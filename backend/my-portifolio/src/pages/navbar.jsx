@@ -1,31 +1,27 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  FaHome, FaUser, FaCode,
-  FaProjectDiagram, FaEnvelope,
+  FaHome,
+  FaUser,
+  FaCode,
+  FaProjectDiagram,
+  FaEnvelope,
   FaTimes
 } from "react-icons/fa";
 import avataaars from "../assets/avataaars.svg";
 
 const NavBar = () => {
-  const [activeAction, setActiveAction] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", target: "/", icon: <FaHome /> },
-    { name: "About", target: "/about", icon: <FaUser /> },
-    { name: "Skills", target: "/skills", icon: <FaCode /> },
-    { name: "Projects", target: "/projects", icon: <FaProjectDiagram /> },
-    { name: "Contact Me", target: "/contact", icon: <FaEnvelope /> },
+    { name: "Home", target: "#home", icon: <FaHome /> },
+    { name: "About", target: "#about", icon: <FaUser /> },
+    { name: "Skills", target: "#skills", icon: <FaCode /> },
+    { name: "Projects", target: "#projects", icon: <FaProjectDiagram /> },
+    { name: "Contact Me", target: "#contact", icon: <FaEnvelope /> },
   ];
 
-  const handleNavClick = (target) => {
-    setActiveAction(target);
-    setMobileMenuOpen(false);
-  };
-  
-
+  const handleNavClick = () => setMobileMenuOpen(false);
 
   return (
     <motion.div
@@ -36,6 +32,7 @@ const NavBar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 md:px-16">
         <div className="flex items-center justify-between h-20">
+          {/* Avatar + Name */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex-shrink-0 flex items-center gap-3"
@@ -50,54 +47,47 @@ const NavBar = () => {
             </span>
           </motion.div>
 
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-4">
             {navItems.map((item) => (
-              <NavLink
+              <a
                 key={item.target}
-                to={item.target}
-                className={({ isActive }) => 
-                   `flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium ${
-                  isActive
-                    ? "text-cyan-400 bg-gray-800/50 shadow-inner shadow-cyan-500/20"
-                    : "text-gray-300 hover:text-cyan-300 hover:bg-gray-800/30"
-                } transition-all duration-300 cursor-pointer`}
-                onClick={() => handleNavClick(item.target)}
+                href={item.target}
+                className="flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium text-gray-300 hover:text-cyan-300 hover:bg-gray-800/30 transition-all duration-300 cursor-pointer"
+                onClick={handleNavClick}
               >
                 <span className="text-xl">{item.icon}</span>
                 <span>{item.name}</span>
-              </NavLink>
+              </a>
             ))}
           </div>
 
-          {/* Theme toggle and mobile menu button */}
-          <div className="flex items-center gap-4">
-    
-            <motion.button
-              className="md:hidden text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileMenuOpen ? (
-                <FaTimes className="h-6 w-6" />
-              ) : (
-                <svg
-                  className="h-8 w-8"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
-            </motion.button>
-          </div>
+          {/* Mobile Menu Button */}
+          <motion.button
+            className="md:hidden text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <FaTimes className="h-6 w-6" />
+            ) : (
+              <svg
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </motion.button>
         </div>
       </div>
 
@@ -113,19 +103,15 @@ const NavBar = () => {
           >
             <div className="px-4 py-3 flex flex-col space-y-2">
               {navItems.map((item) => (
-                <NavLink
+                <a
                   key={item.target}
-                  to={item.target}
-                  className={({ isActive }) => 
-                    `flex items-center gap-4 px-4 py-3 rounded-lg text-lg font-medium ${
-                      isActive 
-                      ? "text-cyan-400 bg-gray-800/50"
-                      : "text-gray-300 hover:text-cyan-300"
-                  } transition-all duration-300 cursor-pointer`}
+                  href={item.target}
+                  className="flex items-center gap-4 px-4 py-3 rounded-lg text-lg font-medium text-gray-300 hover:text-cyan-300 transition-all duration-300 cursor-pointer"
+                  onClick={handleNavClick}
                 >
                   <span className="text-xl">{item.icon}</span>
                   <span>{item.name}</span>
-                </NavLink>
+                </a>
               ))}
             </div>
           </motion.div>

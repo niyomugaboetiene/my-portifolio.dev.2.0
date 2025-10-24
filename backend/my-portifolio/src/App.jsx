@@ -1,26 +1,33 @@
-import Home from './pages/home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import About from './pages/about'
-import Skills from './pages/skills'
-import Projects from './pages/projects'
-import Layout from './pages/layout'
-import Contact from './pages/contact'
-function App() {
+import React from "react";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Skills from "./pages/skills";
+import Projects from "./pages/projects";
+import Contact from "./pages/contact";
+import Layout from "./pages/layout";
 
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route element={<Layout />}>
-           <Route path='/' element={<Home />}/>
-            <Route path='/about' element={<About />} />
-            <Route path='/skills' element={<Skills />}/>
-            <Route path='/projects' element={<Projects />}/>
-            <Route path='/contact' element={<Contact />}/>
-        </Route>
- 
-      </Routes>
-    </Router>
-  )
+    <Layout>
+      <div className="flex flex-col scroll-smooth">
+        <section id="home" className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+          <Home />
+        </section>
+        <section id="about" className="min-h-screen flex items-center justify-center bg-gray-800 text-white">
+          <About />
+        </section>
+        <section id="skills" className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+          <Skills />
+        </section>
+        <section id="projects" className="min-h-screen flex items-center justify-center bg-gray-800 text-white">
+          <Projects />
+        </section>
+        <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+          <Contact />
+        </section>
+      </div>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
