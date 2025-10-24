@@ -116,19 +116,19 @@ const About = () => {
                 <span>Based in Rwanda, open to remote opportunities</span>
               </motion.li>
             </ul>
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ delay: 1 }}
+>
+  <a href="#projects">
+    <button className="mt-8 px-8 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full text-lg font-medium shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+      View My Projects
+    </button>
+  </a>
+</motion.div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 1 }}
-            >
-              <Link to="/projects">
-                <button className="mt-8 px-8 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full text-lg font-medium shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-                  View My Projects
-                </button>
-              </Link>
-            </motion.div>
           </motion.div>
         </motion.div>
 
