@@ -39,7 +39,7 @@ const NavBar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // set initial active
+    handleScroll(); 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
