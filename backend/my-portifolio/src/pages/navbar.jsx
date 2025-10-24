@@ -32,7 +32,6 @@ const NavBar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 md:px-16">
         <div className="flex items-center justify-between h-20">
-          {/* Avatar + Name */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex-shrink-0 flex items-center gap-3"
@@ -47,7 +46,6 @@ const NavBar = () => {
             </span>
           </motion.div>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-4">
             {navItems.map((item) => (
               <a
@@ -62,7 +60,6 @@ const NavBar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <motion.button
             className="md:hidden text-gray-300 hover:text-cyan-400 focus:outline-none p-2"
             whileHover={{ scale: 1.1 }}
@@ -91,7 +88,6 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div

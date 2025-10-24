@@ -4,7 +4,7 @@ const Layout = ({ children }) => {
   return (
     <div className="relative">
       <NavBar />
-      <div className="pt-20">{children}</div>
+      <div className="pt-6">{children}</div>
     </div>
   );
 };
