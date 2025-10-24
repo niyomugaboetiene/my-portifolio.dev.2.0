@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaHome,
@@ -12,14 +12,36 @@ import avataaars from "../assets/avataaars.svg";
 
 const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { name: "Home", target: "#home", icon: <FaHome /> },
-    { name: "About", target: "#about", icon: <FaUser /> },
-    { name: "Skills", target: "#skills", icon: <FaCode /> },
-    { name: "Projects", target: "#projects", icon: <FaProjectDiagram /> },
-    { name: "Contact Me", target: "#contact", icon: <FaEnvelope /> },
+    { name: "Home", target: "home", icon: <FaHome /> },
+    { name: "About", target: "about", icon: <FaUser /> },
+    { name: "Skills", target: "skills", icon: <FaCode /> },
+    { name: "Projects", target: "projects", icon: <FaProjectDiagram /> },
+    { name: "Contact Me", target: "contact", icon: <FaEnvelope /> },
   ];
+
+  // Handle scroll to detect active section
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight / 2; // center of screen
+
+      navItems.forEach(item => {
+        const section = document.getElementById(item.target);
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
+            setActiveSection(item.target);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // set initial active
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleNavClick = () => setMobileMenuOpen(false);
 
@@ -47,11 +69,15 @@ const NavBar = () => {
           </motion.div>
 
           <div className="hidden md:flex items-center gap-4">
-            {navItems.map((item) => (
+            {navItems.map(item => (
               <a
                 key={item.target}
-                href={item.target}
-                className="flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium text-gray-300 hover:text-cyan-300 hover:bg-gray-800/30 transition-all duration-300 cursor-pointer"
+                href={`#${item.target}`}
+                className={`flex items-center gap-2 px-5 py-3 rounded-full text-lg font-medium transition-all duration-300 cursor-pointer
+                  ${activeSection === item.target
+                    ? "text-cyan-400 bg-gray-800/50 shadow-inner shadow-cyan-500/20"
+                    : "text-gray-300 hover:text-cyan-300 hover:bg-gray-800/30"
+                  }`}
                 onClick={handleNavClick}
               >
                 <span className="text-xl">{item.icon}</span>
@@ -98,11 +124,15 @@ const NavBar = () => {
             className="md:hidden bg-gray-900/95 backdrop-blur-sm border-t border-gray-800"
           >
             <div className="px-4 py-3 flex flex-col space-y-2">
-              {navItems.map((item) => (
+              {navItems.map(item => (
                 <a
                   key={item.target}
-                  href={item.target}
-                  className="flex items-center gap-4 px-4 py-3 rounded-lg text-lg font-medium text-gray-300 hover:text-cyan-300 transition-all duration-300 cursor-pointer"
+                  href={`#${item.target}`}
+                  className={`flex items-center gap-4 px-4 py-3 rounded-lg text-lg font-medium transition-all duration-300 cursor-pointer
+                    ${activeSection === item.target
+                      ? "text-cyan-400"
+                      : "text-gray-300 hover:text-cyan-300"
+                    }`}
                   onClick={handleNavClick}
                 >
                   <span className="text-xl">{item.icon}</span>
