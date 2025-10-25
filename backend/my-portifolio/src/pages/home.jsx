@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileDownload, FaWhatsapp } from "react-icons/fa";
-import background from "../../public/background.png";
+import background from "../../public/background.jpg";
 
 const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
 
           <motion.p
-            className="text-gray-300 text-lg max-w-lg"
+            className="text-gray-300 text-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
