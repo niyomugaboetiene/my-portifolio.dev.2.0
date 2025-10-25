@@ -107,7 +107,7 @@ const Home = () => {
           </div>
 
           <motion.div
-            className="flex gap-4 pt-8"
+            className="flex gap-4 pt-8 ms-60"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
