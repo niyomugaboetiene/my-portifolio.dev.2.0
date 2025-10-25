@@ -10,7 +10,8 @@ const Home = () => {
     "Web 3.0 Developer",
     "Smart Contract Developer",
     "Blockchain Developer",
-    "Machine Learning & Deep Learning Developer",
+    "Machine Learning Developer",
+    "Deep Learning Developer",
     "Relational Database Developer",
     "Web Developer",
     "React Expert",
@@ -58,11 +59,11 @@ const Home = () => {
             </div>
           </motion.h1>
 
-          <div className="h-16 relative overflow-hidden">
+          <div className="h-16 relative overflow-hidden ms-[200px]">
             <AnimatePresence mode="wait">
               <motion.h2
                 key={currentTextIndex}
-                className="text-2xl md:text-3xl font-semibold text-gray-300"
+                className="text-sm md:text-lg font-semibold text-gray-300"
                 variants={textVariants}
                 initial="enter"
                 animate="center"
