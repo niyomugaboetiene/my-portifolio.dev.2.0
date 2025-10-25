@@ -52,9 +52,9 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-sm text-center ms-[200px]">Hi, I'm</span> 
+            <span className="text-sm text-center ms-[250px] text-cyan-500">Hi, I'm</span> 
             <div>
-                <span className="text-cyan-500">Niyomugabo Etiene</span>
+                <span className="text-cyan-500 ms-[70px]">Niyomugabo Etiene</span>
             </div>
           </motion.h1>
 
