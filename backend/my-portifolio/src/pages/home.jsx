@@ -42,8 +42,8 @@ const Home = () => {
     >
       <div className="absolute inset-0 bg-black/70"></div>
    
-     <div className="ms-[500px]">
-      <div className="relative z-10 max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+     <div className="ms-[200px]">
+      <div className="relative z-10 max-w-6xl w-[800px]  md:grid-cols-2 gap-8 items-center">
         
         <div className="space-y-6">
           <motion.h1
