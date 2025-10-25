@@ -82,13 +82,25 @@ const About = () => {
             </ul>
             <div className="">
                 <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold">Hobbies</span></h2>
-                <div>
-                  <p>Reading books</p>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-white text-sm">
+                       <p>Reading books</p>
+                       <p>60%</p>
+                  </div>
+                  <div className="w-full bg-gray-500 rounded-full overflow-hidden">
+                      <motion.div
+                        className="bg-cyan-500 h-3 rounded-full"
+                        initial={{ width: 0 }}
+                        animate={{ width: "90%" }}
+                        transition={{ duration: 1 }}
+                      />
+                        
+                  </div>
+                </div>
                   <p>Watching cartoons</p>
                   <p>Watching movies</p>
                   <p>Watching documentaries</p>
                   <p>Playing football (sometime)</p>
-                </div>
             </div>
 <motion.div
   initial={{ opacity: 0 }}
