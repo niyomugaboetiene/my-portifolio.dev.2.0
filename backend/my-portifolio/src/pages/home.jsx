@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaFileDownload, FaWhatsapp } from 'react-icons/fa';
-
+import background from "../../public/background.png";
 import avatar from "../assets/avatar.gif"
 
 const Home = () => {
@@ -54,7 +54,7 @@ const Home = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-12 bg-gradient-to-b from-gray-900 to-black">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-12 ">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
         <div className="space-y-6">
@@ -91,6 +91,8 @@ const Home = () => {
           >
             I create beautiful, Modern Decentrized Application, Decentralzied Exchange, and responsive websites with modern technologies like React, 
             Tailwind CSS, and Node.js, Solidity. Passionate about crafting exceptional user experiences.
+            <img src={background} />
+            
           </motion.p>
 
           <div className="flex flex-wrap gap-4 pt-4">
