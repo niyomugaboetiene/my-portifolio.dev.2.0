@@ -82,7 +82,7 @@ const Home = () => {
             transition={{ delay: 0.6 }}
           >
             I create beautiful, modern decentralized applications, decentralized exchanges, and responsive websites using React, 
-            Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional user experiences.
+            Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional <span className="ms-3">user experiences.</span>
           </motion.p>
 
           <div className="flex flex-wrap gap-4 pt-4 ms-[150px]">
