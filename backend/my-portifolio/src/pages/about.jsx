@@ -82,12 +82,12 @@ const About = () => {
             </ul>
             <div className="">
                 <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold">Hobbies</span></h2>
-                <div className="space-y-2">
-                  <div className="flex justify-between text-white text-sm">
+                <div className="space-y-3 border w-[350px] p-2 rounded-lg">
+                  <div className="flex text-white text-sm">
                        <p>Reading books</p>
-                       <p>60%</p>
+                       <p className="ms-[220px]">60%</p>
                   </div>
-                  <div className="w-full bg-gray-500 rounded-full overflow-hidden">
+                  <div className=" bg-gray-500 rounded-full overflow-hidden">
                       <motion.div
                         className="bg-cyan-500 h-3 rounded-full"
                         initial={{ width: 0 }}
