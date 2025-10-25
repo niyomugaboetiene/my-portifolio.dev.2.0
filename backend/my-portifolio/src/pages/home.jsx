@@ -52,7 +52,10 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Hi, I'm <span className="text-cyan-500">Etiene</span>
+            <span className="text-sm text-center ms-[200px]">Hi, I'm</span> 
+            <div>
+                <span className="text-cyan-500">Niyomugabo Etiene</span>
+            </div>
           </motion.h1>
 
           <div className="h-16 relative overflow-hidden">
@@ -81,12 +84,12 @@ const Home = () => {
             Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional user experiences.
           </motion.p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-wrap gap-4 pt-4 ms-[150px]">
             <motion.a
               href="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg text-white font-semibold transition duration-300"
+              className="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg text-white font-semibold transition duration-300 text-center"
             >
               View My Work
             </motion.a>
