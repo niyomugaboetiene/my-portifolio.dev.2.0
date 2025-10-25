@@ -19,7 +19,6 @@ const Home = () => {
     "Full Stack Specialist"
   ];
 
-  // Rotate text every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prevIndex) =>
@@ -38,16 +37,13 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-cover bg-center bg-no-repeat w-full"
       style={{ backgroundImage: `url(${background})` }}
     >
-      {/* Dark transparent overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Content */}
       <div className="relative z-10 max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
-        {/* Left side text */}
         <div className="space-y-6">
           <motion.h1
             className="text-4xl md:text-5xl font-bold text-white"
