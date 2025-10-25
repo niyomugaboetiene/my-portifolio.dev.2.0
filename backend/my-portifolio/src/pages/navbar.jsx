@@ -76,7 +76,7 @@ const NavBar = () => {
                 className={`flex items-center gap-2 px-5 py-3 rounded-full text-[15px] font-medium transition-all duration-300 cursor-pointer
                   ${activeSection === item.target
                     ? "text-cyan-400 "
-                    : "text-gray-300 hover:text-cyan-300 hover:underline transition duration-500"
+                    : "text-gray-300 hover:text-cyan-500  transition duration-500"
                   }`}
                 onClick={handleNavClick}
               >
