@@ -8,12 +8,12 @@ const Home = () => {
 
   const texts = [
     "Web 3.0 Developer",
-    "Smart Contract Developer",
-    "Blockchain Developer",
-    "Machine Learning Developer",
-    "Deep Learning Developer",
-    "Relational Database Developer",
-    "Web Developer",
+    "Smart Contract Dev",
+    "Blockchain Dev",
+    "Machine Learning Dev",
+    "Deep Learning Dev",
+    "Relational DB Dev",
+    "Website Dev",
     "React Expert",
     "UI/UX Enthusiast",
     "Graphic Designer",
