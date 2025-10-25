@@ -59,7 +59,7 @@ const Home = () => {
             </div>
           </motion.h1>
 
-          <div className="h-16 relative overflow-hidden ms-[200px]">
+          <div className="h-16 relative overflow-hidden ms-[210px]">
             <AnimatePresence mode="wait">
               <motion.h2
                 key={currentTextIndex}
