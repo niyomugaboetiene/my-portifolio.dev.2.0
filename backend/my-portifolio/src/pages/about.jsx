@@ -1,24 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { FaReact, FaNodeJs, FaPython, FaDatabase } from "react-icons/fa";
-import { SiFlask, SiMongodb, SiTypescript, SiNextdotjs, SiSolidity, SiEthers } from "react-icons/si";
-
 import aboutAnimation from "../assets/about.gif"
 const About = () => {
 
-  const techStack = [
-    { icon: <SiSolidity className="text-blue-500" />, name: "Solidity" },
-    { icon: <SiEthers className="text-green-400" />, name: "Ethers" },
-    { icon: <FaReact className="text-cyan-400" />, name: "React.js" },
-    { icon: <FaNodeJs className="text-green-500" />, name: "Node.js" },
-    { icon: <FaPython className="text-blue-400" />, name: "Python" },
-    { icon: <SiFlask className="text-gray-300" />, name: "Flask" },
-    { icon: <FaDatabase className="text-amber-500" />, name: "MySQL" },
-    { icon: <SiMongodb className="text-green-600" />, name: "MongoDB" },
-    { icon: <SiTypescript className="text-blue-600" />, name: "TypeScript" },
-    { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
-  ];
 
   return (
     <section 
@@ -63,26 +47,6 @@ const About = () => {
             <p className="text-lg leading-relaxed">
               My expertise spans both frontend and backend technologies, allowing me to create seamless, full-featured applications from concept to deployment.
             </p>
-
-            <div className="py-4">
-              <h3 className="text-xl font-semibold text-white mb-4">Tech Stack</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {techStack.map((tech, index) => (
-                  <motion.div
-                    key={index}
-                    className="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-lg"
-                    whileHover={{ scale: 1.05 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 300, delay: 0.1 * index }}
-                  >
-                    <span className="text-xl">{tech.icon}</span>
-                    <span>{tech.name}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
 
             <ul className="space-y-3 text-lg">
               <motion.li 

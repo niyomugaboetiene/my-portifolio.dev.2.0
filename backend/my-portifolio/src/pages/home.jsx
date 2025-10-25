@@ -92,7 +92,7 @@ const Home = () => {
               whileTap={{ scale: 0.98 }}
               className="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg text-white font-semibold transition duration-300 text-center"
             >
-             <span className="mt-3">View My Work </span> 
+             <span className="text-center flex mt-1">View My Work </span> 
             </motion.a>
 
             <motion.a
