@@ -43,7 +43,7 @@ const Home = () => {
     >
       <div className="absolute inset-0 bg-black/70"></div>
    
-     <div className="ms-[200px]">
+     <div className="ms-[160px]">
       <div className="relative z-10 max-w-6xl w-[800px]  md:grid-cols-2 gap-8 items-center">
         
         <div className="space-y-6">
@@ -53,13 +53,13 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-sm text-center ms-[250px] text-cyan-500">Hi, I'm</span> 
+            <span className="text-sm text-center ms-[300px] text-cyan-500">Hi, I'm</span> 
             <div>
-                <span className="text-cyan-500 ms-[70px]">Niyomugabo Etiene</span>
+                <span className="text-cyan-500 ms-[120px]">Niyomugabo Etiene</span>
             </div>
           </motion.h1>
 
-          <div className="h-16 relative overflow-hidden ms-[210px]">
+          <div className="h-16 relative overflow-hidden ms-[270px]">
             <AnimatePresence mode="wait">
               <motion.h2
                 key={currentTextIndex}
@@ -82,7 +82,7 @@ const Home = () => {
             transition={{ delay: 0.6 }}
           >
             I create beautiful, modern decentralized applications, decentralized exchanges, and responsive websites using React, 
-            Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional <span className="ms-3">user experiences.</span>
+            Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional <span className="ms-[290px]">user experiences.</span>
           </motion.p>
 
           <div className="flex flex-wrap gap-4 pt-4 ms-[150px]">
@@ -113,7 +113,7 @@ const Home = () => {
             transition={{ delay: 0.9 }}
           >
             <a
-              href="https://github.com/nietiene"
+              href="https://github.com/niyomugaboetiene"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300"

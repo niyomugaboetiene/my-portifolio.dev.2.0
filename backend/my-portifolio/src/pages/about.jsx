@@ -23,7 +23,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h2 
-            className="text-4xl font-bold text-cyan-500 mb-8"
+            className="text-4xl font-bold text-cyan-500 mb-[90px] text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -41,7 +41,7 @@ const About = () => {
           >
             <p className="text-lg leading-relaxed">
               I'm <span className="font-semibold text-cyan-400">Etiene Niyomugabo</span>, a passionate <span className="text-cyan-400 font-bold"> Blockchain Developer, </span> 
-              <span className="font-bold text-cyan-400">Smart contract Developer, </span> <span className="font-bold text-cyan-400">Machine Learning and Deep learning Developer,</span>  full stack developer with a strong desire to build clean, user-friendly, and impactful digital experiences. What began as curiosity has envolved into a dedicated career path.
+              <span className="font-bold text-cyan-400">Smart contract Developer, </span> <span className="font-bold text-cyan-400">Machine Learning and Deep learning Developer,</span>  <span className="text-cyan-500 font-bold">full stack developer</span> with a strong desire to build clean, user-friendly, and impactful digital experiences. What began as curiosity has envolved into a dedicated career path.
             </p>
 
             <p className="text-lg leading-relaxed">
@@ -80,6 +80,16 @@ const About = () => {
                 <span>Based in Rwanda, open to remote opportunities</span>
               </motion.li>
             </ul>
+            <div className="">
+                <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold">Hobbies</span></h2>
+                <div>
+                  <p>Reading books</p>
+                  <p>Watching cartoons</p>
+                  <p>Watching movies</p>
+                  <p>Watching documentaries</p>
+                  <p>Playing football (sometime)</p>
+                </div>
+            </div>
 <motion.div
   initial={{ opacity: 0 }}
   whileInView={{ opacity: 1 }}
@@ -87,34 +97,13 @@ const About = () => {
   transition={{ delay: 1 }}
 >
   <a href="#projects">
-    <button className="mt-8 px-8 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full text-lg font-medium shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+    <button className="mt-8 px-8 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg text-lg font-medium shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
       View My Projects
     </button>
   </a>
 </motion.div>
 
           </motion.div>
-        </motion.div>
-
-        <motion.div
-        // flex-1 flex this part make division take 50% of the screen
-          className="flex-1 flex justify-center"
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="relative w-full max-w-md">
-             <img src={aboutAnimation} 
-             alt="Animated Developers"
-             loading="lazy"
-             decoding="async" 
-            />
-            <motion.div
-              className="absolute -inset-4 border-2 border-cyan-400 rounded-2xl opacity-0 hover:opacity-100 transition-all duration-500"
-              whileHover={{ opacity: 1 }}
-            />
-          </div>
         </motion.div>
       </div>
     </section>
