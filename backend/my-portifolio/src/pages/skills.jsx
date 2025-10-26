@@ -58,17 +58,17 @@ const Skills = () => {
         { icon: <FaNodeJs className="text-green-500" />, name: "Node.js", level: 85,gradient: "from-purple-500 to-red-500" },
         { icon: <SiExpress className="text-gray-300" />, name: "Express", level: 80 , gradient: "from-green-500 to-purple-500", },
         { icon: <SiFlask className="text-gray-300" />, name: "Flask", level: 70, gradient: "from-red-500 to-sky-500" },
-        { icon: <FaPython className="text-blue-400" />, name: "Python", level: 90, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <SiDjango className="text-emerald-800" />, name: "Django", level: 75, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <FaPhp className="text-indigo-500" />, name: "PHP", level: 88 , gradient: "from-blue-500 to-cyan-500" },
-        { icon: <SiLaravel className="text-red-600" />, name: "Laravel", level: 83, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <SiSolidity className="text-blue-500" />, name: "Solidity", level: 70, gradient: "from-blue-500 to-cyan-500" },
+        { icon: <FaPython className="text-blue-400" />, name: "Python", level: 90, gradient: "from-emerald-500 to-orange-500" },
+        { icon: <SiDjango className="text-emerald-800" />, name: "Django", level: 75, gradient: "from-indigo-500 to-purple-500" },
+        { icon: <FaPhp className="text-indigo-500" />, name: "PHP", level: 88 , gradient: "from-orange-500 to-red-500" },
+        { icon: <SiLaravel className="text-red-600" />, name: "Laravel", level: 83, gradient: "from-red-600 to-purple-500" },
+        { icon: <SiSolidity className="text-blue-500" />, name: "Solidity", level: 70, gradient: "from-blue-500 to-purple-500" },
       ]
     },
     {
       name: "Databases",
       items: [
-        { icon: <FaDatabase className="text-amber-500" />, name: "MySQL", level: 90, gradient: "from-blue-500 to-cyan-500" },
+        { icon: <FaDatabase className="text-amber-500" />, name: "MySQL", level: 90, gradient: "from-yellow-500 to-cyan-500" },
         { icon: <SiMongodb className="text-green-600" />, name: "MongoDB", level: 80, gradient: "from-blue-500 to-cyan-500" },
       ]
     },
