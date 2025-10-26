@@ -87,12 +87,12 @@ const Skills = () => {
       name: "Others",
       items: [
         { name: "REST APIs", icon: <SiPostman className="text-orange-400" />, level: 85, gradient: "from-blue-500 to-red-500"},
-        { icon: <SiSocketdotio className="text-white" />, name: "Socket.IO", level: 80, gradient: "from-blue-500 to-cyan-500" },
-        { name: "EJS", icon: <SiJavascript className="text-yellow-400" />, level: 90, gradient: "from-blue-500 to-cyan-500" },
-        { name: "Multer", icon: <FaFileUpload className="text-blue-400" />, level: 70, gradient: "from-blue-500 to-cyan-500" },
-        { name: "Auth", icon: <FaUserShield className="text-green-400" />, level: 80, gradient: "from-blue-500 to-cyan-500" },
-        { name: "Passport", icon: <FaPassport className="text-cyan-400" />, level: 75, gradient: "from-blue-500 to-cyan-500" },
-        { name: "Dart", icon: <DartIcon className="text-cyan-400" />, level: 65, gradient: "from-blue-500 to-cyan-500" },
+        { icon: <SiSocketdotio className="text-white" />, name: "Socket.IO", level: 80, gradient: "from-green-500 to-cyan-500" },
+        { name: "EJS", icon: <SiJavascript className="text-yellow-400" />, level: 90, gradient: "from-yellow-500 to-cyan-500" },
+        { name: "Multer", icon: <FaFileUpload className="text-blue-400" />, level: 70, gradient: "from-blue-500 to-amber-500" },
+        { name: "Auth", icon: <FaUserShield className="text-green-400" />, level: 80, gradient: "from-orange-500 to-blue-500" },
+        { name: "Passport", icon: <FaPassport className="text-cyan-400" />, level: 75, gradient: "from-red-500 to-purple-500" },
+        { name: "Dart", icon: <DartIcon className="text-cyan-400" />, level: 65, gradient: "from-blue-500 to-red-500" },
       ]
     }
   ];
