@@ -56,13 +56,13 @@ const Skills = () => {
         {
             name: "Backend",
             items: [
-                { icon: <FaNodeJs className="text-green-500" />, name:"Node.js"},
-                { icon: <SiExpress className="text-gray-300" />, name:"Express"},
-                { icon: <SiFlask className="text-gray-300" />,  name:"Flask"},
-                { icon: <FaPython className="text-blue-400"/>, name:"Python"},
-                { icon: <SiDjango className="text-emerald-800" />, name:"Django"},
-                { icon: <FaPhp className="text-indigo-500" />,  name:"PHP"},
-                { icon: <SiLaravel className="text-red-600"/>, name: "Laravel"},
+                { icon: <FaNodeJs className="text-green-500" />, name:"Node.js", level: 80 },
+                { icon: <SiExpress className="text-gray-300" />, name:"Express", level: 90 },
+                { icon: <SiFlask className="text-gray-300" />,  name:"Flask", level: 60 },
+                { icon: <FaPython className="text-blue-400"/>, name:"Python", level: 50 },
+                { icon: <SiDjango className="text-emerald-800" />, name:"Django", level: 40 },
+                { icon: <FaPhp className="text-indigo-500" />,  name:"PHP", level: 70 },
+                { icon: <SiLaravel className="text-red-600"/>, name: "Laravel", level: 30},
                 { icon: <SiSolidity className="text-blue-500"/>, name: "Solidity"},
             ]
         },
