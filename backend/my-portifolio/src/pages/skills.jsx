@@ -164,8 +164,8 @@ const Skills = () => {
                         variants={itemVariants}
                       >
                         <div className="">
-                            <span className="text-xl mb-1">{skill.icon}</span>
-                            <span className="text-sm md:text-base text-center text-cyan-400">{skill.name}</span>
+                            <span className="text-[17px] mb-1">{skill.icon}</span>
+                            <span className="text-xs md:text-base text-center text-cyan-400">{skill.name}</span>
                             <span className="text-xs text-gray-400">{skill.level || 70}%</span>
 
                         </div>
