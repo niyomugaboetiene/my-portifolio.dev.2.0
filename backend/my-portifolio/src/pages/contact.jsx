@@ -242,7 +242,7 @@ const Contact = () => {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700 hover:bg-cyan-600 rounded-full transition duration-300"
+                className="p-3 bg-gray-700 hover:bg-blue-600 rounded-full transition duration-300"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="text-white text-xl" />
@@ -251,7 +251,7 @@ const Contact = () => {
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700 hover:bg-cyan-600 rounded-full transition duration-300"
+                className="p-3 bg-gray-700 hover:bg-black rounded-full transition duration-300"
                 aria-label="GitHub"
               >
                 <FaGithub className="text-white text-xl" />
@@ -260,7 +260,7 @@ const Contact = () => {
                 href="https://wa.me/+250728184299" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700 hover:bg-cyan-600 rounded-full transition duration-300"
+                className="p-3 bg-gray-700 hover:bg-green-600 rounded-full transition duration-300"
                 aria-label="GitHub"
               >
                 <FaWhatsapp className="text-white text-xl" />
