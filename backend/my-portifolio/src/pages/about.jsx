@@ -100,14 +100,14 @@ const About = () => {
                 </div>
                 <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg">
                   <div className="flex text-white text-sm">
-                      <p>Watching cartoons</p>
-                      <p className="ms-[175px]">50%</p>
+                      <p>Watching cartoons & cartoons</p>
+                      <p className="ms-[175px]">80%</p>
                   </div>
                   <div className="bg-gray-500  rounded-full overflow-hidden">
                     <motion.div
                     className="bg-gradient-to-l from-amber-500 to-cyan-500 h-3 rounded-full"
                     initial={{ width: 0 }}
-                    animate={{ width: "50%" }}
+                    animate={{ width: "80%" }}
                     transition={{ duration: 1}}
                         /> 
                        
@@ -117,19 +117,32 @@ const About = () => {
               <div className="flex justify-between w-full">
                 <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg mt-9">
                    <div className="flex text-white text-sm">
-                       <p>Watching movies</p>
-                       <p className="ms-[175px]">40%</p>
+                       <p>Listening musics</p>
+                       <p className="ms-[189px]">70%</p>
                    </div>
                    <div className="bg-gray-500 rounded-full overflow-hidden">
                     <motion.div
                        className="bg-gradient-to-l from-lime-500 to-cyan-500 h-3 rounded-full"
                        initial={{ width: 0 }}
-                       animate={{ width: "40%" }}
+                       animate={{ width: "70%" }}
                        transition={{ duration: 1 }}
                     />
                    </div>
                 </div>
-                    <p>Watching documentaries</p>
+                <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg mt-9">
+                  <div className="flex text-white text-sm">
+                      <p>Watching documentaries</p>
+                      <p className="ms-[190px]">60%</p>
+                  </div>
+                  <div className="bg-gray-500 rounded-full overflow-hidden">
+                    <motion.div 
+                      className="bg-gradient-to-l from-emerald-500 to-blue-500 h-3 rounded-full"
+                      initial={{ width: 0 }}
+                      animate={{ width: "60%" }}
+                      transition={{ duration: 1 }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 <motion.div
