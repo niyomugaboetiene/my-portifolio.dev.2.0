@@ -10,7 +10,6 @@ import {
   SiPostman, SiVercel, SiSocketdotio, SiJavascript, SiLaravel, SiSolidity, SiEthers, SiRemix
 } from "react-icons/si"
 
-import skillsAnimation from "../assets/skillss.gif"
 
 const Skills = () => {
     const VSCodeIcon = ({ className }) => (
@@ -200,27 +199,7 @@ const Skills = () => {
                     </motion.div>
                 </motion.div>
 
-                <motion.div
-                    className="hidden lg:block relative w-full max-w-md"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ 
-                        duration: 0.6,
-                        delay: 0.2
-                    }}
-                >
-                        <img 
-                            src={skillsAnimation} 
-                            alt="Animated developer"
-                            className="w-full"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                    <motion.div
-                        className="absolute -inset-4 border-2 border-cyan-400 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-300"
-                        whileHover={{ opacity: 0.7 }}
-                    />
-                </motion.div>
+
             </div>
         </section>
     )
