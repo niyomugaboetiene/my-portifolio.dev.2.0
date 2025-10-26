@@ -152,12 +152,11 @@ const About = () => {
   transition={{ delay: 1 }}
 >
   <a href="#projects">
-    <button className="mt-8 px-8 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg text-lg font-medium shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+    <button className="mt-8 px-8 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg text-lg font-medium shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 hover:scale-105">
       View My Projects
-    </button>
-  </a>
-</motion.div>
-
+                   </button>
+                </a>
+              </motion.div>
           </motion.div>
         </motion.div>
       </div>
