@@ -1,10 +1,15 @@
 import NavBar from "./navbar";
+import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="relative">
+    <div className="flex flex-col max-h-screen bg-gray-950 text-white">
       <NavBar />
-      <div className="pt-6">{children}</div>
+      <main className="flex-grow pt-6">
+         {children}
+      </main>
+      <hr  className="border border-gray-600"/>
+      <Footer />
     </div>
   );
 };
