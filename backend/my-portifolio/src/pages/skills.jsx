@@ -156,19 +156,19 @@ const Skills = () => {
                     {category.items.map((skill, skillIndex) => (
                       <motion.div
                         key={skillIndex}
-                        className="flex flex-col items-center gap-2 bg-gray-800/50 px-3 py-3 rounded-lg hover:bg-gray-800/70 transition-colors w-full"
+                        className="flex flex-col  gap-2 bg-gray-800/50 px-3 py-3 rounded-lg hover:bg-gray-800/70 transition-colors w-full"
                         whileHover={{
                           scale: 1.03,
                           boxShadow: "0 0 10px rgba(34, 211, 238, 0.3)"
                         }}
                         variants={itemVariants}
                       >
-                        <div className="">
+                        <div className="flex justify-between">
                             <span className="text-[17px] mb-1">{skill.icon}</span>
-                            <span className="text-xs md:text-base text-center text-cyan-400">{skill.name}</span>
                             <span className="text-xs text-gray-400">{skill.level || 70}%</span>
-
                         </div>
+                        <span className="text-xs md:text-[14px] text-cyan-400">{skill.name}</span>
+
      
 
                         {/* Progress bar */}
