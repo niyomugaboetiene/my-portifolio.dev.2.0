@@ -114,10 +114,23 @@ const About = () => {
                   </div>
                </div>
               </div>
-              <div>
-                   <p>Watching movies</p>
+              <div className="flex justify-between w-full">
+                <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg mt-9">
+                   <div className="flex text-white text-sm">
+                       <p>Watching movies</p>
+                       <p className="ms-[175px]">40%</p>
+                   </div>
+                   <div className="bg-gray-500 rounded-full overflow-hidden">
+                    <motion.div
+                       className="bg-gradient-to-l from-lime-500 to-cyan-500 h-3 rounded-full"
+                       initial={{ width: 0 }}
+                       animate={{ width: "40%" }}
+                       transition={{ duration: 1 }}
+                    />
+                   </div>
+                </div>
+                    <p>Watching documentaries</p>
               </div>
-                  <p>Watching documentaries</p>
             </div>
 <motion.div
   initial={{ opacity: 0 }}
