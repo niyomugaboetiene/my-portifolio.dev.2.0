@@ -82,8 +82,9 @@ const About = () => {
             </ul>
             <div className="">
                 <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold">Hobbies</span></h2>
-                <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg">
-                  <div className="flex text-white text-sm ">
+                <div  className="flex justify-between w-full mt-9">
+                  <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg">
+                    <div className="flex text-white text-sm ">
                        <p>Reading books</p>
                        <p className="ms-[200px]">60%</p>
                   </div>
@@ -100,11 +101,11 @@ const About = () => {
                 <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg">
                   <div className="flex text-white text-sm">
                       <p>Watching cartoons</p>
-                      <p className="ms-[200px]">50%</p>
+                      <p className="ms-[175px]">50%</p>
                   </div>
-                  <div className="bg-gray-500 rounded-full overflow-hidden">
+                  <div className="bg-gray-500  rounded-full overflow-hidden">
                     <motion.div
-                    className="bg-gradient-to-bl from-purple-500 to-cyan-500 h-3 rounded-full"
+                    className="bg-gradient-to-l from-amber-500 to-cyan-500 h-3 rounded-full"
                     initial={{ width: 0 }}
                     animate={{ width: "50%" }}
                     transition={{ duration: 1}}
@@ -112,7 +113,10 @@ const About = () => {
                        
                   </div>
                </div>
-                  <p>Watching movies</p>
+              </div>
+              <div>
+                   <p>Watching movies</p>
+              </div>
                   <p>Watching documentaries</p>
             </div>
 <motion.div
