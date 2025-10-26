@@ -90,7 +90,7 @@ const About = () => {
                   </div>
                   <div className="bg-gray-500 rounded-full overflow-hidden">
                       <motion.div
-                        className="bg-gradient-to-bl from-cyan-500 to-purple-500 h-3 rounded-full"
+                        className="bg-gradient-to-l from-cyan-500 to-purple-500 h-3 rounded-full"
                         initial={{ width: 0 }}
                         animate={{ width: "60%" }}
                         transition={{ duration: 1 }}
@@ -101,7 +101,7 @@ const About = () => {
                 <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg">
                   <div className="flex text-white text-sm">
                       <p>Watching cartoons & cartoons</p>
-                      <p className="ms-[175px]">80%</p>
+                      <p className="ms-[100px]">80%</p>
                   </div>
                   <div className="bg-gray-500  rounded-full overflow-hidden">
                     <motion.div
