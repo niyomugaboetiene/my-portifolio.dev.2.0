@@ -75,12 +75,12 @@ const Skills = () => {
     {
       name: "Dev Tools",
       items: [
-        { icon: <FaGitAlt className="text-orange-600" />, name: "Git", level: 90, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <FaGithub className="text-white" />, name: "GitHub", level: 85, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <VSCodeIcon className="text-blue-500" />, name: "VS Code", level: 95, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <SiPostman className="text-orange-400" />, name: "Postman", level: 80, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 75 , gradient: "from-blue-500 to-cyan-500" },
-        { icon: <FaFigma className="text-purple-400" />, name: "Figma", level: 85 , gradient: "from-blue-500 to-cyan-500" },
+        { icon: <FaGitAlt className="text-orange-600" />, name: "Git", level: 90, gradient: "from-blue-500 to-orange-500" },
+        { icon: <FaGithub className="text-white" />, name: "GitHub", level: 85, gradient: "from-yellow-500 to-purple-500" },
+        { icon: <VSCodeIcon className="text-blue-500" />, name: "VS Code", level: 95, gradient: "from-orange-500 to-green-500" },
+        { icon: <SiPostman className="text-orange-400" />, name: "Postman", level: 80, gradient: "from-purple-500 to-orange-500" },
+        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 75 , gradient: "from-yellow-500 to-red-500" },
+        { icon: <FaFigma className="text-purple-400" />, name: "Figma", level: 85 , gradient: "from-purple-500 to-yellow-500" },
       ]
     },
     {
