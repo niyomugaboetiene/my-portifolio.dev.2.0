@@ -68,8 +68,8 @@ const Skills = () => {
     {
       name: "Databases",
       items: [
-        { icon: <FaDatabase className="text-amber-500" />, name: "MySQL", level: 90, gradient: "from-yellow-500 to-cyan-500" },
-        { icon: <SiMongodb className="text-green-600" />, name: "MongoDB", level: 80, gradient: "from-blue-500 to-cyan-500" },
+        { icon: <FaDatabase className="text-amber-500" />, name: "MySQL", level: 90, gradient: "from-yellow-500 to-red-500" },
+        { icon: <SiMongodb className="text-green-600" />, name: "MongoDB", level: 80, gradient: "from-green-500 to-purple-700" },
       ]
     },
     {
