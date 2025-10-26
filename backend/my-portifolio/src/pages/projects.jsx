@@ -103,6 +103,19 @@ const Projects = () => {
             illustration: netmovies,
             code: "https://github.com/niyomugaboetiene/movie-app.dev",
             demo: "https://netmoviess.vercel.app"
+        },  
+         {
+            title: "Task remainder",
+            tech: [
+                {icon: <SiReact className="text-cyan-400"/>, name: "React"},
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js"},
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss"},
+            ],
+            description:
+            "A modern mobile app where you can set your remainders for daily activities",
+            illustration: netmovies,
+            code: "https://github.com/niyomugaboetiene/movie-app.dev",
+            demo: "https://netmoviess.vercel.app"
         },
     ];
 
@@ -160,7 +173,7 @@ const Projects = () => {
                         {projects.map((projects, index) => (
                             <motion.div
                               key={index}
-                              className="bg-grray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
+                              className="bg-grray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 hover:border hover:border-cyan-500 hover:border-3.5"
                               variants={itemVariants}
                               whileHover={{ y: -5 }}
                               >
