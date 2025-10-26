@@ -63,37 +63,37 @@ const Skills = () => {
                 { icon: <SiDjango className="text-emerald-800" />, name:"Django", level: 40 },
                 { icon: <FaPhp className="text-indigo-500" />,  name:"PHP", level: 70 },
                 { icon: <SiLaravel className="text-red-600"/>, name: "Laravel", level: 30},
-                { icon: <SiSolidity className="text-blue-500"/>, name: "Solidity"},
+                { icon: <SiSolidity className="text-blue-500"/>, name: "Solidity", level: 50},
             ]
         },
         {
             name: "Databases",
             items: [
-                { icon: <FaDatabase className="text-amber-500"/>, name: "MySQL"},
-                { icon: <SiMongodb className="text-green-600"/>, name: "MongoDB"}
+                { icon: <FaDatabase className="text-amber-500"/>, name: "MySQL", level: 85},
+                { icon: <SiMongodb className="text-green-600"/>, name: "MongoDB", level: 70}
             ]
         },
         {
             name: "Dev Tools",
             items: [
-                { icon: <FaGitAlt className="text-orange-600"/>, name: "Git"},
-                { icon: <FaGithub className="text-white"/>, name: "GitHub"},
-                { icon: <VSCodeIcon className="text-blue-500"/>, name: "VS Code"},
-                { icon: <SiPostman className="text-orange-400"/>, name: "Postman"},
-                { icon: <SiRemix className="text-cyan-500"/>, name: "Remix IDE"},
-                { icon: <FaFigma className="text-purple-400"/>, name: "Figma"},
+                { icon: <FaGitAlt className="text-orange-600"/>, name: "Git", level: 60},
+                { icon: <FaGithub className="text-white"/>, name: "GitHub", level: 80},
+                { icon: <VSCodeIcon className="text-blue-500"/>, name: "VS Code", level: 70},
+                { icon: <SiPostman className="text-orange-400"/>, name: "Postman", level: 60},
+                { icon: <SiRemix className="text-cyan-500"/>, name: "Remix IDE", level: 90},
+                { icon: <FaFigma className="text-purple-400"/>, name: "Figma", level: 30},
             ]
         },
         {
             name: "Others",
             items: [
-                { name: "REST APIs", icon: <SiPostman className="text-orange-400" /> },
-                { icon: <SiSocketdotio className="text-white"/>, name: "Socket.IO"},
-                { name: "EJS", icon:  <SiJavascript className="text-yellow-400"/> },
-                { name: "Multer", icon: <FaFileUpload className="text-blue-400" /> },
-                { name: "Auth", icon: <FaUserShield className="text-green-400" /> },
-                { name: "Passport", icon: <FaPassport className="text-cyan-400" /> },
-                { name: "Dart", icon: <DartIcon className="text-cyan-400" /> },
+                { name: "REST APIs", icon: <SiPostman className="text-orange-400" />, level: 70},
+                { icon: <SiSocketdotio className="text-white"/>, name: "Socket.IO", level: 50},
+                { name: "EJS", icon:  <SiJavascript className="text-yellow-400"/> , level:80},
+                { name: "Multer", icon: <FaFileUpload className="text-blue-400" />, level: 100 },
+                { name: "Auth", icon: <FaUserShield className="text-green-400" />, level: 100 },
+                { name: "Passport", icon: <FaPassport className="text-cyan-400" />, level: 100 },
+                { name: "Dart", icon: <DartIcon className="text-cyan-400" />, level: 80 },
 
             ]
         }
