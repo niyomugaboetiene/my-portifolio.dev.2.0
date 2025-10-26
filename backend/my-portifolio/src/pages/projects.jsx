@@ -34,7 +34,8 @@ const Projects = () => {
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
             illustration: chatAppIllustration,
-            code: "https://github.com/nietiene/Chat-app-frontend"
+            code: "https://github.com/nietiene/Chat-app-frontend",
+            demo: "#"
         },
         { 
             title: "Krypto-site-3.0 App",
@@ -47,7 +48,8 @@ const Projects = () => {
             description: 
             "Simple modern decentralized app which enable sending token across the world",
             illustration: transaction,
-            code: "https://krypto-site-3-0.vercel.app"
+            code: "https://github.com/niyomugaboetiene/krypto-site.3.0",
+            demo: "https://krypto-site-3-0.vercel.app"
         },
         {
             title: "Student Managment System",
