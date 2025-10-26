@@ -132,7 +132,7 @@ const About = () => {
                 <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg mt-9">
                   <div className="flex text-white text-sm">
                       <p>Watching documentaries</p>
-                      <p className="ms-[190px]">60%</p>
+                      <p className="ms-[140px]">60%</p>
                   </div>
                   <div className="bg-gray-500 rounded-full overflow-hidden">
                     <motion.div 
