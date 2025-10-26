@@ -44,13 +44,13 @@ const Skills = () => {
         {
             name: "Frontend",
             items: [
-                { icon: <FaHtml5 className="text-orange-500"/>, name: "HTML5"},
-                { icon: <FaCss3Alt className="text-blue-500"/>, name: "CSS3"},
-                { icon: <FaJs className="text-yellow-400"/>, name: "JavaScript"},
-                { icon: <FaReact className="text-cyan-400"/>, name: "React"},
-                { icon: <FaBootstrap className="text-purple-500"/>, name: "Bootstrap"},
-                { icon: <SiEthers className="text-green-300"/>, name: "Ethers"},
-                { icon: <SiTailwindcss className="text-cyan-300"/>, name: "Tailwind"},
+                { icon: <FaHtml5 className="text-orange-500"/>, name: "HTML5", level: 100 },
+                { icon: <FaCss3Alt className="text-blue-500"/>, name: "CSS3", level: 95 },
+                { icon: <FaJs className="text-yellow-400"/>, name: "JavaScript", level: 100 },
+                { icon: <FaReact className="text-cyan-400"/>, name: "React", level: 100 },
+                { icon: <FaBootstrap className="text-purple-500"/>, name: "Bootstrap", level: 80 },
+                { icon: <SiEthers className="text-green-300"/>, name: "Ethers", level: 60 },
+                { icon: <SiTailwindcss className="text-cyan-300"/>, name: "Tailwind", level: 95 },
             ]
         },
         {
