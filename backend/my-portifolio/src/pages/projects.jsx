@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, stagger } from "framer-motion";
-import { FaGithub, FaDatabase, } from "react-icons/fa";
+import { FaGithub, FaDatabase,} from "react-icons/fa";
 import {
     SiNodedotjs,
     SiMongodb,
@@ -27,23 +27,23 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React"},
-                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js"},
-                { icon: <FaDatabase className="text-yellow-400" />, name: "MySQL"},
+                { icon: <SiReact className="text-cyan-400" />, name: "React", background: "bg-cyan-500 text-white" },
+                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", background: "bg-cyan-500 text-white" },
+                { icon: <FaDatabase className="text-yellow-400" />, name: "MySQL", background: "bg-cyan-500 text-white" },
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
             illustration: chatAppIllustration,
-            code: "https://github.com/nietiene/Chat-app-frontend",
+            code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
             demo: "#"
         },
         { 
             title: "Krypto-site-3.0 App",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React"},
-                { icon: < SiEthers className="text-green-500" />, name: "ethers"},
-                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript"},
-                { icon: <SiSolidity className="text-black" />, name: "soldity"},
+                { icon: <SiReact className="text-cyan-400" />, name: "React", background: "bg-cyan-500 text-white" },
+                { icon: < SiEthers className="text-green-500" />, name: "ethers", background: "bg-cyan-500 text-white" },
+                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", background: "bg-cyan-500 text-white" },
+                { icon: <SiSolidity className="text-black" />, name: "soldity", background: "bg-cyan-500 text-white" },
             ],
             description: 
             "Simple modern decentralized app which enable sending token across the world",
@@ -61,7 +61,8 @@ const Projects = () => {
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
             illustration: studentIllustration,
-            code: "https://github.com/nietiene/Gikonko-Tss-Managment-system"
+            code: "https://github.com/niyomugaboetiene/Gikonko-Tss-Managment-system",
+            demo: "#"
         },
 
         {
@@ -74,7 +75,8 @@ const Projects = () => {
             description: 
               "A responsive portfolio website showcasting project, skills and contact information with smooth animations.",
               illustration: myPortfolio,
-              code: "https://github.com/nietiene/my-react-portfolio",
+              code: "https://github.com/niyomugaboetiene/my-react-portfolio",
+              demo: "#",
         },
         {
             title: "Library Management System",
@@ -86,7 +88,8 @@ const Projects = () => {
             description:
             "Full-stack Library management application with mananging student functionality and Role based access control",
             illustration: libraryAppIllustration,
-            code: "https://github.com/nietiene/Library-Management-System"
+            code: "https://github.com/niyomugaboetiene/Library-Management-System",
+            demo: "#"
         },
         {
             title: "Netmoviess",
@@ -98,7 +101,8 @@ const Projects = () => {
             description:
             "A modern Web app which allows you to watch full movie online ",
             illustration: netmovies,
-            code: "https://netmoviess.vercel.app"
+            code: "https://github.com/niyomugaboetiene/",
+            demo: "https://netmoviess.vercel.app"
         },
     ];
 
@@ -184,14 +188,22 @@ const Projects = () => {
 
                                     <p className="text-cyan-500 mb-6">{projects.description}</p>
 
-                                    <div className="flex gay-4">
+                                    <div className="flex gay-4 justify-between">
                                         <a href={projects.code}
                                            rel="noopener noreferrer"
                                            className="flex items-center gap-2 px-2 py-2 border border-gray-600 hover:bg-gray-700/50
-                                           rounded-full transition-colors text-cyan-500"
+                                           rounded-lg transition-colors text-cyan-500"
                                         >
                                             <FaGithub/>
                                             View Code
+                                        </a>    
+                                        <a href={projects.demo}
+                                           rel="noopener noreferrer"
+                                           className="flex items-center gap-2 px-2 py-2 border border-gray-600 hover:bg-gray-700/50
+                                           rounded-lg transition-colors text-cyan-500"
+                                        >
+                                            <FaGithub/>
+                                            Explore
                                         </a>
                                     </div>
                                 </div>
