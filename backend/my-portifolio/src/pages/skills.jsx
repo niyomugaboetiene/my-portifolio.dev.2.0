@@ -143,7 +143,7 @@ const Skills = () => {
               {skillsCategories.map((category, catIndex) => (
                 <motion.div key={catIndex} variants={itemVariants}>
                   <motion.h3
-                    className="text-xl md:text-2xl font-semibold text-white mb-4 border-b border-cyan-500/30 pb-2"
+                    className="text-xs md:text-xs font-semibold text-white mb-4 border-b border-cyan-500/30 pb-2"
                     variants={itemVariants}
                   >
                     {category.name}
@@ -163,8 +163,13 @@ const Skills = () => {
                         }}
                         variants={itemVariants}
                       >
-                        <span className="text-2xl mb-1">{skill.icon}</span>
-                        <span className="text-sm md:text-base text-center text-cyan-400">{skill.name}</span>
+                        <div className="">
+                            <span className="text-xl mb-1">{skill.icon}</span>
+                            <span className="text-sm md:text-base text-center text-cyan-400">{skill.name}</span>
+                            <span className="text-xs text-gray-400">{skill.level || 70}%</span>
+
+                        </div>
+     
 
                         {/* Progress bar */}
                         <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
@@ -176,7 +181,6 @@ const Skills = () => {
                           />
                         </div>
 
-                        <span className="text-xs text-gray-400">{skill.level || 70}%</span>
                       </motion.div>
                     ))}
                   </motion.div>
