@@ -83,7 +83,7 @@ const About = () => {
             <div className="">
                 <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold">Hobbies</span></h2>
                 <div  className="flex justify-between w-full mt-9">
-                  <div className="space-y-3 bg-gray-700 w-[350px] p-5 border border-cyan-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-green-500">
+                  <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-green-500">
                     <div className="flex text-white text-sm ">
                        <p>Reading books</p>
                        <p className="ms-[185px]">60%</p>
@@ -98,12 +98,12 @@ const About = () => {
                         
                   </div>
                 </div>
-                <div className="space-y-3 bg-gray-700 w-[350px] p-5 border border-cyan-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-red-500">
+                <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-red-500">
                   <div className="flex text-white text-sm">
                       <p>Watching cartoons & cartoons</p>
                       <p className="ms-[90px]">90%</p>
                   </div>
-                  <div className="bg-gray-500  rounded-full overflow-hidden">
+                  <div className="bg-gray-500 rounded-full overflow-hidden">
                     <motion.div
                     className="bg-gradient-to-l from-amber-500 to-cyan-500 h-3 rounded-full"
                     initial={{ width: 0 }}
@@ -115,7 +115,7 @@ const About = () => {
                </div>
               </div>
               <div className="flex justify-between w-full">
-                <div className="space-y-3 bg-gray-700 w-[350px] p-5 border border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-blue-500">
+                <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-blue-500">
                    <div className="flex text-white text-sm">
                        <p>Listening musics</p>
                        <p className="ms-[170px]">70%</p>
@@ -129,7 +129,7 @@ const About = () => {
                     />
                    </div>
                 </div>
-                <div className="space-y-3 bg-gray-700 w-[350px] p-5 border border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-purple-500">
+                <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-purple-500">
                   <div className="flex text-white text-sm">
                       <p>Watching documentaries</p>
                       <p className="ms-[120px]">60%</p>
