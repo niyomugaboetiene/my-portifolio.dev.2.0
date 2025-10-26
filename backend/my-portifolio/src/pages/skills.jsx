@@ -46,16 +46,16 @@ const Skills = () => {
         { icon: <FaHtml5 className="text-orange-500" />, name: "HTML5", level: 95, gradient: "from-blue-500 to-cyan-500" },
         { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3", level: 90, gradient: "from-indigo-500 to-purple-500" },
         { icon: <FaJs className="text-yellow-400" />, name: "JavaScript", level: 85, gradient: "from-green-500 to-blue-500" },
-        { icon: <FaReact className="text-cyan-400" />, name: "React", level: 80, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <FaBootstrap className="text-purple-500" />, name: "Bootstrap", level: 75 , gradient: "from-blue-500 to-cyan-500" },
-        { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", level: 88, gradient: "from-blue-500 to-cyan-500" },
-        { icon: <SiEthers className="text-green-300" />, name: "Ethers", level: 70, gradient: "from-blue-500 to-cyan-500" },
+        { icon: <FaReact className="text-cyan-400" />, name: "React", level: 80, gradient: "from-red-500 to-sky-500" },
+        { icon: <FaBootstrap className="text-purple-500" />, name: "Bootstrap", level: 75 , gradient: "from-orange-500 to-yellow-500" },
+        { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", level: 88, gradient: "from-blue-500 to-yellow-500" },
+        { icon: <SiEthers className="text-green-300" />, name: "Ethers", level: 70, gradient: "from-indigo-500 to-zinc-500" },
       ]
     },
     {
       name: "Backend",
       items: [
-        { icon: <FaNodeJs className="text-green-500" />, name: "Node.js", level: 85,gradient: "from-blue-500 to-cyan-500" },
+        { icon: <FaNodeJs className="text-green-500" />, name: "Node.js", level: 85,gradient: "from-purple-500 to-red-500" },
         { icon: <SiExpress className="text-gray-300" />, name: "Express", level: 80 , gradient: "from-blue-500 to-cyan-500", },
         { icon: <SiFlask className="text-gray-300" />, name: "Flask", level: 70, gradient: "from-blue-500 to-cyan-500" },
         { icon: <FaPython className="text-blue-400" />, name: "Python", level: 90, gradient: "from-blue-500 to-cyan-500" },
