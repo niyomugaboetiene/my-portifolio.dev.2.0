@@ -19,6 +19,7 @@ import chatAppIllustration from "../assets/chat-app.png"
 import libraryAppIllustration from "../assets/library-managment.png"
 import transaction from "../assets/transaction.gif"
 import netmovies from "../assets/logo.png"
+import taskReaminderLogo from "../assets/task-remainder.png"
 
 import myPortfolio from "../assets/portfolio.png"
 
@@ -113,9 +114,9 @@ const Projects = () => {
             ],
             description:
             "A modern mobile app where you can set your remainders for daily activities",
-            illustration: netmovies,
-            code: "https://github.com/niyomugaboetiene/movie-app.dev",
-            demo: "https://netmoviess.vercel.app"
+            illustration: taskReaminderLogo,
+            code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
+            demo: "#"
         },
     ];
 
