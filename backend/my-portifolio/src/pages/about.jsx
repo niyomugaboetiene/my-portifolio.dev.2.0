@@ -91,16 +91,29 @@ const About = () => {
                       <motion.div
                         className="bg-gradient-to-bl from-cyan-500 to-purple-500 h-3 rounded-full"
                         initial={{ width: 0 }}
-                        animate={{ width: "90%" }}
+                        animate={{ width: "60%" }}
                         transition={{ duration: 1 }}
                       />
                         
                   </div>
                 </div>
-                  <p>Watching cartoons</p>
+                <div className="space-y-3 bg-gray-700 w-[350px] p-3 border border-cyan-500 rounded-lg">
+                  <div className="flex text-white text-sm">
+                      <p>Watching cartoons</p>
+                      <p className="ms-[200px]">50%</p>
+                  </div>
+                  <div className="bg-gray-500 rounded-full overflow-hidden">
+                    <motion.div
+                    className="bg-gradient-to-bl from-purple-500 to-cyan-500 h-3 rounded-full"
+                    initial={{ width: 0 }}
+                    animate={{ width: "50%" }}
+                    transition={{ duration: 1}}
+                        /> 
+                       
+                  </div>
+               </div>
                   <p>Watching movies</p>
                   <p>Watching documentaries</p>
-                  <p>Playing football (sometime)</p>
             </div>
 <motion.div
   initial={{ opacity: 0 }}
