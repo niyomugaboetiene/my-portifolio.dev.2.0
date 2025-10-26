@@ -101,7 +101,7 @@ const Projects = () => {
             description:
             "A modern Web app which allows you to watch full movie online ",
             illustration: netmovies,
-            code: "https://github.com/niyomugaboetiene/",
+            code: "https://github.com/niyomugaboetiene/movie-app.dev",
             demo: "https://netmoviess.vercel.app"
         },
     ];
