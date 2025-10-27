@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap,
   FaNodeJs, FaPython, FaPhp, FaDatabase, FaGitAlt,
-  FaGithub, FaFigma, FaFileUpload, FaUserShield, FaPassport
+  FaGithub, FaFigma, FaFileUpload, FaUserShield, FaPassport,
 } from "react-icons/fa";
 import {
   SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongodb,
-  SiPostman, SiVercel, SiSocketdotio, SiJavascript, SiLaravel, SiSolidity, SiEthers, SiRemix
+  SiPostman, SiVercel, SiSocketdotio, SiJavascript, SiLaravel, SiSolidity, SiEthers, SiRemix, SiFlutter,
+  SiReact
 } from "react-icons/si";
 
 const Skills = () => {
@@ -63,6 +64,8 @@ const Skills = () => {
         { icon: <FaPhp className="text-indigo-500" />, name: "PHP", level: 80 , gradient: "from-orange-500 to-red-500" },
         { icon: <SiLaravel className="text-red-600" />, name: "Laravel", level: 30, gradient: "from-red-600 to-purple-500" },
         { icon: <SiSolidity className="text-blue-500" />, name: "Solidity", level: 50, gradient: "from-blue-500 to-purple-500" },
+        { name: "Dart", icon: <DartIcon className="text-cyan-400" />, level: 70, gradient: "from-blue-500 to-red-500" },
+
       ]
     },
     {
@@ -78,21 +81,27 @@ const Skills = () => {
         { icon: <FaGitAlt className="text-orange-600" />, name: "Git", level: 100, gradient: "from-blue-500 to-orange-500" },
         { icon: <FaGithub className="text-white" />, name: "GitHub", level: 90, gradient: "from-yellow-500 to-purple-500" },
         { icon: <VSCodeIcon className="text-blue-500" />, name: "VS Code", level: 100, gradient: "from-orange-500 to-green-500" },
-        { icon: <SiPostman className="text-orange-400" />, name: "Postman", level: 80, gradient: "from-purple-500 to-orange-500" },
-        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 75 , gradient: "from-yellow-500 to-red-500" },
-        { icon: <FaFigma className="text-purple-400" />, name: "Figma", level: 85 , gradient: "from-purple-500 to-yellow-500" },
+        { icon: <SiPostman className="text-orange-400" />, name: "Postman", level: 100, gradient: "from-purple-500 to-orange-500" },
+        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 100 , gradient: "from-yellow-500 to-red-500" },
+        { icon: <FaFigma className="text-purple-400" />, name: "Figma", level: 50 , gradient: "from-purple-500 to-yellow-500" },
       ]
+    },
+    {
+       name: "Mobile Apps and PWA",
+       items: [
+              { name: "Flutter", icon: <SiFlutter className="text-cyan-400" />, level: 20, gradient: "from-sky-500 to-white" },
+              { name: "React native", icon: <SiReact className="text-cyan-400" />, level: 70, gradient: "from-blue-500 to-red-500" },
+       ]
     },
     {
       name: "Others",
       items: [
-        { name: "REST APIs", icon: <SiPostman className="text-orange-400" />, level: 85, gradient: "from-blue-500 to-red-500"},
-        { icon: <SiSocketdotio className="text-white" />, name: "Socket.IO", level: 80, gradient: "from-green-500 to-cyan-500" },
-        { name: "EJS", icon: <SiJavascript className="text-yellow-400" />, level: 90, gradient: "from-yellow-500 to-cyan-500" },
-        { name: "Multer", icon: <FaFileUpload className="text-blue-400" />, level: 70, gradient: "from-blue-500 to-amber-500" },
-        { name: "Auth", icon: <FaUserShield className="text-green-400" />, level: 80, gradient: "from-orange-500 to-blue-500" },
-        { name: "Passport", icon: <FaPassport className="text-cyan-400" />, level: 75, gradient: "from-red-500 to-purple-500" },
-        { name: "Dart", icon: <DartIcon className="text-cyan-400" />, level: 65, gradient: "from-blue-500 to-red-500" },
+        { name: "REST APIs", icon: <SiPostman className="text-orange-400" />, level: 100, gradient: "from-blue-500 to-red-500"},
+        { icon: <SiSocketdotio className="text-white" />, name: "Socket.IO", level: 100, gradient: "from-green-500 to-cyan-500" },
+        { name: "EJS", icon: <SiJavascript className="text-yellow-400" />, level: 100, gradient: "from-yellow-500 to-cyan-500" },
+        { name: "Multer", icon: <FaFileUpload className="text-blue-400" />, level: 100, gradient: "from-blue-500 to-amber-500" },
+        { name: "Auth", icon: <FaUserShield className="text-green-400" />, level: 100, gradient: "from-orange-500 to-blue-500" },
+        { name: "Passport", icon: <FaPassport className="text-cyan-400" />, level: 100, gradient: "from-red-500 to-purple-500" },
       ]
     }
   ];
