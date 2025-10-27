@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, stagger } from "framer-motion";
+import { hover, motion, stagger } from "framer-motion";
 import { FaGithub, FaDatabase,} from "react-icons/fa";
 import {
     SiNodedotjs,
@@ -28,9 +28,9 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-cyan-500" />, name: "React", hover: "hover:text-black hover:bg-cyan-500 transition duration-200 hover:text-black" },
-                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", background: "bg-green-500" },
-                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", background: "bg-yellow-500" },
+                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600 transition duration-200 hover:text-black" },
+                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600 transition duration-300 hover:text-black" },
+                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", hover: "hover:bg-yellow-600 transition duration-300 hover:text-black" },
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
@@ -41,10 +41,10 @@ const Projects = () => {
         { 
             title: "Krypto-site-3.0 App",
             tech: [
-                { icon: <SiReact className="text-white" />, name: "React", background: "bg-cyan-500" },
-                { icon: < SiEthers className="text-white" />, name: "ethers", background: "bg-green-500" },
-                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", background: "bg-cyan-500" },
-                { icon: <SiSolidity className="text-black" />, name: "soldity", background: "bg-cyan-500" },
+                { icon: <SiReact className="text-cyan-500" />, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
+                { icon: < SiEthers className="text-green-500" />, name: "ethers", hover: "hover:bg-green-500 transition duration-200" },
+                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", hover: "hover:bg-cyan-500 transition duration-200" },
+                { icon: <SiSolidity className="text-black" />, name: "soldity", hover: "hover:bg-cyan-500 transition duration-200"},
             ],
             description: 
             "Simple modern decentralized app which enable sending token across the world",
