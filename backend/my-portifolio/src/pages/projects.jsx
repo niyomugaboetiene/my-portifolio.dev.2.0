@@ -42,7 +42,7 @@ const Projects = () => {
             title: "Krypto-site-3.0 App",
             tech: [
                 { icon: <SiReact className="text-white" />, name: "React", background: "bg-cyan-500" },
-                { icon: < SiEthers className="text-green-500" />, name: "ethers", background: "bg-cyan-500" },
+                { icon: < SiEthers className="text-white" />, name: "ethers", background: "bg-green-500" },
                 { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", background: "bg-cyan-500" },
                 { icon: <SiSolidity className="text-black" />, name: "soldity", background: "bg-cyan-500" },
             ],
