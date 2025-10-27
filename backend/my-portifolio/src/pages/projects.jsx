@@ -69,7 +69,7 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React.js", background: "bg-cyan-500 text-white"},
+                { icon: <SiReact className="text-cyan-400" />, name: "React.js", over:"hover:bg-green-600 transition duration-200"},
                 { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", background: "bg-cyan-500 text-white"},
                 { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript", background: "bg-blue-500 text-white"},
             ],
