@@ -28,9 +28,9 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React", background: "bg-cyan-500" },
+                { icon: <SiReact className="text-white" />, name: "React", background: "bg-cyan-500" },
                 { icon: <SiNodedotjs className="text-white" />, name: "Node.js", background: "bg-green-500" },
-                { icon: <FaDatabase className="text-yellow-400" />, name: "MySQL", background: "bg-cyan-500" },
+                { icon: <FaDatabase className="text-white" />, name: "MySQL", background: "bg-yellow-500" },
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
@@ -41,10 +41,10 @@ const Projects = () => {
         { 
             title: "Krypto-site-3.0 App",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React", background: "bg-cyan-500 text-white" },
-                { icon: < SiEthers className="text-green-500" />, name: "ethers", background: "bg-cyan-500 text-white" },
-                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", background: "bg-cyan-500 text-white" },
-                { icon: <SiSolidity className="text-black" />, name: "soldity", background: "bg-cyan-500 text-white" },
+                { icon: <SiReact className="text-white" />, name: "React", background: "bg-cyan-500" },
+                { icon: < SiEthers className="text-green-500" />, name: "ethers", background: "bg-cyan-500" },
+                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", background: "bg-cyan-500" },
+                { icon: <SiSolidity className="text-black" />, name: "soldity", background: "bg-cyan-500" },
             ],
             description: 
             "Simple modern decentralized app which enable sending token across the world",
