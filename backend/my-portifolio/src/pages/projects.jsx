@@ -55,9 +55,9 @@ const Projects = () => {
         {
             title: "Student Managment System",
             tech: [
-                {icon: <SiPhp className="text-purple-500"/>, name: "PHP"},
-                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss"},
-                {icon: <FaDatabase className="text-green-600"/>, name: "MySQL"},
+                {icon: <SiPhp className="text-purple-500"/>, name: "PHP", background: "bg-purple-500 text-white"},
+                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss", background: "bg-cyan-500 text-white"},
+                {icon: <FaDatabase className="text-green-600"/>, name: "MySQL", background: "bg-green-500 text-white"},
             ],
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
@@ -69,7 +69,7 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React.js"},
+                { icon: <SiReact className="text-cyan-400" />, name: "React.js", background},
                 { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind"},
                 { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript"},
             ],
