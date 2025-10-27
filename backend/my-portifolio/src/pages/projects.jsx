@@ -192,7 +192,7 @@ const Projects = () => {
                                         {projects.tech.map((tech, i) => (
                                             <span 
                                             key={i}
-                                            className={`flex items-center gap-1 ${tech.hover} bg-gray-100/20 px-4 py-1 rounded-full text-sm hover:text-white`}
+                                            className={`flex items-center gap-1 ${tech.hover} bg-gray-100/20 px-4 py-1 rounded-full text-sm`}
                                             >
                                                 {tech.icon}
                                                 {tech.name}

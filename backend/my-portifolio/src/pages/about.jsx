@@ -86,7 +86,7 @@ const About = () => {
                   <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-green-500">
                     <div className="flex text-white text-sm ">
                        <p>Reading books</p>
-                       <p className="ms-[185px]">60%</p>
+                       <p className="ms-[183px]">60%</p>
                   </div>
                   <div className="bg-gray-500 rounded-full overflow-hidden">
                       <motion.div
@@ -100,7 +100,7 @@ const About = () => {
                 </div>
                 <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-red-500">
                   <div className="flex text-white text-sm">
-                      <p>Watching cartoons & cartoons</p>
+                      <p>Watching movies & cartoons</p>
                       <p className="ms-[90px]">90%</p>
                   </div>
                   <div className="bg-gray-500 rounded-full overflow-hidden">
@@ -132,7 +132,7 @@ const About = () => {
                 <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-purple-500">
                   <div className="flex text-white text-sm">
                       <p>Watching documentaries</p>
-                      <p className="ms-[120px]">60%</p>
+                      <p className="ms-[115px]">60%</p>
                   </div>
                   <div className="bg-gray-500 rounded-full overflow-hidden">
                     <motion.div 
