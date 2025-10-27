@@ -55,9 +55,9 @@ const Projects = () => {
         {
             title: "Student Managment System",
             tech: [
-                {icon: <SiPhp className="text-purple-500"/>, name: "PHP", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <FaDatabase className="text-green-600"/>, name: "MySQL", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiPhp className="text-purple-500"/>, name: "PHP", hover:"hover:bg-purple-600 transition duration-200" },
+                {icon: <SiTailwindcss className="text-blue-400"/>, name: "Tailwindcss", hover:"hover:bg-blue-600 transition duration-200" },
+                {icon: <FaDatabase className="text-yellow-600"/>, name: "MySQL", hover:"hover:bg-green-600 transition duration-200" },
             ],
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
