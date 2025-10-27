@@ -28,9 +28,9 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600 transition duration-200 hover:text-black" },
-                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600 transition duration-300 hover:text-black" },
-                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", hover: "hover:bg-yellow-600 transition duration-300 hover:text-black" },
+                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600 transition duration-200"},
+                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600 transition duration-300"},
+                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", hover: "hover:bg-yellow-600 transition duration-300"},
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
@@ -42,8 +42,8 @@ const Projects = () => {
             title: "Krypto-site-3.0 App",
             tech: [
                 { icon: <SiReact className="text-cyan-500" />, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
-                { icon: < SiEthers className="text-green-500" />, name: "ethers", hover: "hover:bg-green-500 transition duration-200" },
-                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", hover: "hover:bg-cyan-500 transition duration-200" },
+                { icon: < SiEthers className="text-green-500" />, name: "ethers", hover: "hover:bg-green-600 transition duration-200" },
+                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", hover: "hover:bg-blue-600 transition duration-200" },
                 { icon: <SiSolidity className="text-black" />, name: "soldity", hover: "hover:bg-cyan-500 transition duration-200"},
             ],
             description: 
