@@ -214,7 +214,7 @@ const Projects = () => {
                                         <a href={projects.demo}
                                            rel="noopener noreferrer"
                                            className="flex items-center gap-2 px-2 py-2 border border-gray-600 hover:bg-gray-700/50
-                                           rounded-lg transition-colors text-cyan-500"
+                                           rounded-lg transition duration-200 hover:scale-105 text-cyan-500"
                                         >
                                             <FaGithub/>
                                             Explore
