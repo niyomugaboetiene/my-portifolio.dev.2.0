@@ -28,9 +28,9 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-cyan-500" />, name: "React", hover: "hover:text-white hover:bg-cyan-500 transition duration-200 hover:text-black" },
-                { icon: <SiNodedotjs className="text-white" />, name: "Node.js", background: "bg-green-500" },
-                { icon: <FaDatabase className="text-white" />, name: "MySQL", background: "bg-yellow-500" },
+                { icon: <SiReact className="text-cyan-500" />, name: "React", hover: "hover:text-black hover:bg-cyan-500 transition duration-200 hover:text-black" },
+                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", background: "bg-green-500" },
+                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", background: "bg-yellow-500" },
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
