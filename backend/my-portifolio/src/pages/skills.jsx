@@ -167,7 +167,7 @@ const Skills = () => {
                             <span className="text-[17px] mb-1">{skill.icon}</span>
                             <span className="text-xs text-gray-400">{skill.level || 70}%</span>
                         </div>
-                        <span className="text-xs md:text-[14px] text-cyan-400">{skill.name}</span>
+                        <span className="text-xs md:text-[14px] text-white">{skill.name}</span>
 
      
 

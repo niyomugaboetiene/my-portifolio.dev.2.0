@@ -28,7 +28,7 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-white" />, name: "React", background: "bg-cyan-500" },
+                { icon: <SiReact className="text-cyan-500 hover:text-white" />, name: "React", hover: "hover:bg-cyan-500 transition duration-200" },
                 { icon: <SiNodedotjs className="text-white" />, name: "Node.js", background: "bg-green-500" },
                 { icon: <FaDatabase className="text-white" />, name: "MySQL", background: "bg-yellow-500" },
             ],
@@ -192,7 +192,7 @@ const Projects = () => {
                                         {projects.tech.map((tech, i) => (
                                             <span 
                                             key={i}
-                                            className={`flex items-center gap-1 ${tech.background} px-4 py-1 rounded-full text-sm`}
+                                            className={`flex items-center gap-1 ${tech.hover} bg-gray-100/20 px-4 py-1 rounded-full text-sm`}
                                             >
                                                 {tech.icon}
                                                 {tech.name}
