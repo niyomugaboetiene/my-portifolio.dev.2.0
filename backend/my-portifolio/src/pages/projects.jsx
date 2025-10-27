@@ -44,7 +44,7 @@ const Projects = () => {
                 { icon: <SiReact className="text-cyan-500" />, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
                 { icon: < SiEthers className="text-green-500" />, name: "ethers", hover: "hover:bg-green-600 transition duration-200" },
                 { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", hover: "hover:bg-blue-600 transition duration-200" },
-                { icon: <SiSolidity className="text-black" />, name: "soldity", hover: "hover:bg-cyan-500 transition duration-200"},
+                { icon: <SiSolidity className="text-blue-500" />, name: "soldity", hover: "hover:bg-cyan-500 transition duration-200"},
             ],
             description: 
             "Simple modern decentralized app which enable sending token across the world",
