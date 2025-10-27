@@ -69,9 +69,9 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React.js", over:"hover:bg-green-600 transition duration-200"},
-                { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", background: "bg-cyan-500 text-white"},
-                { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript", background: "bg-blue-500 text-white"},
+                { icon: <SiReact className="text-cyan-400" />, name: "React.js", hover:"hover:bg-cyan-600 transition duration-200" },
+                { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", hover:"hover:bg-cyan-600 transition duration-200" },
+                { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript", hover:"hover:bg-blue-600 transition duration-200" },
             ],
             description: 
               "A responsive portfolio website showcasting project, skills and contact information with smooth animations.",
@@ -82,9 +82,9 @@ const Projects = () => {
         {
             title: "Library Management System",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React"},
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js"},
-                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDb"},
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDb", hover:"hover:bg-green-600 transition duration-200" },
             ],
             description:
             "Full-stack Library management application with mananging student functionality and Role based access control",
@@ -95,9 +95,9 @@ const Projects = () => {
         {
             title: "Netmoviess",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React"},
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js"},
-                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss"},
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
             ],
             description:
             "A modern Web app which allows you to watch full movie online ",
@@ -108,9 +108,9 @@ const Projects = () => {
          {
             title: "Task remainder",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React"},
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js"},
-                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss"},
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
             ],
             description:
             "A modern mobile app where you can set your remainders for daily activities",
