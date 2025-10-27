@@ -28,9 +28,9 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React", background: "bg-cyan-500 text-white" },
-                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", background: "bg-cyan-500 text-white" },
-                { icon: <FaDatabase className="text-yellow-400" />, name: "MySQL", background: "bg-cyan-500 text-white" },
+                { icon: <SiReact className="text-cyan-400" />, name: "React", background: "bg-cyan-500" },
+                { icon: <SiNodedotjs className="text-white" />, name: "Node.js", background: "bg-green-500" },
+                { icon: <FaDatabase className="text-yellow-400" />, name: "MySQL", background: "bg-cyan-500" },
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
@@ -69,9 +69,9 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React.js", background},
-                { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind"},
-                { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript"},
+                { icon: <SiReact className="text-cyan-400" />, name: "React.js", background: "bg-cyan-500 text-white"},
+                { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", background: "bg-cyan-500 text-white"},
+                { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript", background: "bg-blue-500 text-white"},
             ],
             description: 
               "A responsive portfolio website showcasting project, skills and contact information with smooth animations.",
@@ -192,7 +192,7 @@ const Projects = () => {
                                         {projects.tech.map((tech, i) => (
                                             <span 
                                             key={i}
-                                            className="flex items-center gap-1 bg-gray-700/50 px-4 py-1 rounded-full text-sm"
+                                            className={`flex items-center gap-1 ${tech.background} px-4 py-1 rounded-full text-sm`}
                                             >
                                                 {tech.icon}
                                                 {tech.name}
