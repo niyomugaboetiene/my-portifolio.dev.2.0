@@ -44,7 +44,7 @@ const Projects = () => {
                 { icon: <SiReact className="text-cyan-500" />, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
                 { icon: < SiEthers className="text-green-500" />, name: "ethers", hover: "hover:bg-green-600 transition duration-200" },
                 { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", hover: "hover:bg-blue-600 transition duration-200" },
-                { icon: <SiSolidity className="text-blue-500" />, name: "soldity", hover: "hover:bg-cyan-500 transition duration-200"},
+                { icon: <SiSolidity className="text-blue-500" />, name: "soldity", hover: "hover:bg-blue-600 transition duration-200"},
             ],
             description: 
             "Simple modern decentralized app which enable sending token across the world",
@@ -55,9 +55,9 @@ const Projects = () => {
         {
             title: "Student Managment System",
             tech: [
-                {icon: <SiPhp className="text-purple-500"/>, name: "PHP", background: "bg-purple-500 text-white"},
-                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss", background: "bg-cyan-500 text-white"},
-                {icon: <FaDatabase className="text-green-600"/>, name: "MySQL", background: "bg-green-500 text-white"},
+                {icon: <SiPhp className="text-purple-500"/>, name: "PHP", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-400"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <FaDatabase className="text-green-600"/>, name: "MySQL", hover:"hover:bg-cyan-600 transition duration-200" },
             ],
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
