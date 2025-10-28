@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutAnimation from "../assets/about.gif"
 const About = () => {
 
 
@@ -83,7 +82,7 @@ const About = () => {
             <div className="">
                 <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold">Hobbies</span></h2>
                 <div  className="flex justify-between w-full mt-9">
-                  <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg hover:shadow-green-500">
+                  <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-gray-500 rounded-lg hover:scale-x-105 tansition duration-200 hover:shadow-lg hover:shadow-green-500">
                     <div className="flex text-white text-sm ">
                        <p>Reading books</p>
                        <p className="ms-[183px]">60%</p>
