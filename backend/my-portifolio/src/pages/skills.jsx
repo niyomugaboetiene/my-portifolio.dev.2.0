@@ -180,7 +180,6 @@ const Skills = () => {
 
      
 
-                        {/* Progress bar */}
                         <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
                           <motion.div
                             className={`bg-gradient-to-r ${skill.gradient} h-2 rounded-full`}
