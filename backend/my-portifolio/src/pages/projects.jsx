@@ -130,6 +130,7 @@ const Projects = () => {
                 {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
                 {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
                 {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600 transition duration-200" },
             ],
             description:
             "A modern Ecommerce-app where you can buy and sell goods with admin portal to manipulate goods and customers to view and buy goods",
@@ -143,6 +144,7 @@ const Projects = () => {
                 {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
                 {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
                 {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600 transition duration-200" },
             ],
             description:
             "A modern Ecommerce-ap for buying, renting and selling houses with three users such as Admin with full privileges, seller(landrold) and customer",
