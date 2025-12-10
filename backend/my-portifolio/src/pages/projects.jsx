@@ -19,11 +19,11 @@ import studentIllustration from "../assets/student.png"
 import libraryAppIllustration from "../assets/library-managment.png"
 // import transaction from "../assets/transaction.gif"
 // import netmovies from "../assets/logo.png"
-// import taskReaminderLogo from "../assets/task-remainder.png"
+import taskReaminderLogo from "../assets/task-remainder.png"
 import ChatApp from "../assets/chatApp.png"
 import Krypt from "../assets/krypt.png"
 import HouseSellImage from "../assets/housesell.png"
-import ShopShere from ".../assets/shopshere.png"
+import ShopShere from "../assets/shopshere.png"
 import NetMovies from "../assets/netmovie.png"
 
 
@@ -107,7 +107,7 @@ const Projects = () => {
             ],
             description:
             "A modern Web app which allows you to watch full movie online ",
-            illustration: netmovies,
+            illustration: NetMovies,
             code: "https://github.com/niyomugaboetiene/movie-app.dev",
             demo: "https://netmoviess.vercel.app"
         },  
@@ -121,6 +121,32 @@ const Projects = () => {
             description:
             "A modern mobile app where you can set your remainders for daily activities",
             illustration: taskReaminderLogo,
+            code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
+            demo: "#"
+        },
+        {
+            title: "Shop Shere",
+            tech: [
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
+            ],
+            description:
+            "A modern Ecommerce-app where you can buy and sell goods with admin portal to manipulate goods and customers to view and buy goods",
+            illustration: ShopShere,
+            code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
+            demo: "#"
+        },
+        {
+            title: "Home Finder",
+            tech: [
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
+            ],
+            description:
+            "A modern Ecommerce-ap for buying, renting and selling houses with three users such as Admin with full privileges, seller(landrold) and customer",
+            illustration: HouseSellImage,
             code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
             demo: "#"
         },
