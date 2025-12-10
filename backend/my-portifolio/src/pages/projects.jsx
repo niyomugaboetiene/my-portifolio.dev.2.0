@@ -15,11 +15,17 @@ import {
 } from "react-icons/si"
 
 import studentIllustration from "../assets/student.png"
-import chatAppIllustration from "../assets/chat-app.png"
+// import chatAppIllustration from "../assets/chat-app.png"
 import libraryAppIllustration from "../assets/library-managment.png"
-import transaction from "../assets/transaction.gif"
-import netmovies from "../assets/logo.png"
-import taskReaminderLogo from "../assets/task-remainder.png"
+// import transaction from "../assets/transaction.gif"
+// import netmovies from "../assets/logo.png"
+// import taskReaminderLogo from "../assets/task-remainder.png"
+import ChatApp from "../assets/chatApp.png"
+import Krypt from "../assets/krypt.png"
+import HouseSellImage from "../assets/housesell.png"
+import ShopShere from ".../assets/shopshere.png"
+import NetMovies from "../assets/netmovie.png"
+
 
 import myPortfolio from "../assets/portfolio.png"
 
@@ -34,7 +40,7 @@ const Projects = () => {
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
-            illustration: chatAppIllustration,
+            illustration: ChatApp,
             code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
             demo: "#"
         },
@@ -48,7 +54,7 @@ const Projects = () => {
             ],
             description: 
             "Simple modern decentralized app which enable sending token across the world",
-            illustration: transaction,
+            illustration: Krypt,
             code: "https://github.com/niyomugaboetiene/krypto-site.3.0",
             demo: "https://krypto-site-3-0.vercel.app"
         },
