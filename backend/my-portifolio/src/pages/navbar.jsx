@@ -8,8 +8,7 @@ import {
   FaEnvelope,
   FaTimes
 } from "react-icons/fa";
-import avataaars from "../assets/avataaars.svg";
-
+import Avatar from "../assets/github.jpeg";
 const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -60,7 +59,7 @@ const NavBar = () => {
           >
             <img
               className="h-12 w-12 rounded-full border-2 border-cyan-500 object-cover hover:border-cyan-400 transition-all duration-300"
-              src={avataaars}
+              src={Avatar}
               alt="Etiene avatar"
             />
             <span className="text-white font-medium hidden md:inline-block text-xl bg-gradient-to-r from-cyan-400 to-cyan-200 bg-clip-text text-transparent">
