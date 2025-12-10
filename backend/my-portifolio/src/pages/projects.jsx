@@ -149,7 +149,7 @@ const Projects = () => {
         name="projects"
           className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-300 flex items-center justify-center px-4 md:px-16 py-20"
         >
-            <div className="max-w-6xl w-full">
+            <div className="max-w-6xl">
                 <motion.div
                  variants={containerVariants}
                  initial="hidden"
@@ -169,7 +169,7 @@ const Projects = () => {
                         Here are some of my projects available on GitHub. Each demonstrates different aspects of my full-stack develpment skills.
                       </motion.p>
 
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full "
                       >
                         {projects.map((projects, index) => (
                             <motion.div
@@ -178,9 +178,9 @@ const Projects = () => {
                               variants={itemVariants}
                               whileHover={{ y: -5 }}
                               >
-                                <div className="relative h-48 overflow-hidden flex items-center bg-gray-700/30">
+                                <div className="relative  overflow-hidden flex items-center">
                                     <img src={projects.illustration} alt={projects.title} 
-                                    className="w-2/3 h-2/3 object-contain"/>
+                                    className="w-full h-80 object-contain"/>
                                 </div>
 
                                 <div className="p-6">
