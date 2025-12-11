@@ -102,6 +102,7 @@ const Skills = () => {
         { name: "Multer", icon: <FaFileUpload className="text-blue-400" />, level: 100, gradient: "from-blue-500 to-amber-500" },
         { name: "Auth", icon: <FaUserShield className="text-green-400" />, level: 100, gradient: "from-orange-500 to-blue-500" },
         { name: "Passport", icon: <FaPassport className="text-cyan-400" />, level: 100, gradient: "from-red-500 to-purple-500" },
+        { name: "Material UI", icon: <FaPassport className="text-cyan-400" />, level: 55, gradient: "from-purple-500 to-red-500" },
       ]
     }
   ];
@@ -152,31 +153,31 @@ const Skills = () => {
               {skillsCategories.map((category, catIndex) => (
                 <motion.div key={catIndex} variants={itemVariants}>
                   <motion.h3
-                    className="text-xs md:text-xs font-semibold text-white mb-4 border-b border-cyan-500/30 pb-2"
+                    className="text-xs md:text-xs font-semibold text-white mb-4 border-b border-cyan-500/30 pb-4"
                     variants={itemVariants}
                   >
                     {category.name}
                   </motion.h3>
 
                   <motion.div
-                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3"
+                    className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-3 gap-3"
                     variants={containerVariants}
                   >
                     {category.items.map((skill, skillIndex) => (
                       <motion.div
                         key={skillIndex}
-                        className="flex flex-col  gap-2 bg-gray-800/50 px-3 py-6 rounded-lg hover:bg-gray-800/70 transition-colors w-full border border-gray-500"
+                        className="flex flex-col  gap-2 bg-gray-800/50 px-3 py-6 rounded-lg hover:bg-gray-800/70 transition-colors w-full border border-cyan-500"
                         whileHover={{
                           scale: 1.03,
                           boxShadow: "0 0 10px rgba(34, 211, 238, 0.3)"
                         }}
                         variants={itemVariants}
                       >
-                        <div className="flex justify-between">
+                        <div className="flex justify-between ">
                             <span className="text-[17px] mb-1">{skill.icon}</span>
-                            <span className="text-xs text-gray-400">{skill.level || 70}%</span>
+                            <span className="text-xs text-cyan-400">{skill.level || 70}%</span>
                         </div>
-                        <span className="text-xs md:text-[14px] text-white">{skill.name}</span>
+                        <span className="text-xs md:text-[14px] text-cyan-500">{skill.name}</span>
 
      
 

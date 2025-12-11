@@ -6,7 +6,8 @@ import {
   FaCode,
   FaProjectDiagram,
   FaEnvelope,
-  FaTimes
+  FaTimes,
+  FaSun
 } from "react-icons/fa";
 import Avatar from "../assets/github.jpeg";
 const NavBar = () => {
@@ -55,7 +56,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-20">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex-shrink-0 flex items-center gap-3"
+            className="flex-shrink-0 flex hover:opacity-80 items-center gap-3"
           >
             <img
               className="h-12 w-12 rounded-full border-2 border-cyan-500 object-cover hover:border-cyan-400 transition-all duration-300"
@@ -83,6 +84,9 @@ const NavBar = () => {
                 <span>{item.name}</span>
               </a>
             ))}
+            <div className="mt-3">
+              <button> <FaSun className="text-xl text-cyan-500 hover:text-white transition-colors"/> </button>
+            </div>
           </div>
 
           <motion.button

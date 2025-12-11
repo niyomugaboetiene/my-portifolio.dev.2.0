@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFileDownload, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileDownload, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import background from "../../public/background.jpg";
 
 const Home = () => {
@@ -53,7 +53,9 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-sm text-center ms-[300px] text-cyan-500">Hi, I'm</span> 
+            <div className="hover:rotate-6  transition duration-200 hover:-translate-y-4">
+            <span className="text-sm text-center bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent via-purple bg-clip-text ms-[300px] text-cyan-500">Hi, I'm</span> 
+            </div>
             <div>
                 <span className="text-cyan-500 ms-[120px]">Niyomugabo Etiene</span>
             </div>
@@ -63,7 +65,7 @@ const Home = () => {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={currentTextIndex}
-                className="text-sm md:text-lg font-semibold text-gray-300"
+                className="text-sm md:text-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent via-purple-500 bg-clip-text font-semibold text-gray-300"
                 variants={textVariants}
                 initial="enter"
                 animate="center"
@@ -107,7 +109,7 @@ const Home = () => {
           </div>
 
           <motion.div
-            className="flex gap-4 pt-8 ms-60"
+            className="flex gap-4 pt-8 ms-56"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -116,7 +118,7 @@ const Home = () => {
               href="https://github.com/niyomugaboetiene"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300"
+              className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300 hover:translate-y-1"
             >
               <FaGithub className="text-white text-xl" />
             </a>
@@ -124,7 +126,7 @@ const Home = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300"
+              className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300 hover:translate-y-1"
             >
               <FaLinkedin className="text-white text-xl" />
             </a>
@@ -132,9 +134,17 @@ const Home = () => {
               href="https://wa.me/+250728184299"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300"
+              className="p-3 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300 hover:translate-y-1"
             >
               <FaWhatsapp className="text-white text-xl" />
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-gray-800 hover:bg-blue-700 rounded-full transition duration-300 hover:translate-y-1"
+            >
+              <FaFacebook className="text-white text-xl" />
             </a>
           </motion.div>
         </div>

@@ -34,9 +34,9 @@ const Projects = () => {
         { 
             title: "Real-Time Chat Application",
             tech: [
-                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600 transition duration-200"},
-                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600 transition duration-300"},
-                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", hover: "hover:bg-yellow-600 transition duration-300"},
+                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600 hover:translate-y-1 transition duration-200"},
+                { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600 hover:translate-y-1 transition duration-300"},
+                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", hover: "hover:bg-yellow-600 hover:translate-y-1 transition duration-300"},
             ],
             description: 
             "A socket.io based chat application with real-tie messaging, user authentication and message history.",
@@ -47,10 +47,10 @@ const Projects = () => {
         { 
             title: "Krypto-site-3.0 App",
             tech: [
-                { icon: <SiReact className="text-cyan-500" />, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
-                { icon: < SiEthers className="text-green-500" />, name: "ethers", hover: "hover:bg-green-600 transition duration-200" },
-                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", hover: "hover:bg-blue-600 transition duration-200" },
-                { icon: <SiSolidity className="text-blue-500" />, name: "soldity", hover: "hover:bg-blue-600 transition duration-200"},
+                { icon: <SiReact className="text-cyan-500" />, name: "React", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                { icon: < SiEthers className="text-green-500" />, name: "ethers", hover: "hover:bg-green-600 hover:translate-y-1 transition duration-200" },
+                { icon: < SiTypescript className="text-blue-500" />, name: "Typescript", hover: "hover:bg-blue-600 hover:translate-y-1 transition duration-200" },
+                { icon: <SiSolidity className="text-blue-500" />, name: "soldity", hover: "hover:bg-blue-600 hover:translate-y-1 transition duration-200"},
             ],
             description: 
             "Simple modern decentralized app which enable sending token across the world",
@@ -61,9 +61,9 @@ const Projects = () => {
         {
             title: "Student Managment System",
             tech: [
-                {icon: <SiPhp className="text-purple-500"/>, name: "PHP", hover:"hover:bg-purple-600 transition duration-200" },
-                {icon: <SiTailwindcss className="text-blue-400"/>, name: "Tailwindcss", hover:"hover:bg-blue-600 transition duration-200" },
-                {icon: <FaDatabase className="text-yellow-600"/>, name: "MySQL", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiPhp className="text-purple-500"/>, name: "PHP", hover:"hover:bg-purple-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiTailwindcss className="text-blue-400"/>, name: "Tailwindcss", hover:"hover:bg-blue-600 hover:translate-y-1 transition duration-200" },
+                {icon: <FaDatabase className="text-yellow-600"/>, name: "MySQL", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
             ],
             description:
             "Student Management System with Student managment, user authentication, and Role based access control.",
@@ -75,9 +75,9 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             tech: [
-                { icon: <SiReact className="text-cyan-400" />, name: "React.js", hover:"hover:bg-cyan-600 transition duration-200" },
-                { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", hover:"hover:bg-cyan-600 transition duration-200" },
-                { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript", hover:"hover:bg-blue-600 transition duration-200" },
+                { icon: <SiReact className="text-cyan-400" />, name: "React.js", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                { icon: <SiTypescript className="text-blue-500" />, name: "TypeScript", hover:"hover:bg-blue-600 hover:translate-y-1 transition duration-200" },
             ],
             description: 
               "A responsive portfolio website showcasting project, skills and contact information with smooth animations.",
@@ -88,9 +88,9 @@ const Projects = () => {
         {
             title: "Library Management System",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
-                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDb", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition hover:translate-y-1 duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDb", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
             ],
             description:
             "Full-stack Library management application with mananging student functionality and Role based access control",
@@ -101,9 +101,10 @@ const Projects = () => {
         {
             title: "Netmoviess",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
-                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition hover:translate-y-1 duration-300" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-300" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-300" },
+                {icon: <SiTailwindcss className="text-yellow-500"/>, name: "IMDB API", hover:"hover:bg-yellow-600 hover:translate-y-1 transition duration-300" },
             ],
             description:
             "A modern Web app which allows you to watch full movie online ",
@@ -114,9 +115,9 @@ const Projects = () => {
          {
             title: "Task remainder",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
-                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
             ],
             description:
             "A modern mobile app where you can set your remainders for daily activities",
@@ -127,10 +128,10 @@ const Projects = () => {
         {
             title: "Shop Shere",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
-                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
             ],
             description:
             "A modern Ecommerce-app where you can buy and sell goods with admin portal to manipulate goods and customers to view and buy goods",
@@ -141,10 +142,10 @@ const Projects = () => {
         {
             title: "Home Finder",
             tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 transition duration-200" },
-                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 transition duration-200" },
-                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600 transition duration-200" },
+                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600 hover:translate-y-1 transition duration-200" },
+                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600 hover:translate-y-1 transition duration-200" },
             ],
             description:
             "A modern Ecommerce-ap for buying, renting and selling houses with three users such as Admin with full privileges, seller(landrold) and customer",
@@ -208,7 +209,7 @@ const Projects = () => {
                         {projects.map((projects, index) => (
                             <motion.div
                               key={index}
-                              className="bg-grray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 hover:border hover:border-cyan-500 hover:border-3.5"
+                              className="bg-grray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl mb-3 hover:shadow-cyan-500/20 transition-all duration-300   hover:border-cyan-500 hover:border-2"
                               variants={itemVariants}
                               whileHover={{ y: -5 }}
                               >
@@ -250,7 +251,7 @@ const Projects = () => {
                                            className="flex items-center gap-2 px-2 py-2 border border-gray-600 hover:bg-gray-700/50
                                            rounded-lg transition duration-200 hover:scale-105 text-cyan-500"
                                         >
-                                            <FaGithub/>
+                                            {/* <FaGithub/> */}
                                             Explore
                                         </a>
                                     </div>
