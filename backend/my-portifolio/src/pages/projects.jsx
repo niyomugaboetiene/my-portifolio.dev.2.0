@@ -112,7 +112,7 @@ const Projects = () => {
             demo: "#"
         },
         {
-            title: "Shop Share",
+            title: "Shop Shere",
             tech: [
                 {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600" },
                 {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600" },
@@ -181,7 +181,7 @@ const Projects = () => {
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full auto-rows-fr">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full auto-rows-fr h-[1400px]">
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
