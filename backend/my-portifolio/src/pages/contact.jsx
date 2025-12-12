@@ -181,15 +181,14 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Right Side - Contact Info */}
         <div className="flex flex-col justify-center">
           <motion.h2 
-            className="text-4xl font-bold text-cyan-500 mb-8"
+            className="text-4xl font-bold text-cyan-500 mb-8 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Contact <span className="text-white">Info</span>
+            Contact <span className="dark:text-white text-gray-500">Info</span>
           </motion.h2>
 
           <motion.div 
@@ -203,8 +202,8 @@ const Contact = () => {
                 <FaMapMarkerAlt className="text-cyan-400 text-xl" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-1">Location</h3>
-                <p className="text-gray-300">Bugesera, Rwanda</p>
+                <h3 className="text-xl font-semibold dark:text-white text-gray-500 mb-1">Location</h3>
+                <p className="dark:text-gray-300 text-gray-500">Bugesera, Rwanda</p>
               </div>
             </div>
 
@@ -213,8 +212,8 @@ const Contact = () => {
                 <FaEnvelope className="text-cyan-400 text-xl" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-1">Email</h3>
-                <p className="text-gray-300">niyomugaboetiene53@gmail.com</p>
+                <h3 className="text-xl font-semibold dark:text-white text-gray-500 mb-1">Email</h3>
+                <p className="dark:text-gray-300 text-gray-500">niyomugaboetiene53@gmail.com</p>
               </div>
             </div>
 
@@ -223,8 +222,8 @@ const Contact = () => {
                 <FaPhoneAlt className="text-cyan-400 text-xl" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-1">Phone</h3>
-                <p className="text-gray-300">+250 796 878 992</p>
+                <h3 className="text-xl font-semibold dark:text-white text-gray-500 mb-1">Phone</h3>
+                <p className="dark:text-gray-300 text-gray-500">+250 796 878 992</p>
               </div>
             </div>
           </motion.div>
@@ -235,7 +234,7 @@ const Contact = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <h3 className="text-xl font-semibold text-white mb-4">Connect With Me</h3>
+            <h3 className="text-xl font-semibold dark:text-cyan-500 mb-4 text-gray-500">Connect With Me</h3>
             <div className="flex space-x-4">
               <a 
                 href="https://linkedin.com" 
