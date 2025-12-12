@@ -123,8 +123,8 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 
-      text-gray-300 flex items-center justify-center px-4 md:px-16 py-20 overflow-hidden"
+      className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 
+      dark:text-gray-300 bg-white flex items-center justify-center px-4 md:px-16 py-20 overflow-hidden"
     >
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
         <motion.div
@@ -138,11 +138,11 @@ const Skills = () => {
               className="text-3xl md:text-4xl font-bold text-cyan-500 mb-6 text-center"
               variants={itemVariants}
             >
-              My <span className="text-white">Skills</span>
+              My <span className="dark:text-white text-gray-500">Skills</span>
             </motion.h2>
 
             <motion.p
-              className="text-base md:text-lg leading-relaxed mb-8"
+              className="dark:text-white text-gray-500 text-base md:text-lg leading-relaxed mb-8"
               variants={itemVariants}
             >
               Here’s a comprehensive overview of the technologies and tools I use to build
@@ -153,20 +153,20 @@ const Skills = () => {
               {skillsCategories.map((category, catIndex) => (
                 <motion.div key={catIndex} variants={itemVariants}>
                   <motion.h3
-                    className="text-xs md:text-xs font-semibold text-white mb-4 border-b border-cyan-500/30 pb-4"
+                    className="text-xs md:text-xs font-semibold dark:text-white mb-4 border-b text-gray-500 border-cyan-500/30 pb-4"
                     variants={itemVariants}
                   >
                     {category.name}
                   </motion.h3>
 
                   <motion.div
-                    className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-3 gap-3"
+                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3"
                     variants={containerVariants}
                   >
                     {category.items.map((skill, skillIndex) => (
                       <motion.div
                         key={skillIndex}
-                        className="flex flex-col  gap-2 bg-gray-800/50 px-3 py-6 rounded-lg hover:bg-gray-800/70 transition-colors w-full border border-cyan-500"
+                        className="flex flex-col shadow-lg gap-2 dark:bg-gray-800/50 px-3 py-6 rounded-lg dark:hover:bg-gray-800/70 transition-colors w-full border dark:border-cyan-500"
                         whileHover={{
                           scale: 1.03,
                           boxShadow: "0 0 10px rgba(34, 211, 238, 0.3)"
