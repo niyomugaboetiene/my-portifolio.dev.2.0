@@ -41,7 +41,7 @@ const Home = () => {
       className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-cover bg-center bg-no-repeat w-full"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="absolute inset-0 dark:bg-black/70 bg-white/20"></div>
+      <div className="absolute inset-0 dark:bg-black/70 bg-white/80"></div>
    
      <div className="ms-[160px]">
       <div className="relative z-10 max-w-6xl w-[800px]  md:grid-cols-2 gap-8 items-center">
@@ -102,7 +102,7 @@ const Home = () => {
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 dark:bg-transparent border-2 dark:border-cyan-600 dark:text-cyan-400 dark:hover:bg-cyan-600/20 rounded-lg font-semibold transition duration-300 flex items-center gap-2 border-gray-400"
+              className="px-6 py-3 dark:bg-transparent border-2 text-gray-600 dark:border-cyan-600 dark:text-cyan-400 dark:hover:bg-cyan-600/20 rounded-lg font-semibold transition duration-300 flex items-center gap-2 border-gray-600"
             >
               <FaFileDownload /> Download CV
             </motion.a>

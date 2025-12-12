@@ -193,17 +193,17 @@ const Projects = () => {
                        className="text-4xl font-bold text-cyan-500 mb-8 text-center"
                        variants={itemVariants}
                     >
-                        My <span className="text-white">Projects </span>
+                        My <span className="dark:text-white text-gray-500">Projects </span>
                     </motion.h2>
 
                     <motion.p
-                      className="text-lg leading-relaxed mb-12 text-center mx-w-2xl mx-auto"
+                      className="text-lg text-gray-500 dark:text-white leading-relaxed mb-12 text-center mx-w-2xl mx-auto"
                       variants={itemVariants}
                     >
                         Here are some of my projects available on GitHub. Each demonstrates different aspects of my full-stack develpment skills.
                       </motion.p>
 
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full "
+                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full "
                       >
                         {projects.map((projects, index) => (
                             <motion.div
