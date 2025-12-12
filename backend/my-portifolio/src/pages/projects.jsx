@@ -181,7 +181,7 @@ const Projects = () => {
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full auto-rows-fr h-[1400px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full auto-rows-fr h-[1500px]">
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
@@ -193,7 +193,7 @@ const Projects = () => {
                                     <img 
                                         src={project.illustration} 
                                         alt={project.title} 
-                                        className="w-full h-full object-contain p-4 transform group-hover:scale-105 transition-transform duration-500"
+                                        className="w-full h-full object-cover p-4 transform group-hover:scale-105 transition-transform duration-500"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
