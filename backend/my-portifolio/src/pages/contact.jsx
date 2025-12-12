@@ -113,7 +113,7 @@ const Contact = () => {
                 onChange={handleChange}
                 rows="5"
                 required
-                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 dark:border-none text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
                 placeholder="Write your message here..."
                 disabled={isSubmitting}
               />
@@ -160,7 +160,7 @@ const Contact = () => {
             
             {submitStatus === "success" && (
               <motion.div
-                className="bg-green-900/50 text-green-100 rounded-lg p-3 text-center mt-4 font-medium"
+                className="dark:bg-green-900/50 text-green-100 rounded-lg p-3 text-center mt-4 font-medium"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
