@@ -44,7 +44,6 @@ const Contact = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       > 
-        {/* Left Side - Contact Form */}
         <div className="space-y-6">
           <motion.h2 
             className="text-4xl font-bold text-cyan-500 mb-8"
