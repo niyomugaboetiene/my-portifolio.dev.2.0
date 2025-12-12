@@ -44,10 +44,12 @@ const NavBar = () => {
       html.classList.remove('dark');
       html.classList.add('light');
       localStorage.setItem('theme', 'light');
+      setTheme('light');
     } else {
          html.classList.remove('light');
          html.classList.add('dark');
          localStorage.setItem('theme', 'dark');
+         setTheme('dark')
     }
   }
   // Handle scroll to detect active section
@@ -104,7 +106,7 @@ const NavBar = () => {
                 className={`flex items-center gap-2 px-5 py-3 rounded-full text-[15px] font-medium transition-all duration-300 cursor-pointer
                   ${activeSection === item.target
                     ? "text-cyan-400 "
-                    : "text-gray-300 hover:text-cyan-500  transition duration-500"
+                    : "text-gray-500 dark:text-white hover:text-cyan-500  transition duration-500"
                   }`}
                 onClick={handleNavClick}
               >
@@ -115,9 +117,9 @@ const NavBar = () => {
             <div className="mt-3">
               <button onClick={ToogleTheme}>
                  {document.documentElement.classList.contains('dark') ? (
-                     <FaSun className="text-xl text-cyan-500 hover:text-white transition-colors"/> 
+                     <FaSun className="text-xl text-cyan-500 hover:text-yellow-500 transition-colors"/> 
                  ) : (
-                     <FaMoon className="text-xl text-cyan-500 hover:text-white transition-colors"/> 
+                     <FaMoon className="text-xl text-cyan-500 hover:text-gray-500 transition-colors"/> 
                  )}
                  </button>
             </div>
