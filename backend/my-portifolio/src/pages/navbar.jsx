@@ -91,7 +91,7 @@ const NavBar = () => {
               src={Avatar}
               alt="Etiene avatar"
             />
-            <span className="text-white dark:text-dark font-medium hidden md:inline-block text-xl bg-gradient-to-r from-cyan-400 to-cyan-200 bg-clip-text text-transparent">
+            <span className="dark:text-cyan-500 font-medium hidden md:inline-block text-xl text-cyan-500">
               Etiene
             </span>
           </motion.div>
