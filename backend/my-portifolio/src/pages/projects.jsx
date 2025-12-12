@@ -182,7 +182,7 @@ const Projects = () => {
     return (
         <section
         name="projects"
-          className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-300 flex items-center justify-center px-4 md:px-16 py-20"
+          className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 dark:text-gray-300 flex items-center justify-center bg-white px-4 md:px-16 py-20"
         >
             <div className="max-w-6xl">
                 <motion.div
@@ -260,6 +260,7 @@ const Projects = () => {
                         ))}
                       </div>
                 </motion.div>
+               <hr  className="border-2 text-gray-500 dark:border-none"/>
             </div>
            </section>
     )
