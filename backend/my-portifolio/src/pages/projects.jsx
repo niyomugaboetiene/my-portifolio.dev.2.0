@@ -203,7 +203,7 @@ const Projects = () => {
                         Here are some of my projects available on GitHub. Each demonstrates different aspects of my full-stack develpment skills.
                       </motion.p>
 
-                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full "
+                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full h-[1000px]"
                       >
                         {projects.map((projects, index) => (
                             <motion.div
@@ -214,7 +214,7 @@ const Projects = () => {
                               >
                                 <div className="relative  overflow-hidden flex items-center">
                                     <img src={projects.illustration} alt={projects.title} 
-                                    className="w-full h-80 object-contain"/>
+                                    className="w-full h-62 object-contain"/>
                                 </div>
 
                                 <div className="p-6">
@@ -222,7 +222,7 @@ const Projects = () => {
                                         {projects.title}
                                     </h3>
 
-                                    <div className="flex flex-wrap gap-2 mb-4">
+                                    <div className="flex gap-2 mb-4">
                                         {projects.tech.map((tech, i) => (
                                             <span 
                                             key={i}
@@ -235,7 +235,7 @@ const Projects = () => {
                                     </div>
 
                                     <p className="text-cyan-500 mb-6">{projects.description}</p>
-
+{/* 
                                     <div className="flex gay-4 justify-between">
                                         <a href={projects.code}
                                            rel="noopener noreferrer"
@@ -244,16 +244,16 @@ const Projects = () => {
                                         >
                                             <FaGithub/>
                                             View Code
-                                        </a>    
-                                        <a href={projects.demo}
+                                        </a>     */}
+                                        {/* <a href={projects.demo}
                                            rel="noopener noreferrer"
                                            className="flex items-center gap-2 px-2 py-2 border border-gray-600 hover:bg-gray-700/50
                                            rounded-lg transition duration-200 hover:scale-105 text-cyan-500"
                                         >
                                             <FaEye />
                                             Explore
-                                        </a>
-                                    </div>
+                                        </a> */}
+                                    {/* </div> */}
                                 </div>
                               </motion.div>
                         ))}
