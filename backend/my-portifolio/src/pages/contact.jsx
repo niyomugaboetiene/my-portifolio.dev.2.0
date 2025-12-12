@@ -51,7 +51,7 @@ const Contact = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Get In <span className="text-white">Touch</span>
+            Get In <span className="dark:text-white text-gray-500">Touch</span>
           </motion.h2>
 
           <form onSubmit={handleSubmit} className="space-y-6">
