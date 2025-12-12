@@ -7,12 +7,14 @@ import {
   FaProjectDiagram,
   FaEnvelope,
   FaTimes,
-  FaSun
+  FaSun,
+  FaMoon
 } from "react-icons/fa";
 import Avatar from "../assets/github.jpeg";
 const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [theme, setTheme] = useState("dark");
 
   const navItems = [
     { name: "Home", target: "home", icon: <FaHome /> },
