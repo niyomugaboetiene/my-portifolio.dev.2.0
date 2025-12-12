@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaDatabase, FaEye } from "react-icons/fa";
 import {
@@ -24,6 +24,7 @@ import NetMovies from "../assets/netmovie.png";
 import myPortfolio from "../assets/portfolio.png";
 
 const Projects = () => {
+    const [isHovered, setIsHovered] = useState(false);
     const projects = [
         { 
             title: "Real-Time Chat Application",
@@ -189,10 +190,11 @@ const Projects = () => {
                                 variants={itemVariants}
                                 whileHover={{ y: -8 }}
                             >
-                                <div className="relative h-48 md:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
+                                <div className="relative h-48 md:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900" >
                                     <img 
                                         src={project.illustration} 
                                         alt={project.title} 
+                                        
                                         className="w-full h-full object-cover p-4 transform group-hover:scale-105 transition-transform duration-500"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -220,8 +222,9 @@ const Projects = () => {
                                             {project.description}
                                         </p>
                                     </div>
-
-                                    {/* <div className="flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                              
+                                  <div className="flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                    {isHovered && (
                                         <a 
                                             href={project.code}
                                             target="_blank"
@@ -230,8 +233,13 @@ const Projects = () => {
                                         >
                                             <FaGithub className="group-hover/btn:scale-110 transition-transform duration-200" />
                                             <span className="font-medium">Code</span>
-                                        </a> */}
-                                        {/* {project.demo !== "#" && (
+                                        </a> 
+                                    
+                                    
+                                    )}
+
+{/* 
+                                        {project.demo !== "#" && (
                                             <a 
                                                 href={project.demo}
                                                 target="_blank"
@@ -241,8 +249,8 @@ const Projects = () => {
                                                 <FaEye className="group-hover/btn:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Live Demo</span>
                                             </a>
-                                        )} */}
-                                    {/* </div> */}
+                                        )}  */}
+                                     </div>
                                 </div>
                             </motion.div>
                         ))}
@@ -267,6 +275,7 @@ const Projects = () => {
                   <hr  className="relative -bottom-20 border-2 dark:border-none"/>
                 </motion.div>
             </div>
+            
         </section>
     );
 };
