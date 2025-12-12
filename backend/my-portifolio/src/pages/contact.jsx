@@ -39,7 +39,7 @@ const Contact = () => {
       className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 px-4 py-12 bg-white flex items-center justify-center"
     >
       <motion.div
-        className="max-w-6xl w-full bg-gray-800/70 rounded-xl shadow-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+        className="max-w-6xl w-full dark:bg-gray-800/70 rounded-xl bg-white border-2 shadow-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -71,7 +71,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-gray-900/80 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
                 placeholder="Enter your name"
                 disabled={isSubmitting}
               />
@@ -92,7 +92,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-gray-900/80 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
                 placeholder="Enter your email"
                 disabled={isSubmitting}
               />
@@ -113,7 +113,7 @@ const Contact = () => {
                 onChange={handleChange}
                 rows="5"
                 required
-                className="w-full px-4 py-3 rounded-lg bg-gray-900/80 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
                 placeholder="Write your message here..."
                 disabled={isSubmitting}
               />
