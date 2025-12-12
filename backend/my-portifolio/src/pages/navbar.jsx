@@ -24,6 +24,19 @@ const NavBar = () => {
     { name: "Contact Me", target: "contact", icon: <FaEnvelope /> },
   ];
 
+  // useEffect(() => {
+  //   const saved = localStorage.getItem("theme");
+  //   const currentTheme = saved || "dark";
+  //   setTheme(currentTheme);
+  //   if (currentTheme === 'light') {
+  //     document.documentElement.classList.add('light')
+  //     document.documentElement.classList.dark('dark')
+  //   }
+  // })
+
+  const ToogleTheme =  () => {
+    const html = 
+  }
   // Handle scroll to detect active section
   useEffect(() => {
     const handleScroll = () => {
