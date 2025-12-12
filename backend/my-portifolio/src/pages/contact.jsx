@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 px-4 py-12 flex items-center justify-center"
+      className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 px-4 py-12 bg-white flex items-center justify-center"
     >
       <motion.div
         className="max-w-6xl w-full bg-gray-800/70 rounded-xl shadow-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"

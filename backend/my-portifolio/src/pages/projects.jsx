@@ -264,6 +264,7 @@ const Projects = () => {
                             </a>
                         </p>
                     </motion.div> */}
+                  <hr  className="relative -bottom-20 border-2"/>
                 </motion.div>
             </div>
         </section>
