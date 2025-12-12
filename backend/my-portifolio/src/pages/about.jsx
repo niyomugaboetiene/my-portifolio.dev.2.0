@@ -27,7 +27,10 @@ const About = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            About <span className="dark:text-white text-gray-500">Me</span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-cyan-500 mb-4">
+                            About <span className="dark:text-white text-gray-800">Me</span>
+                        </h2>
+                        <div className="w-24 h-1 bg-cyan-500 mx-auto mb-6"></div>
           </motion.h2>
 
           <motion.div
@@ -80,7 +83,11 @@ const About = () => {
               </motion.li>
             </ul>
             <div className="">
-                <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold text-gray-500 dark:text-white">Hobbies</span></h2>
+                <h2 className="text-3xl text-center">
+                  <h2 className="text-4xl md:text-5xl font-bold text-cyan-500 mb-4">
+                            My <span className="dark:text-white text-gray-800">Hobbies</span>
+                        </h2>
+                        <div className="w-24 h-1 bg-cyan-500 mx-auto mb-6"></div></h2>
                 <div  className="flex justify-between w-full mt-9">
                   <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-5 border dark:border-cyan-500 rounded-lg hover:scale-x-105 tansition duration-200 shadow-lg">
                     <div className="flex text-cyan-500 text-sm ">

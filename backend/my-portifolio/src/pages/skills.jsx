@@ -138,8 +138,11 @@ const Skills = () => {
               className="text-3xl md:text-4xl font-bold text-cyan-500 mb-6 text-center"
               variants={itemVariants}
             >
-              My <span className="dark:text-white text-gray-500">Skills</span>
-            </motion.h2>
+                        <h2 className="text-4xl md:text-5xl font-bold text-cyan-500 mb-4">
+                            My <span className="dark:text-white text-gray-800">Skills</span>
+                        </h2>
+                        <div className="w-24 h-1 bg-cyan-500 mx-auto mb-6"></div>
+                        </motion.h2>
 
             <motion.p
               className="dark:text-white text-gray-500 text-base md:text-lg leading-relaxed mb-8"
