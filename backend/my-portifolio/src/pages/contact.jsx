@@ -60,7 +60,7 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <label htmlFor="name" className="block mb-2 font-medium text-gray-300">
+              <label htmlFor="name" className="block mb-2 font-medium dark:text-gray-300 text-gray-500">
                 Your Name
               </label>
               <input 
@@ -70,7 +70,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 dark:text-white text-black border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
                 placeholder="Enter your name"
                 disabled={isSubmitting}
               />
@@ -81,7 +81,7 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <label htmlFor="email" className="block mb-2 font-medium text-gray-300">
+              <label htmlFor="email" className="block mb-2 font-medium dark:text-gray-300 text-gray-500">
                 Your Email
               </label>
               <input 
@@ -91,7 +91,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 dark:text-white text-black border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
                 placeholder="Enter your email"
                 disabled={isSubmitting}
               />
@@ -102,7 +102,7 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6 }}
             >
-              <label htmlFor="message" className="block mb-2 font-medium text-gray-300">
+              <label htmlFor="message" className="block mb-2 font-medium dark:text-gray-300 text-gray-500">
                 Your Message
               </label>
               <textarea 
@@ -112,7 +112,7 @@ const Contact = () => {
                 onChange={handleChange}
                 rows="5"
                 required
-                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 dark:border-none text-white border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 dark:border-none dark:text-white text-black border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
                 placeholder="Write your message here..."
                 disabled={isSubmitting}
               />
@@ -121,7 +121,7 @@ const Contact = () => {
             <motion.button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg text-white font-semibold shadow-lg transition duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 rounded-lg  font-semibold shadow-lg bg-gray-500 hover:bg-gray-600 transition duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
