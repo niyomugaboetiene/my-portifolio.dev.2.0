@@ -158,7 +158,9 @@ const About = () => {
               </motion.div>
           </motion.div>
           <hr  className="relative -bottom-24 border-2 text-gray-500 dark:border-none"/>
+          <hr  className="relative -bottom-[2400px] border-2 text-gray-500 dark:border-none"/>
         </motion.div>
+        
       </div>
     </section>
   );

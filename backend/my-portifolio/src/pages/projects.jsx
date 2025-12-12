@@ -258,8 +258,9 @@ const Projects = () => {
                               </motion.div>
                         ))}
                       </div>
+
+                      
                 </motion.div>
-               <hr  className="border-2 text-gray-500 dark:border-none"/>
             </div>
            </section>
     )
