@@ -166,10 +166,9 @@ const Skills = () => {
                     {category.items.map((skill, skillIndex) => (
                       <motion.div
                         key={skillIndex}
-                        className="flex flex-col shadow-lg gap-2 dark:bg-gray-800/50 px-3 py-6 rounded-lg dark:hover:bg-gray-800/70 transition-colors w-full border dark:border-cyan-500"
+                        className="flex flex-col shadow-lg gap-2 dark:bg-gray-800 px-3 py-6 rounded-lg dark:hover:bg-gray-800/70 transition-colors w-full border dark:border-cyan-500"
                         whileHover={{
                           scale: 1.03,
-                          boxShadow: "0 0 10px rgba(34, 211, 238, 0.3)"
                         }}
                         variants={itemVariants}
                       >
