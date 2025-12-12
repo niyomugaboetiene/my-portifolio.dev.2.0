@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section 
       name="about"
-      className="min-h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-300 flex items-center justify-center px-4 md:px-16 py-20"
+      className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 dark:text-gray-300 flex items-center bg-white justify-center px-4 md:px-16 py-20"
     >
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
         {/* normal div but enhanced with animations */}
@@ -27,7 +27,7 @@ const About = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            About <span className="text-white">Me</span>
+            About <span className="dark:text-white text-gray-500">Me</span>
           </motion.h2>
 
           <motion.div
@@ -38,12 +38,12 @@ const About = () => {
             // delay wait 0.4 before starting the animation
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg text-gray-500 dark:text-white leading-relaxed">
               I'm <span className="font-semibold text-cyan-400">Etiene Niyomugabo</span>, a passionate <span className="text-cyan-400 font-bold"> Blockchain Developer, </span> 
               <span className="font-bold text-cyan-400">Smart contract Developer, </span> <span className="font-bold text-cyan-400">Machine Learning and Deep learning Developer,</span>  <span className="text-cyan-500 font-bold">full stack developer</span> with a strong desire to build clean, user-friendly, and impactful digital experiences. What began as curiosity has envolved into a dedicated career path.
             </p>
 
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed dark:text-white text-gray-500">
               My expertise spans both frontend and backend technologies, allowing me to create seamless, full-featured applications from concept to deployment.
             </p>
 
@@ -56,7 +56,7 @@ const About = () => {
                 transition={{ delay: 0.6 }}
               >
                 <span className="text-cyan-400 mr-2">▹</span>
-                <span>Building responsive, accessible web applications</span>
+                <span className="text-gray-500 dark:text-white">Building responsive, accessible web applications</span>
               </motion.li>
               <motion.li 
                 className="flex items-start"
@@ -66,7 +66,7 @@ const About = () => {
                 transition={{ delay: 0.7 }}
               >
                 <span className="text-cyan-400 mr-2">▹</span>
-                <span>Continuously learning modern technologies</span>
+                <span className="text-gray-500 dark:text-white">Continuously learning modern technologies</span>
               </motion.li>
               <motion.li 
                 className="flex items-start"
@@ -76,13 +76,13 @@ const About = () => {
                 transition={{ delay: 0.8 }}
               >
                 <span className="text-cyan-400 mr-2">▹</span>
-                <span>Based in Rwanda, open to remote opportunities</span>
+                <span className="text-gray-500 dark:text-white">Based in Rwanda, open to remote opportunities</span>
               </motion.li>
             </ul>
             <div className="">
-                <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold">Hobbies</span></h2>
+                <h2 className="text-3xl text-center"><span className="text-cyan-500 font-bold" >My</span> <span className="font-bold text-gray-500 dark:text-white">Hobbies</span></h2>
                 <div  className="flex justify-between w-full mt-9">
-                  <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-cyan-500 rounded-lg hover:scale-x-105 tansition duration-200 hover:shadow-lg">
+                  <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-5 border dark:border-cyan-500 rounded-lg hover:scale-x-105 tansition duration-200 shadow-lg">
                     <div className="flex text-cyan-500 text-sm ">
                        <p>Reading books</p>
                        <p className="ms-[183px]">60%</p>
@@ -97,7 +97,7 @@ const About = () => {
                         
                   </div>
                 </div>
-                <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-cyan-500 rounded-lg hover:scale-105 tansition duration-200 hover:shadow-lg">
+                <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-5 border dark:border-cyan-500 rounded-lg hover:scale-105 tansition duration-200 shadow-lg">
                   <div className="flex text-cyan-500 text-sm">
                       <p>Watching movies & cartoons</p>
                       <p className="ms-[90px]">90%</p>
@@ -114,7 +114,7 @@ const About = () => {
                </div>
               </div>
               <div className="flex justify-between w-full">
-                <div className="space-y-3 bg-gray-800/50 w-[350px] p-5 border border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 hover:shadow-lg">
+                <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-5 border dark:border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 shadow-lg">
                    <div className="flex text-cyan-500 text-sm">
                        <p>Listening musics</p>
                        <p className="ms-[170px]">70%</p>
@@ -128,7 +128,7 @@ const About = () => {
                     />
                    </div>
                 </div>
-                <div className="space-y-3 bg-gray-800/50 w-[350px] p-6  border border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 hover:shadow-lg">
+                <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-6  border dark:border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 shadow-lg">
                   <div className="flex text-cyan-500 text-sm">
                       <p>Watching documentaries</p>
                       <p className="ms-[115px]">60%</p>

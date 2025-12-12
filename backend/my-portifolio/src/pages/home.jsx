@@ -92,7 +92,7 @@ const Home = () => {
               href="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 rounded-lg dark:text-white bg-gray-500 hover:bg-gray-600 font-semibold transition duration-300 text-center"
+              className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 rounded-lg dark:text-white bg-gray-500 hover:bg-gray-600  font-semibold transition duration-300 text-center"
             >
              <span className="text-center flex mt-1">View My Work </span> 
             </motion.a>

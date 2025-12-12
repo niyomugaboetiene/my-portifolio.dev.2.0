@@ -80,7 +80,7 @@ const NavBar = () => {
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white fixed top-0 left-0 right-0 z-50 bg-gradient-to-b dark:to-gray-900 dark:from-gray-900/95 dark:via-black/95 w-full"
+      className="bg-white fixed top-0 left-0 right-0 z-50 shadow-2xl  bg-gradient-to-b dark:to-gray-900 dark:from-gray-900/95 dark:via-black/95 w-full"
     >
       <div className="max-w-6xl mx-auto px-4 md:px-16">
         <div className="flex items-center justify-between h-20">
