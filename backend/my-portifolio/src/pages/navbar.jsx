@@ -24,18 +24,31 @@ const NavBar = () => {
     { name: "Contact Me", target: "contact", icon: <FaEnvelope /> },
   ];
 
-  // useEffect(() => {
-  //   const saved = localStorage.getItem("theme");
-  //   const currentTheme = saved || "dark";
-  //   setTheme(currentTheme);
-  //   if (currentTheme === 'light') {
-  //     document.documentElement.classList.add('light')
-  //     document.documentElement.classList.dark('dark')
-  //   }
-  // })
+  useEffect(() => {
+    const saved = localStorage.getItem("theme") || "dark";
+
+    if (saved === 'light') {
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+    }
+  }, []);
 
   const ToogleTheme =  () => {
-    const html = 
+    const html = document.documentElement;
+    const isDark = html.classList.contains('dark');
+
+    if (isDark) {
+      html.classList.remove('dark');
+      html.classList.add('light');
+      localStorage.setItem('theme', 'light');
+    } else {
+         html.classList.remove('light');
+         html.classList.add('dark');
+         localStorage.setItem('theme', 'dark');
+    }
   }
   // Handle scroll to detect active section
   useEffect(() => {
@@ -65,7 +78,7 @@ const NavBar = () => {
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-gray-900/95 via-black/95 w-full"
+      className="bg-white fixed top-0 left-0 right-0 z-50 bg-gradient-to-b dark:to-gray-900 dark:from-gray-900/95 dark:via-black/95 w-full"
     >
       <div className="max-w-6xl mx-auto px-4 md:px-16">
         <div className="flex items-center justify-between h-20">
@@ -78,7 +91,7 @@ const NavBar = () => {
               src={Avatar}
               alt="Etiene avatar"
             />
-            <span className="text-white font-medium hidden md:inline-block text-xl bg-gradient-to-r from-cyan-400 to-cyan-200 bg-clip-text text-transparent">
+            <span className="text-white dark:text-dark font-medium hidden md:inline-block text-xl bg-gradient-to-r from-cyan-400 to-cyan-200 bg-clip-text text-transparent">
               Etiene
             </span>
           </motion.div>
@@ -100,7 +113,13 @@ const NavBar = () => {
               </a>
             ))}
             <div className="mt-3">
-              <button> <FaSun className="text-xl text-cyan-500 hover:text-white transition-colors"/> </button>
+              <button onClick={ToogleTheme}>
+                 {document.documentElement.classList.contains('dark') ? (
+                     <FaSun className="text-xl text-cyan-500 hover:text-white transition-colors"/> 
+                 ) : (
+                     <FaMoon className="text-xl text-cyan-500 hover:text-white transition-colors"/> 
+                 )}
+                 </button>
             </div>
           </div>
 
