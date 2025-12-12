@@ -41,23 +41,23 @@ const Home = () => {
       className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-cover bg-center bg-no-repeat w-full"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 dark:bg-black/70"></div>
    
      <div className="ms-[160px]">
       <div className="relative z-10 max-w-6xl w-[800px]  md:grid-cols-2 gap-8 items-center">
         
         <div className="space-y-6">
           <motion.h1
-            className="text-4xl md:text-5xl font-bold text-white"
+            className="text-4xl md:text-5xl font-bold text-black dark:text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <div className="hover:rotate-6  transition duration-200 hover:-translate-y-4">
-            <span className="text-sm text-center bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent via-purple bg-clip-text ms-[300px] text-cyan-500">Hi, I'm</span> 
+            <span className="text-sm text-center dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 dark:text-transparent dark:via-purple-500 bg-clip-text ms-[300px] text-black">Hi, I'm</span> 
             </div>
             <div>
-                <span className="text-cyan-500 ms-[120px]">Niyomugabo Etiene</span>
+                <span className="dark:text-cyan-500 text-black/100 ms-[120px]">Niyomugabo Etiene</span>
             </div>
           </motion.h1>
 
@@ -65,7 +65,7 @@ const Home = () => {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={currentTextIndex}
-                className="text-sm md:text-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent via-purple-500 bg-clip-text font-semibold text-gray-300"
+                className="text-sm md:text-lg dark:bg-gradient-to-r dark:from-cyan-500 to-blue-500 text-transparent via-purple-500 bg-clip-text font-semibold text-gray-300"
                 variants={textVariants}
                 initial="enter"
                 animate="center"
