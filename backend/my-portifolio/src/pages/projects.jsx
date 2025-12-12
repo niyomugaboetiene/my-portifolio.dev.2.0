@@ -1,6 +1,6 @@
 import React from "react";
 import { hover, motion, stagger } from "framer-motion";
-import { FaGithub, FaDatabase,} from "react-icons/fa";
+import { FaGithub, FaDatabase, FaEye } from "react-icons/fa";
 import {
     SiNodedotjs,
     SiMongodb,
@@ -11,7 +11,6 @@ import {
     SiReact,
     SiEthers,
     SiSolidity,
-
 } from "react-icons/si"
 
 import studentIllustration from "../assets/student.png"
@@ -251,7 +250,7 @@ const Projects = () => {
                                            className="flex items-center gap-2 px-2 py-2 border border-gray-600 hover:bg-gray-700/50
                                            rounded-lg transition duration-200 hover:scale-105 text-cyan-500"
                                         >
-                                            {/* <FaGithub/> */}
+                                            <FaEye />
                                             Explore
                                         </a>
                                     </div>
