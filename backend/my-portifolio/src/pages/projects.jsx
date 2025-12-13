@@ -24,7 +24,7 @@ import NetMovies from "../assets/netmovie.png";
 import myPortfolio from "../assets/portfolio.png";
 
 const Projects = () => {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState(null);
     const projects = [
         { 
             title: "Real-Time Chat Application",
@@ -186,14 +186,14 @@ const Projects = () => {
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
+                                onMouseEnter={() => setIsHovered(index)}
+                                onMouseLeave={() => setIsHovered(null)}
                                 className="group bg-white dark:bg-gray-800/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-cyan-500 hover:shadow-cyan-500/20 flex flex-col h-full"
                                 variants={itemVariants}
                                 whileHover={{ y: -8 }}
                             >
                                 <div 
                                   className="relative h-48 md:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900" 
-                                  onMouseEnter={() => setIsHovered(index)}
-                                  onMouseLeave={() => setIsHovered(index)}
                                 >
                                     <img 
                                         src={project.illustration} 
@@ -228,7 +228,7 @@ const Projects = () => {
                                     </div>
                               
                                   <div className="flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-                                    {isHovered && (
+                                    {isHovered === index && (
                                         <a 
                                             href={project.code}
                                             target="_blank"
@@ -239,11 +239,7 @@ const Projects = () => {
                                             <span className="font-medium">Code</span>
                                         </a> 
                                     
-                                    
-                                    )}
-
-{/* 
-                                        {project.demo !== "#" && (
+                                    {project.demo !== "#" && (
                                             <a 
                                                 href={project.demo}
                                                 target="_blank"
@@ -253,13 +249,15 @@ const Projects = () => {
                                                 <FaEye className="group-hover/btn:scale-110 transition-transform duration-200" />
                                                 <span className="font-medium">Live Demo</span>
                                             </a>
-                                        )}  */}
+                                        )}                                     
+                                    )}
+ 
                                      </div>
                                 </div>
                             </motion.div>
                         ))}
                     </div>
-{/* 
+
                     <motion.div 
                         variants={itemVariants}
                         className="text-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-800"
@@ -275,7 +273,7 @@ const Projects = () => {
                                 GitHub
                             </a>
                         </p>
-                    </motion.div> */}
+                    </motion.div>
                   <hr  className="relative -bottom-20 border-2 dark:border-none"/>
                 </motion.div>
             </div>
