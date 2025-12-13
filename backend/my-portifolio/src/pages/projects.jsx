@@ -227,31 +227,29 @@ const Projects = () => {
                                         </p>
                                     </div>
                               
-                                  <div className="flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                  <div className="flex space-x-12 gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
                                     {isHovered === index && (
                                         <a 
                                             href={project.code}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-600 text-white rounded-lg transition-all duration-200 hover:scale-105 group/btn"
+                                            className="absolute left-4 top-4  items-center justify-center gap-2 px-4 py-2.5 bg-gray-200 dark:bg-gray-300  hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-500 rounded-full transition-all duration-200 group/btn"
                                         >
                                             <FaGithub className="group-hover/btn:scale-110 transition-transform duration-200" />
-                                            <span className="font-medium">Code</span>
                                         </a> 
                                     
-                                    {project.demo !== "#" && (
+                                    
+                                    )}
+                                    {isHovered === index && project.demo !== "#" && (
                                             <a 
                                                 href={project.demo}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-all duration-200 hover:scale-105 group/btn"
+                                                className="absolute top-4 items-center justify-center gap-2 px-4 py-2.5 bg-cyan-100 hover:bg-cyan-200 text-cyan-500 rounded-full transition-all duration-200 hover:scale-105 group/btn"
                                             >
                                                 <FaEye className="group-hover/btn:scale-110 transition-transform duration-200" />
-                                                <span className="font-medium">Live Demo</span>
                                             </a>
-                                        )}                                     
-                                    )}
- 
+                                        )}  
                                      </div>
                                 </div>
                             </motion.div>
