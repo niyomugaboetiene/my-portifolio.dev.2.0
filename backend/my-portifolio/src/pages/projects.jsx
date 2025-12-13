@@ -192,8 +192,8 @@ const Projects = () => {
                             >
                                 <div 
                                   className="relative h-48 md:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900" 
-                                  onMouseEnter={() => setIsHovered(true)}
-                                  onMouseLeave={() => setIsHovered(false)}
+                                  onMouseEnter={() => setIsHovered(index)}
+                                  onMouseLeave={() => setIsHovered(index)}
                                 >
                                     <img 
                                         src={project.illustration} 
@@ -228,7 +228,7 @@ const Projects = () => {
                                     </div>
                               
                                   <div className="flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-                                    {/* {isHovered && (
+                                    {isHovered && (
                                         <a 
                                             href={project.code}
                                             target="_blank"
@@ -240,7 +240,7 @@ const Projects = () => {
                                         </a> 
                                     
                                     
-                                    )} */}
+                                    )}
 
 {/* 
                                         {project.demo !== "#" && (
