@@ -233,9 +233,9 @@ const Projects = () => {
                                             href={project.code}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="absolute left-4 top-4  items-center justify-center gap-2 px-4 py-2.5 bg-gray-200 dark:bg-gray-300  hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-500 rounded-full transition-all duration-200 group/btn"
+                                            className="absolute left-4 top-4 hover:text-white items-center justify-center gap-2 px-4 py-2.5 bg-gray-200 dark:bg-gray-300  hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-500 rounded-full transition-all duration-200 group/btn"
                                         >
-                                            <FaGithub className="group-hover/btn:scale-110 transition-transform duration-200" />
+                                            <FaGithub className="text-black group-hover/btn:scale-110 transition-transform duration-200" />
                                         </a> 
                                     
                                     
