@@ -26,6 +26,10 @@ app.post("/send", async (req, res) => {
       user: process.env.EMAIL_USER,
       pass: process.env.APP_PASS,
     },
+    tls: {
+      rejectUnauthorized: false
+    },
+    connectionTimeout: 10000,
   });
 
   const mailOptions = {
