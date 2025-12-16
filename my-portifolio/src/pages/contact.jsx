@@ -21,7 +21,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      await axios.post("https://niyomugaboetiene.onrender.com/send", formData);
+      await axios.post("http://localhost:5000/send", formData);
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
@@ -159,7 +159,7 @@ const Contact = () => {
             
             {submitStatus === "success" && (
               <motion.div
-                className="dark:bg-green-900/50 text-green-100 rounded-lg p-3 text-center mt-4 font-medium"
+                className="dark:bg-green-900/50 text-green-100 rounded-lg p-3 text-center mt-4 font-medium bg-green-500"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
