@@ -5,6 +5,10 @@ import { Resend } from "resend";
 
 dotenv.config();
 
+if (!process.env.RESEND_API_KEY || !process.env.EMAIL_USER) {
+  console.error("Missing required environment variables");
+  process.exit(1);
+}
 const app = express();
 
 app.use(cors({
