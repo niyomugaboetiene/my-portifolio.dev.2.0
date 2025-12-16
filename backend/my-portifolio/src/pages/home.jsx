@@ -17,7 +17,9 @@ const Home = () => {
     "React Expert",
     "UI/UX Enthusiast",
     "Graphic Designer",
-    "Full Stack Specialist"
+    "Full Stack Specialist",
+    "Cyber security Specialist",
+    "Defensive & Offsensive Security"
   ];
 
   useEffect(() => {
