@@ -7,7 +7,6 @@ dotenv.config();
 
 const app = express();
 
-// CORS
 app.use(cors({
   origin: "https://niyomugaboetiene.vercel.app",
   methods: ["POST", "GET"],
