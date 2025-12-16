@@ -48,16 +48,16 @@ app.post("/send", async (req, res) => {
   }
 });
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-app.use(express.static(path.join(__dirname, "my-portifolio/dist")));
-app.use(express.static(path.join(__dirname, "public")));
-
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "my-portifolio/dist", "index.html"));
+// test route
+app.get("/", (req, res) => {
+  res.json({ 
+    message: "Backend API is running",
+    endpoints: {
+      sendEmail: "POST /send"
+    }
+  });
 });
+
 
 const PORT = process.env.PORT || 5000;
 
