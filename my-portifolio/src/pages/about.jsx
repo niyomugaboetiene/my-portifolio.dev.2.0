@@ -88,13 +88,15 @@ const About = () => {
                             My <span className="dark:text-white text-gray-800">Hobbies</span>
                         </h2>
                         <div className="w-24 h-1 bg-cyan-500 mx-auto mb-6"></div></h2>
-                <div  className="flex justify-between w-full mt-9">
-                  <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-5 border dark:border-cyan-500 rounded-lg hover:scale-x-105 tansition duration-200 shadow-lg">
-                    <div className="flex text-cyan-500 text-sm ">
+
+                {/* Responsive hobby cards: stack on small screens, two columns on sm+ */}
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 w-full mt-9">
+                  <div className="space-y-3 dark:bg-gray-800/50 w-full sm:w-[48%] p-5 border dark:border-cyan-500 rounded-lg hover:scale-x-105 transition duration-200 shadow-lg">
+                    <div className="flex text-cyan-500 text-sm w-full">
                        <p>Reading books</p>
-                       <p className="ms-[183px]">60%</p>
+                       <p className="ml-auto">60%</p>
                   </div>
-                  <div className="bg-gray-500 rounded-full overflow-hidden">
+                  <div className="bg-gray-500 rounded-full overflow-hidden h-3">
                       <motion.div
                         className="bg-gradient-to-l from-cyan-500 to-purple-500 h-3 rounded-full"
                         initial={{ width: 0 }}
@@ -104,12 +106,13 @@ const About = () => {
                         
                   </div>
                 </div>
-                <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-5 border dark:border-cyan-500 rounded-lg hover:scale-105 tansition duration-200 shadow-lg">
-                  <div className="flex text-cyan-500 text-sm">
+
+                <div className="space-y-3 dark:bg-gray-800/50 w-full sm:w-[48%] p-5 border dark:border-cyan-500 rounded-lg hover:scale-105 transition duration-200 shadow-lg">
+                  <div className="flex text-cyan-500 text-sm w-full">
                       <p>Watching movies & cartoons</p>
-                      <p className="ms-[90px]">90%</p>
+                      <p className="ml-auto">90%</p>
                   </div>
-                  <div className="bg-gray-500 rounded-full overflow-hidden">
+                  <div className="bg-gray-500 rounded-full overflow-hidden h-3">
                     <motion.div
                     className="bg-gradient-to-l from-amber-500 to-cyan-500 h-3 rounded-full"
                     initial={{ width: 0 }}
@@ -119,14 +122,13 @@ const About = () => {
                        
                   </div>
                </div>
-              </div>
-              <div className="flex justify-between w-full">
-                <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-5 border dark:border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 shadow-lg">
-                   <div className="flex text-cyan-500 text-sm">
+
+                <div className="space-y-3 dark:bg-gray-800/50 w-full sm:w-[48%] p-5 border dark:border-cyan-500 rounded-lg mt-9 hover:scale-105 transition duration-200 shadow-lg">
+                   <div className="flex text-cyan-500 text-sm w-full">
                        <p>Listening musics</p>
-                       <p className="ms-[170px]">70%</p>
+                       <p className="ml-auto">70%</p>
                    </div>
-                   <div className="bg-gray-500 rounded-full overflow-hidden">
+                   <div className="bg-gray-500 rounded-full overflow-hidden h-3">
                     <motion.div
                        className="bg-gradient-to-l from-lime-500 to-cyan-500 h-3 rounded-full"
                        initial={{ width: 0 }}
@@ -135,12 +137,13 @@ const About = () => {
                     />
                    </div>
                 </div>
-                <div className="space-y-3 dark:bg-gray-800/50 w-[350px] p-6  border dark:border-cyan-500 rounded-lg mt-9 hover:scale-105 tansition duration-200 shadow-lg">
-                  <div className="flex text-cyan-500 text-sm">
+
+                <div className="space-y-3 dark:bg-gray-800/50 w-full sm:w-[48%] p-6  border dark:border-cyan-500 rounded-lg mt-9 hover:scale-105 transition duration-200 shadow-lg">
+                  <div className="flex text-cyan-500 text-sm w-full">
                       <p>Watching documentaries</p>
-                      <p className="ms-[115px]">60%</p>
+                      <p className="ml-auto">60%</p>
                   </div>
-                  <div className="bg-gray-500 rounded-full overflow-hidden">
+                  <div className="bg-gray-500 rounded-full overflow-hidden h-3">
                     <motion.div 
                       className="bg-gradient-to-l from-emerald-500 to-blue-500 h-3 rounded-full"
                       initial={{ width: 0 }}
