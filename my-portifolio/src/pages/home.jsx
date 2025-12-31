@@ -41,129 +41,120 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 bg-cover bg-center bg-no-repeat w-full"
+      className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-cover bg-center bg-no-repeat w-full"
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="absolute inset-0 dark:bg-black/70 bg-white/80"></div>
    
-      <div className="relative z-10 max-w-6xl w-full flex flex-col items-center lg:items-start">
-        <div className="w-full max-w-3xl space-y-6 sm:space-y-8 px-4 sm:px-0">
-          <motion.div
-            className="text-center lg:text-left"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="mb-2 sm:mb-4">
-              <span className="text-sm sm:text-base text-cyan-500 dark:text-cyan-300 font-medium">
-                Hi, I'm
-              </span>
+      <div className="relative z-10 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+        <div className="w-full max-w-3xl text-center">
+          
+          <div className="space-y-6 sm:space-y-8">
+            <motion.h1
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-black dark:text-white"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="mb-2 sm:mb-4">
+                <span className="text-sm sm:text-base text-cyan-500 dark:text-cyan-300 font-medium">
+                  Hi, I'm
+                </span>
+              </div>
+              <div>
+                <span className="dark:text-cyan-500 text-cyan-600 text-5xl sm:text-6xl md:text-7xl">
+                  Niyomugabo Etiene
+                </span>
+              </div>
+            </motion.h1>
+
+            <div className="h-16 sm:h-20 relative overflow-hidden flex justify-center">
+              <AnimatePresence mode="wait">
+                <motion.h2
+                  key={currentTextIndex}
+                  className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 text-transparent bg-clip-text"
+                  variants={textVariants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  {texts[currentTextIndex]}
+                </motion.h2>
+              </AnimatePresence>
             </div>
-            
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
-              <span className="text-cyan-600 dark:text-cyan-400 block mb-2">
-                Niyomugabo
-              </span>
-              <span className="text-gray-800 dark:text-white">
-                Etiene
-              </span>
-            </h1>
-          </motion.div>
 
-          <div className="h-16 sm:h-20 relative overflow-hidden text-center lg:text-left">
-            <AnimatePresence mode="wait">
-              <motion.h2
-                key={currentTextIndex}
-                className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text"
-                variants={textVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+            <motion.p
+              className="dark:text-gray-300 text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              I create beautiful, modern decentralized applications, decentralized exchanges, and responsive websites using React, 
+              Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional user experiences.
+            </motion.p>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+              <motion.a
+                href="/projects"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 bg-cyan-500 hover:bg-cyan-600 rounded-lg text-white font-semibold transition duration-300 text-center"
               >
-                {texts[currentTextIndex]}
-              </motion.h2>
-            </AnimatePresence>
+                View My Work
+              </motion.a>
+
+              <motion.a
+                href="/resume/Etiene_Niyomugabo.pdf"
+                download
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="px-6 py-3 dark:bg-transparent bg-transparent border-2 border-cyan-500 text-cyan-600 dark:text-cyan-400 dark:hover:bg-cyan-600/20 hover:bg-cyan-50 rounded-lg font-semibold transition duration-300 flex items-center justify-center gap-2"
+              >
+                <FaFileDownload /> Download CV
+              </motion.a>
+            </div>
+
+            <motion.div
+              className="flex justify-center gap-4 pt-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.9 }}
+            >
+              <a
+                href="https://github.com/niyomugaboetiene"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300 hover:translate-y-1"
+              >
+                <FaGithub className="text-white text-lg sm:text-xl" />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300 hover:translate-y-1"
+              >
+                <FaLinkedin className="text-white text-lg sm:text-xl" />
+              </a>
+              <a
+                href="https://wa.me/+250728184299"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300 hover:translate-y-1"
+              >
+                <FaWhatsapp className="text-white text-lg sm:text-xl" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-700 rounded-full transition duration-300 hover:translate-y-1"
+              >
+                <FaFacebook className="text-white text-lg sm:text-xl" />
+              </a>
+            </motion.div>
           </div>
-
-          {/* Description */}
-          <motion.p
-            className="dark:text-gray-300 text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-center lg:text-left"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            I create beautiful, modern decentralized applications, decentralized exchanges, 
-            and responsive websites using React, Tailwind CSS, Node.js, and Solidity. 
-            Passionate about crafting exceptional user experiences.
-          </motion.p>
-
-          {/* Buttons Section */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 sm:pt-8 justify-center lg:justify-start">
-            <motion.a
-              href="/projects"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 bg-cyan-500 dark:bg-cyan-600 hover:bg-cyan-600 dark:hover:bg-cyan-700 text-white rounded-lg font-semibold transition duration-300 text-center"
-            >
-              View My Work
-            </motion.a>
-
-            <motion.a
-              href="/resume/Etiene_Niyomugabo.pdf"
-              download
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 bg-transparent border-2 border-cyan-500 text-cyan-600 dark:text-cyan-400 dark:border-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 rounded-lg font-semibold transition duration-300 flex items-center justify-center gap-2"
-            >
-              <FaFileDownload /> Download CV
-            </motion.a>
-          </div>
-
-          {/* Social Links */}
-          <motion.div
-            className="flex gap-4 sm:gap-6 pt-6 sm:pt-8 justify-center lg:justify-start"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-          >
-            <a
-              href="https://github.com/niyomugaboetiene"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 sm:p-4 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
-              aria-label="GitHub"
-            >
-              <FaGithub className="text-white text-lg sm:text-xl" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin className="text-white text-lg sm:text-xl" />
-            </a>
-            <a
-              href="https://wa.me/+250728184299"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 sm:p-4 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
-              aria-label="WhatsApp"
-            >
-              <FaWhatsapp className="text-white text-lg sm:text-xl" />
-            </a>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-700 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
-              aria-label="Facebook"
-            >
-              <FaFacebook className="text-white text-lg sm:text-xl" />
-            </a>
-          </motion.div>
         </div>
       </div>
     </section>
