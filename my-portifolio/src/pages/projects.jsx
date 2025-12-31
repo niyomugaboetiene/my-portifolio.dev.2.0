@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaDatabase, FaEye } from "react-icons/fa";
+import { FaGithub, FaDatabase, FaEye, FaExternalLinkAlt } from "react-icons/fa";
 import {
     SiNodedotjs,
     SiMongodb,
@@ -163,7 +163,7 @@ const Projects = () => {
     return (
         <section
             name="projects"
-            className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 dark:text-gray-300 bg-white text-gray-800 flex items-center justify-center px-4 md:px-8 lg:px-16 py-16 md:py-20"
+            className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 dark:text-gray-300 bg-white text-gray-800 flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 py-12 sm:py-16 md:py-20"
         >
             <div className="w-full max-w-7xl mx-auto">
                 <motion.div
@@ -172,112 +172,140 @@ const Projects = () => {
                     animate="visible"
                     className="w-full"
                 >
-                    <motion.div variants={itemVariants} className="text-center mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold text-cyan-500 mb-4">
+                    {/* Header */}
+                    <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-500 mb-3 sm:mb-4">
                             My <span className="dark:text-white text-gray-800">Projects</span>
                         </h2>
-                        <div className="w-24 h-1 bg-cyan-500 mx-auto mb-6"></div>
-                        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto px-4">
+                        <div className="w-20 sm:w-24 h-1 bg-cyan-500 mx-auto mb-4 sm:mb-6"></div>
+                        <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto px-4">
                             Here are some of my projects available on GitHub. Each demonstrates different aspects of my full-stack development skills.
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full auto-rows-fr h-[1500px]">
+                    {/* Projects Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full auto-rows-auto">
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
                                 onMouseEnter={() => setIsHovered(index)}
                                 onMouseLeave={() => setIsHovered(null)}
-                                className="group bg-white dark:bg-gray-800/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-cyan-500 hover:shadow-cyan-500/20 flex flex-col h-full"
+                                onTouchStart={() => setIsHovered(index)}
+                                onTouchEnd={() => setIsHovered(null)}
+                                className="group bg-white dark:bg-gray-800/50 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl sm:hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-cyan-400 hover:shadow-cyan-500/10 dark:hover:shadow-cyan-500/20 flex flex-col h-full"
                                 variants={itemVariants}
-                                whileHover={{ y: -8 }}
+                                whileHover={{ y: -4 }}
+                                whileTap={{ scale: 0.98 }}
                             >
-                                <div 
-                                  className="relative h-48 md:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900" 
-                                >
+                                {/* Image Container */}
+                                <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
                                     <img 
                                         src={project.illustration} 
                                         alt={project.title} 
-                                        
                                         className="w-full h-full object-cover p-4 transform group-hover:scale-105 transition-transform duration-500"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                </div>
-
-                                <div className="p-6 flex flex-col flex-grow">
-                                    <div className="flex-grow">
-                                        <h3 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-3 group-hover:text-cyan-500 transition-colors duration-300">
-                                            {project.title}
-                                        </h3>
-
-                                        <div className="flex flex-wrap gap-2 mb-4">
-                                            {project.tech.map((tech, i) => (
-                                                <span 
-                                                    key={i}
-                                                    className={`flex items-center gap-1 ${tech.hover} bg-gray-100 dark:bg-gray-700/50 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 group-hover:translate-y-[-2px]`}
-                                                >
-                                                    <span className="text-lg">{tech.icon}</span>
-                                                    <span className="text-gray-700 dark:text-gray-300">{tech.name}</span>
-                                                </span>
-                                            ))}
-                                        </div>
-
-                                        <p className="text-gray-600 dark:text-gray-400 mb-6 text-sm md:text-base leading-relaxed">
-                                            {project.description}
-                                        </p>
-                                    </div>
-                              
-                                  <div className="flex space-x-12 gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
-                                    {isHovered === index && (
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-300"></div>
+                                    
+                                    {/* Action Buttons - Always visible on mobile, hover on desktop */}
+                                    <div className="absolute top-3 right-3 flex gap-2">
                                         <a 
                                             href={project.code}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="absolute left-4 top-4 hover:text-white items-center justify-center gap-2 px-4 py-2.5 bg-gray-200 dark:bg-gray-300  hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-500 rounded-full transition-all duration-200 group/btn"
+                                            className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full transition-all duration-200 hover:scale-110 active:scale-95 shadow-lg"
+                                            aria-label="View code on GitHub"
                                         >
-                                            <FaGithub className="text-black group-hover/btn:scale-110 transition-transform duration-200" />
-                                        </a> 
-                                    
-                                    
-                                    )}
-                                    {isHovered === index && project.demo !== "#" && (
+                                            <FaGithub className="text-lg sm:text-xl" />
+                                        </a>
+                                        {project.demo !== "#" && (
                                             <a 
                                                 href={project.demo}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="absolute top-4 items-center justify-center gap-2 px-4 py-2.5 bg-cyan-100 hover:bg-cyan-200 text-cyan-500 rounded-full transition-all duration-200 hover:scale-105 group/btn"
+                                                className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-cyan-500/90 backdrop-blur-sm hover:bg-cyan-600 text-white rounded-full transition-all duration-200 hover:scale-110 active:scale-95 shadow-lg"
+                                                aria-label="View live demo"
                                             >
-                                                <FaEye className="group-hover/btn:scale-110 transition-transform duration-200" />
+                                                <FaEye className="text-lg sm:text-xl" />
                                             </a>
-                                        )}  
-                                     </div>
+                                        )}
+                                    </div>
+                                </div>
+
+                                {/* Content Container */}
+                                <div className="p-4 sm:p-6 flex flex-col flex-grow">
+                                    <div className="flex-grow">
+                                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-2 sm:mb-3 group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors duration-300 line-clamp-1">
+                                            {project.title}
+                                        </h3>
+
+                                        {/* Tech Stack */}
+                                        <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+                                            {project.tech.map((tech, i) => (
+                                                <span 
+                                                    key={i}
+                                                    className={`flex items-center gap-1 bg-gray-100 dark:bg-gray-700/50 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs font-medium transition-all duration-200`}
+                                                >
+                                                    <span className="text-sm sm:text-base">{tech.icon}</span>
+                                                    <span className="text-gray-700 dark:text-gray-300 hidden sm:inline">{tech.name}</span>
+                                                </span>
+                                            ))}
+                                        </div>
+
+                                        {/* Description */}
+                                        <p className="text-gray-600 dark:text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed line-clamp-3">
+                                            {project.description}
+                                        </p>
+                                    </div>
+                                  
+                                    {/* Footer Links - Visible on mobile, hidden on desktop (buttons moved to image) */}
+                                    <div className="flex gap-3 pt-3 sm:pt-4 border-t border-gray-200 dark:border-gray-700 sm:hidden">
+                                        <a 
+                                            href={project.code}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-all duration-200 text-sm font-medium"
+                                        >
+                                            <FaGithub />
+                                            <span>Code</span>
+                                        </a>
+                                        {project.demo !== "#" && (
+                                            <a 
+                                                href={project.demo}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-all duration-200 text-sm font-medium"
+                                            >
+                                                <FaEye />
+                                                <span>Demo</span>
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
                             </motion.div>
                         ))}
                     </div>
 
+                    {/* Footer */}
                     <motion.div 
                         variants={itemVariants}
-                        className="text-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-800"
+                        className="text-center mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200 dark:border-gray-800"
                     >
-                        <p className="text-gray-600 dark:text-gray-400">
+                        <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
                             More projects and ongoing work available on{" "}
                             <a 
                                 href="https://github.com/niyomugaboetiene" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="text-cyan-500 hover:text-cyan-600 font-semibold underline underline-offset-2 transition-colors duration-200"
+                                className="text-cyan-500 hover:text-cyan-600 dark:hover:text-cyan-400 font-semibold underline underline-offset-2 transition-colors duration-200"
                             >
                                 GitHub
                             </a>
                         </p>
                     </motion.div>
-                  <hr  className="relative -bottom-20 border-2 dark:border-none"/>
                 </motion.div>
             </div>
-            
         </section>
     );
 };
 
-export default Projects; 
+export default Projects;

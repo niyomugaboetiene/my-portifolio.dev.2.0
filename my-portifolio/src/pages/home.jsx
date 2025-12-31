@@ -41,34 +41,40 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-cover bg-center bg-no-repeat w-full"
+      className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 bg-cover bg-center bg-no-repeat w-full"
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="absolute inset-0 dark:bg-black/70 bg-white/80"></div>
    
-     <div className="ms-[160px]">
-      <div className="relative z-10 max-w-6xl w-[800px]  md:grid-cols-2 gap-8 items-center">
-        
-        <div className="space-y-6">
-          <motion.h1
-            className="text-4xl md:text-5xl font-bold text-black dark:text-white"
+      <div className="relative z-10 max-w-6xl w-full flex flex-col items-center lg:items-start">
+        <div className="w-full max-w-3xl space-y-6 sm:space-y-8 px-4 sm:px-0">
+          <motion.div
+            className="text-center lg:text-left"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="hover:rotate-6  transition duration-200 hover:-translate-y-4">
-            <span className="text-sm text-center dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 dark:text-transparent dark:via-purple-500 bg-clip-text ms-[300px] text-black">Hi, I'm</span> 
+            <div className="mb-2 sm:mb-4">
+              <span className="text-sm sm:text-base text-cyan-500 dark:text-cyan-300 font-medium">
+                Hi, I'm
+              </span>
             </div>
-            <div>
-                <span className="dark:text-cyan-500 text-gray-600 ms-[120px]">Niyomugabo Etiene</span>
-            </div>
-          </motion.h1>
+            
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+              <span className="text-cyan-600 dark:text-cyan-400 block mb-2">
+                Niyomugabo
+              </span>
+              <span className="text-gray-800 dark:text-white">
+                Etiene
+              </span>
+            </h1>
+          </motion.div>
 
-          <div className="h-16 relative overflow-hidden ms-[270px]">
+          <div className="h-16 sm:h-20 relative overflow-hidden text-center lg:text-left">
             <AnimatePresence mode="wait">
               <motion.h2
                 key={currentTextIndex}
-                className="text-sm md:text-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 dark:text-transparent dark:via-purple-500 dark:bg-clip-text font-extrabold text-gray-600 "
+                className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text"
                 variants={textVariants}
                 initial="enter"
                 animate="center"
@@ -80,24 +86,27 @@ const Home = () => {
             </AnimatePresence>
           </div>
 
+          {/* Description */}
           <motion.p
-            className="dark:text-gray-300 text-black text-lg"
+            className="dark:text-gray-300 text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-center lg:text-left"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            I create beautiful, modern decentralized applications, decentralized exchanges, and responsive websites using React, 
-            Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional user experiences.
+            I create beautiful, modern decentralized applications, decentralized exchanges, 
+            and responsive websites using React, Tailwind CSS, Node.js, and Solidity. 
+            Passionate about crafting exceptional user experiences.
           </motion.p>
 
-          <div className="flex flex-wrap gap-4 pt-4 ms-[150px]">
+          {/* Buttons Section */}
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 sm:pt-8 justify-center lg:justify-start">
             <motion.a
               href="/projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 rounded-lg dark:text-white bg-gray-500 hover:bg-gray-600  font-semibold transition duration-300 text-center"
+              className="px-6 py-3 bg-cyan-500 dark:bg-cyan-600 hover:bg-cyan-600 dark:hover:bg-cyan-700 text-white rounded-lg font-semibold transition duration-300 text-center"
             >
-             <span className="text-center flex mt-1">View My Work </span> 
+              View My Work
             </motion.a>
 
             <motion.a
@@ -105,14 +114,15 @@ const Home = () => {
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 dark:bg-transparent border-2 text-gray-600 dark:border-cyan-600 dark:text-cyan-400 dark:hover:bg-cyan-600/20 rounded-lg font-semibold transition duration-300 flex items-center gap-2 border-gray-600"
+              className="px-6 py-3 bg-transparent border-2 border-cyan-500 text-cyan-600 dark:text-cyan-400 dark:border-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 rounded-lg font-semibold transition duration-300 flex items-center justify-center gap-2"
             >
               <FaFileDownload /> Download CV
             </motion.a>
           </div>
 
+          {/* Social Links */}
           <motion.div
-            className="flex gap-4 pt-8 ms-56"
+            className="flex gap-4 sm:gap-6 pt-6 sm:pt-8 justify-center lg:justify-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
@@ -121,38 +131,40 @@ const Home = () => {
               href="https://github.com/niyomugaboetiene"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300 hover:translate-y-1"
+              className="p-3 sm:p-4 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
+              aria-label="GitHub"
             >
-              <FaGithub className="text-white text-xl" />
+              <FaGithub className="text-white text-lg sm:text-xl" />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300 hover:translate-y-1"
+              className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
+              aria-label="LinkedIn"
             >
-              <FaLinkedin className="text-white text-xl" />
+              <FaLinkedin className="text-white text-lg sm:text-xl" />
             </a>
             <a
               href="https://wa.me/+250728184299"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300 hover:translate-y-1"
+              className="p-3 sm:p-4 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
+              aria-label="WhatsApp"
             >
-              <FaWhatsapp className="text-white text-xl" />
+              <FaWhatsapp className="text-white text-lg sm:text-xl" />
             </a>
             <a
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 hover:bg-blue-700 rounded-full transition duration-300 hover:translate-y-1"
+              className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-700 rounded-full transition duration-300 hover:translate-y-1 active:scale-95"
+              aria-label="Facebook"
             >
-              <FaFacebook className="text-white text-xl" />
+              <FaFacebook className="text-white text-lg sm:text-xl" />
             </a>
           </motion.div>
         </div>
-     </div>
-
       </div>
     </section>
   );

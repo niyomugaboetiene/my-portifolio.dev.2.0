@@ -36,31 +36,31 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900  dark:via-black dark:to-gray-900 px-4 py-12 bg-white flex items-center justify-center"
+      className="min-h-screen w-full dark:bg-gradient-to-b dark:from-gray-900 dark:via-black dark:to-gray-900 px-4 sm:px-6 py-8 sm:py-12 bg-white flex items-center justify-center"
     >
       <motion.div
-        className="max-w-6xl w-full dark:bg-gray-800/70 rounded-xl bg-white border-2 dark:border-none shadow-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8"
+        className="max-w-6xl w-full dark:bg-gray-800/70 rounded-xl bg-white border-2 dark:border-none shadow-lg p-6 sm:p-8 md:p-12 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       > 
         <div className="space-y-6">
           <motion.h2 
-            className="text-4xl font-bold text-cyan-500 mb-8"
+            className="text-3xl sm:text-4xl font-bold text-cyan-500 mb-6 sm:mb-8 text-center lg:text-left"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Get In <span className="dark:text-white text-gray-500">Touch</span>
+            Get In <span className="dark:text-white text-gray-800">Touch</span>
           </motion.h2>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <label htmlFor="name" className="block mb-2 font-medium dark:text-gray-300 text-gray-500">
+              <label htmlFor="name" className="block mb-2 font-medium dark:text-gray-300 text-gray-600">
                 Your Name
               </label>
               <input 
@@ -81,7 +81,7 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <label htmlFor="email" className="block mb-2 font-medium dark:text-gray-300 text-gray-500">
+              <label htmlFor="email" className="block mb-2 font-medium dark:text-gray-300 text-gray-600">
                 Your Email
               </label>
               <input 
@@ -102,7 +102,7 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6 }}
             >
-              <label htmlFor="message" className="block mb-2 font-medium dark:text-gray-300 text-gray-500">
+              <label htmlFor="message" className="block mb-2 font-medium dark:text-gray-300 text-gray-600">
                 Your Message
               </label>
               <textarea 
@@ -110,9 +110,9 @@ const Contact = () => {
                 id="message" 
                 value={formData.message}
                 onChange={handleChange}
-                rows="5"
+                rows="4"
                 required
-                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80  dark:text-white text-black border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300"
+                className="w-full px-4 py-3 rounded-lg dark:bg-gray-900/80 dark:text-white text-black border dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition duration-300 resize-none"
                 placeholder="Write your message here..."
                 disabled={isSubmitting}
               />
@@ -121,7 +121,7 @@ const Contact = () => {
             <motion.button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 rounded-lg  font-semibold shadow-lg bg-gray-500 hover:bg-gray-600 transition duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 bg-gray-700 hover:bg-gray-800 rounded-lg font-semibold text-white shadow-lg transition duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
@@ -159,7 +159,7 @@ const Contact = () => {
             
             {submitStatus === "success" && (
               <motion.div
-                className="dark:bg-green-900/50 text-green-100 rounded-lg p-3 text-center mt-4 font-medium bg-green-500"
+                className="dark:bg-green-900/50 bg-green-100 text-green-800 dark:text-green-100 rounded-lg p-3 text-center mt-4 font-medium"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -170,7 +170,7 @@ const Contact = () => {
 
             {submitStatus === "error" && (
               <motion.div
-                className="bg-red-900/50 text-red-100 rounded-lg p-3 text-center mt-4 font-medium"
+                className="bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-100 rounded-lg p-3 text-center mt-4 font-medium"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -181,87 +181,87 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center lg:pl-8">
           <motion.h2 
-            className="text-4xl font-bold text-cyan-500 mb-8 "
+            className="text-3xl sm:text-4xl font-bold text-cyan-500 mb-6 sm:mb-8 text-center lg:text-left"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Contact <span className="dark:text-white text-gray-500">Info</span>
+            Contact <span className="dark:text-white text-gray-800">Info</span>
           </motion.h2>
 
           <motion.div 
-            className="space-y-6"
+            className="space-y-5 sm:space-y-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <div className="flex items-start space-x-4">
-              <div className="p-3 bg-cyan-600/20 rounded-full">
-                <FaMapMarkerAlt className="text-cyan-400 text-xl" />
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="p-2 sm:p-3 bg-cyan-600/20 rounded-full flex-shrink-0">
+                <FaMapMarkerAlt className="text-cyan-400 text-lg sm:text-xl" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold dark:text-white text-gray-500 mb-1">Location</h3>
-                <p className="dark:text-gray-300 text-gray-500">Bugesera, Rwanda</p>
+                <h3 className="text-lg sm:text-xl font-semibold dark:text-white text-gray-800 mb-1">Location</h3>
+                <p className="dark:text-gray-300 text-gray-600 text-sm sm:text-base">Bugesera, Rwanda</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="p-3 bg-cyan-600/20 rounded-full">
-                <FaEnvelope className="text-cyan-400 text-xl" />
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="p-2 sm:p-3 bg-cyan-600/20 rounded-full flex-shrink-0">
+                <FaEnvelope className="text-cyan-400 text-lg sm:text-xl" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold dark:text-white text-gray-500 mb-1">Email</h3>
-                <p className="dark:text-gray-300 text-gray-500">niyomugaboetiene53@gmail.com</p>
+                <h3 className="text-lg sm:text-xl font-semibold dark:text-white text-gray-800 mb-1">Email</h3>
+                <p className="dark:text-gray-300 text-gray-600 text-sm sm:text-base break-all">niyomugaboetiene53@gmail.com</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="p-3 bg-cyan-600/20 rounded-full">
-                <FaPhoneAlt className="text-cyan-400 text-xl" />
+            <div className="flex items-start space-x-3 sm:space-x-4">
+              <div className="p-2 sm:p-3 bg-cyan-600/20 rounded-full flex-shrink-0">
+                <FaPhoneAlt className="text-cyan-400 text-lg sm:text-xl" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold dark:text-white text-gray-500 mb-1">Phone</h3>
-                <p className="dark:text-gray-300 text-gray-500">+250 796 878 992</p>
+                <h3 className="text-lg sm:text-xl font-semibold dark:text-white text-gray-800 mb-1">Phone</h3>
+                <p className="dark:text-gray-300 text-gray-600 text-sm sm:text-base">+250 796 878 992</p>
               </div>
             </div>
           </motion.div>
 
           <motion.div 
-            className="mt-12"
+            className="mt-8 sm:mt-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            <h3 className="text-xl font-semibold dark:text-cyan-500 mb-4 text-gray-500">Connect With Me</h3>
-            <div className="flex space-x-4">
+            <h3 className="text-lg sm:text-xl font-semibold dark:text-cyan-400 text-cyan-500 mb-3 sm:mb-4">Connect With Me</h3>
+            <div className="flex space-x-3 sm:space-x-4">
               <a 
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700 hover:bg-blue-600 rounded-full transition duration-300"
+                className="p-2 sm:p-3 bg-gray-700 hover:bg-blue-600 rounded-full transition duration-300 flex items-center justify-center"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin className="text-white text-xl" />
+                <FaLinkedin className="text-white text-base sm:text-xl" />
               </a>
               <a 
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700 hover:bg-black rounded-full transition duration-300"
+                className="p-2 sm:p-3 bg-gray-700 hover:bg-gray-900 rounded-full transition duration-300 flex items-center justify-center"
                 aria-label="GitHub"
               >
-                <FaGithub className="text-white text-xl" />
+                <FaGithub className="text-white text-base sm:text-xl" />
               </a>
               <a 
                 href="https://wa.me/+250728184299" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-700 hover:bg-green-600 rounded-full transition duration-300"
-                aria-label="GitHub"
+                className="p-2 sm:p-3 bg-gray-700 hover:bg-green-600 rounded-full transition duration-300 flex items-center justify-center"
+                aria-label="WhatsApp"
               >
-                <FaWhatsapp className="text-white text-xl" />
+                <FaWhatsapp className="text-white text-base sm:text-xl" />
               </a>
             </div>
           </motion.div>
