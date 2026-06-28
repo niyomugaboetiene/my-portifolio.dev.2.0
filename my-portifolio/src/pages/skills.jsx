@@ -99,11 +99,11 @@ const Skills = () => {
       items: [
         { icon: <FaGitAlt className="text-orange-600" />, name: "Git", level: 100, gradient: "from-blue-500 to-orange-500" },
         { icon: <FaGithub className="text-white" />, name: "GitHub", level: 90, gradient: "from-yellow-500 to-purple-500" },
-        { icon: <FaGitlab className="text-orange-400" />, name: "GitLab", level: 90, gradient: "from-yellow-500 to-purple-500" },
+        { icon: <FaGitlab className="text-orange-400" />, name: "GitLab", level: 50, gradient: "from-yellow-500 to-purple-500" },
         { icon: <VSCodeIcon className="text-blue-500" />, name: "VS Code", level: 100, gradient: "from-orange-500 to-green-500" },
         { icon: <SiPostman className="text-orange-400" />, name: "Postman", level: 100, gradient: "from-purple-500 to-orange-500" },
         { icon: <SiInsomnia className="text-blue-400" />, name: "Insomania", level: 80, gradient: "from-purple-500 to-orange-500" },
-        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 100 , gradient: "from-yellow-500 to-red-500" },
+        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 70 , gradient: "from-yellow-500 to-red-500" },
       ]
     },
     
