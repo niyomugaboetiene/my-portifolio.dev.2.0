@@ -11,6 +11,11 @@ import {
     SiReact,
     SiEthers,
     SiSolidity,
+    SiFlask,
+    SiJupyter,
+    SiPython,
+    SiOpencv,
+    SiPostgresql,
 } from "react-icons/si";
 
 import studentIllustration from "../assets/student.png";
@@ -22,6 +27,9 @@ import HouseSellImage from "../assets/housesell.png";
 import ShopShere from "../assets/shopshere.png";
 import NetMovies from "../assets/netmovie.png";
 import myPortfolio from "../assets/portfolio.png";
+import face from "../assets/face.png";
+import Rwanda from "../assets/Rwanda.png";
+import india from "../assets/india.png";
 
 const Projects = () => {
     const [isHovered, setIsHovered] = useState(null);
@@ -35,6 +43,51 @@ const Projects = () => {
             ],
             description: "A socket.io based chat application with real-time messaging, user authentication and message history.",
             illustration: ChatApp,
+            code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
+            demo: "#"
+        },
+        
+        { 
+            title: "Bengaluru Real Estate Price Prediction",
+            tech: [
+                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
+                { icon: <SiFlask className="text-gray-500" />, name: "Flask", hover: "hover:bg-green-600" },
+                { icon: <SiJupyter className="text-green-500" />, name: "Notebook", hover: "hover:bg-green-600" },
+                { icon: <FaDatabase className="text-yellow-500" />, name: "MySQL", hover: "hover:bg-yellow-600" },
+            ],
+            description: "Bengaluru Real Estate Price Prediction is AI based application with user friendly which predict the house price based on several features in India ",
+            illustration: india,
+            code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
+            demo: "https://price-predictor-peals.vercel.app"
+        },
+        
+        { 
+            title: "Rwanda Credit Denaial Predictor",
+            tech: [
+                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
+                { icon: <SiFlask className="text-gray-500" />, name: "Flask", hover: "hover:bg-green-600" },
+                { icon: <SiJupyter className="text-orange-500" />, name: "Notebook", hover: "hover:bg-green-600" },
+                { icon: <SiPython className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600" },
+                { icon: <FaDatabase className="text-green-500" />, name: "MongoDB", hover: "hover:bg-yellow-600" },
+            ],
+            description: "Rwanda Credit Denaial Predictor is ML Based project which predict if a Rwandan Citizen is allowed to get credit or not based on different features.",
+            illustration: Rwanda,
+            code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
+            demo: "#"
+        },
+        
+        { 
+            title: "Face Recognation App",
+            tech: [
+                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
+                { icon: <SiFlask className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600" },
+                { icon: <SiPython className="text-green-500" />, name: "Python", hover: "hover:bg-green-600" },
+                { icon: <SiJupyter className="text-green-500" />, name: "Jupyter", hover: "hover:bg-green-600" },
+                { icon: <SiOpencv className="text-green-500" />, name: "OpenCV", hover: "hover:bg-green-600" },
+                { icon: <SiPostgresql className="text-yellow-500" />, name: "PostagreSQL", hover: "hover:bg-yellow-600" },
+            ],
+            description: "A socket.io based chat application with real-time messaging, user authentication and message history.",
+            illustration: face,
             code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
             demo: "#"
         },
@@ -172,7 +225,6 @@ const Projects = () => {
                     animate="visible"
                     className="w-full"
                 >
-                    {/* Header */}
                     <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-500 mb-3 sm:mb-4">
                             My <span className="dark:text-white text-gray-800">Projects</span>
@@ -183,7 +235,6 @@ const Projects = () => {
                         </p>
                     </motion.div>
 
-                    {/* Projects Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full auto-rows-auto">
                         {projects.map((project, index) => (
                             <motion.div
@@ -197,7 +248,6 @@ const Projects = () => {
                                 whileHover={{ y: -4 }}
                                 whileTap={{ scale: 0.98 }}
                             >
-                                {/* Image Container */}
                                 <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
                                     <img 
                                         src={project.illustration} 
@@ -206,7 +256,6 @@ const Projects = () => {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-300"></div>
                                     
-                                    {/* Action Buttons - Always visible on mobile, hover on desktop */}
                                     <div className="absolute top-3 right-3 flex gap-2">
                                         <a 
                                             href={project.code}
@@ -231,14 +280,12 @@ const Projects = () => {
                                     </div>
                                 </div>
 
-                                {/* Content Container */}
                                 <div className="p-4 sm:p-6 flex flex-col flex-grow">
                                     <div className="flex-grow">
                                         <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-2 sm:mb-3 group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors duration-300 line-clamp-1">
                                             {project.title}
                                         </h3>
 
-                                        {/* Tech Stack */}
                                         <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                                             {project.tech.map((tech, i) => (
                                                 <span 
@@ -251,13 +298,11 @@ const Projects = () => {
                                             ))}
                                         </div>
 
-                                        {/* Description */}
                                         <p className="text-gray-600 dark:text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed line-clamp-3">
                                             {project.description}
                                         </p>
                                     </div>
                                   
-                                    {/* Footer Links - Visible on mobile, hidden on desktop (buttons moved to image) */}
                                     <div className="flex gap-3 pt-3 sm:pt-4 border-t border-gray-200 dark:border-gray-700 sm:hidden">
                                         <a 
                                             href={project.code}
@@ -285,13 +330,12 @@ const Projects = () => {
                         ))}
                     </div>
 
-                    {/* Footer */}
                     <motion.div 
                         variants={itemVariants}
                         className="text-center mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200 dark:border-gray-800"
                     >
                         <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-                            More projects and ongoing work available on{" "}
+                            Total <span className="text-cyan-500 font-bold">{projects.length}</span> projects. More and ongoing work available on{" "}
                             <a 
                                 href="https://github.com/niyomugaboetiene" 
                                 target="_blank" 

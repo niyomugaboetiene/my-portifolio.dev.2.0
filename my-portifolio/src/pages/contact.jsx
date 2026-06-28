@@ -246,7 +246,7 @@ const Contact = () => {
                 <FaLinkedin className="text-white text-base sm:text-xl" />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/niyomugaboetiene" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 sm:p-3 bg-gray-700 hover:bg-gray-900 rounded-full transition duration-300 flex items-center justify-center"

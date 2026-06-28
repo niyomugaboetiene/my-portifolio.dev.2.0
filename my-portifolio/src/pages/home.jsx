@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFileDownload, FaWhatsapp, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileDownload, FaWhatsapp, FaFacebook, FaEye } from "react-icons/fa";
 import background from "../../public/background.jpg";
 
 const Home = () => {
@@ -90,18 +90,18 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              I create beautiful, modern decentralized applications, decentralized exchanges, and responsive websites using React, 
-              Tailwind CSS, Node.js, and Solidity. Passionate about crafting exceptional user experiences.
+              I create beautiful, modern decentralized applications, AI based Application, ML-Based Appication, and responsive websites using 
+              modern Technologies. With objective of solving real-world problem using codes.
             </motion.p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
               <motion.a
-                href="/projects"
+                href="/projects"  
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 bg-cyan-500 hover:bg-cyan-600 rounded-lg text-white font-semibold transition duration-300 text-center"
+                className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 bg-cyan-500 hover:bg-cyan-600 rounded-lg text-white font-semibold transition duration-300 flex justify-center items-center gap-2"
               >
-                View My Work
+                <FaEye /> View My Work
               </motion.a>
 
               <motion.a

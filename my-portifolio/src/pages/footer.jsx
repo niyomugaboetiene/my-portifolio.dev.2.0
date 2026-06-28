@@ -17,7 +17,7 @@ function Footer() {
                 <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-gray-200 dark:border-gray-700">
                     <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 sm:gap-6">
                         <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-                            v1.0.0 • Last updated: 31/12/2025 - 18:27 PM
+                            v1.0.0 • Last updated: 11 June 2026 - 15:59 PM
                         </p>
                         
                         <div className="flex items-center justify-center gap-4 sm:gap-6">
