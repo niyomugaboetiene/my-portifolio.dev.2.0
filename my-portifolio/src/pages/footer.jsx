@@ -10,7 +10,7 @@ function Footer() {
                     </p>
                     
                     <p className="text-sm sm:text-base text-cyan-500 dark:text-cyan-400 font-semibold text-center sm:text-right order-1 sm:order-2">
-                        Built with ❤️ using React & Tailwind CSS
+                          Built with ❤️ and  ☕ using React & Tailwind CSS
                     </p>
                 </div>
                 
