@@ -58,7 +58,7 @@ const Projects = () => {
             description: "Bengaluru Real Estate Price Prediction is AI based application with user friendly which predict the house price based on several features in India ",
             illustration: india,
             code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
-            demo: "https://price-predictor-peals.vercel.app"
+            demo: "https://predictor-pearl.vercel.app"
         },
         
         { 

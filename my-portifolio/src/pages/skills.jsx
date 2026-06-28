@@ -117,9 +117,9 @@ const Skills = () => {
     {
        name: "Mobile Apps and PWA",
        items: [
-              { name: "Flutter", icon: <SiFlutter className="text-cyan-400" />, level: 20, gradient: "from-sky-500 to-white" },
+              { name: "Flutter", icon: <SiFlutter className="text-cyan-400" />, level: 80, gradient: "from-sky-500 to-white" },
               { name: "React native", icon: <SiReact className="text-cyan-400" />, level: 70, gradient: "from-blue-500 to-red-500" },
-              { name: "Swift UI", icon: <SiSwift className="text-green-400" />, level: 70, gradient: "from-blue-500 to-red-500" },
+              { name: "Swift UI", icon: <SiSwift className="text-green-400" />, level: 50, gradient: "from-blue-500 to-red-500" },
        ]
     },
     {
