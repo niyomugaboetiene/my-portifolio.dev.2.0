@@ -20,7 +20,7 @@ const Home = () => {
     "Full Stack Specialist",
     "Cyber security Specialist",
     "Defensive & Offsensive Security",
-    "Ethical Hacker"
+    "Youtuber"
   ];
 
   useEffect(() => {
