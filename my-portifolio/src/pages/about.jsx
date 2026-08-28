@@ -107,22 +107,22 @@ const About = () => {
                 <span className="text-gray-500 dark:text-white">Based in Rwanda, open to remote opportunities</span>
               </motion.li>
             </ul>
-<motion.div
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  viewport={{ once: true }}
-  transition={{ delay: 1 }}
->
-  <a href="#projects">
-    <button className="mt-8 px-8 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white rounded-lg text-lg font-medium shadow-lg dark:hover:shadow-cyan-500/20 transition-all bg-gray-500 duration-300 hover:scale-105 flex justify-center items-center gap-2">
-           <FaEye />  View My Projects
-                   </button>
-                </a>
-              </motion.div>
-          </motion.div>
-          <hr  className="relative -bottom-24 border-2 text-gray-500 dark:border-none"/>
-          <hr  className="relative -bottom-[2400px] border-2 text-gray-500 dark:border-none"/>
-        </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1 }}
+            >
+          <a href="#projects">
+            <button className="mt-8 px-8 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white rounded-lg text-lg font-medium shadow-lg dark:hover:shadow-cyan-500/20 transition-all bg-gray-500 duration-300 hover:scale-105 flex justify-center items-center gap-2">
+                  <FaEye />  View My Projects
+                          </button>
+                        </a>
+                      </motion.div>
+                  </motion.div>
+                  <hr  className="relative -bottom-24 border-2 text-gray-500 dark:border-none"/>
+                  <hr  className="relative -bottom-[2400px] border-2 text-gray-500 dark:border-none"/>
+                </motion.div>
         
       </div>
     </section>
