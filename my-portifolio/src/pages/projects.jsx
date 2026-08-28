@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaDatabase, FaEye, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaDatabase, FaEye } from "react-icons/fa";
 import {
     SiNodedotjs,
     SiMongodb,
     SiTailwindcss,
     SiTypescript,
-    SiNextdotjs,
     SiPhp,
     SiReact,
     SiEthers,
