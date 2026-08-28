@@ -62,7 +62,6 @@ const NavBar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      // Set active section
       const scrollPos = window.scrollY + window.innerHeight / 3;
 
       navItems.forEach(item => {
@@ -77,7 +76,7 @@ const NavBar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -99,7 +98,6 @@ const NavBar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Logo/Avatar */}
           <motion.a
             href="#home"
             whileHover={{ scale: 1.05 }}
@@ -117,7 +115,6 @@ const NavBar = () => {
             </span>
           </motion.a>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1 ml-auto">
             {navItems.map(item => (
               <a
@@ -135,7 +132,6 @@ const NavBar = () => {
               </a>
             ))}
             
-            {/* Theme Toggle */}
             <motion.button
               onClick={toggleTheme}
               whileHover={{ scale: 1.1 }}
@@ -151,7 +147,6 @@ const NavBar = () => {
             </motion.button>
           </div>
 
-          {/* Mobile Menu Button */}
           <motion.button
             className="lg:hidden text-gray-600 dark:text-gray-300 hover:text-cyan-500 dark:hover:text-cyan-400 p-2 rounded-lg"
             whileHover={{ scale: 1.1 }}
