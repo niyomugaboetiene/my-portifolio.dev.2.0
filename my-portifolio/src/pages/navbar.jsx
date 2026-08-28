@@ -27,7 +27,6 @@ const NavBar = () => {
     { name: "Contact", target: "contact", icon: <FaEnvelope /> },
   ];
 
-  // Handle theme
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "dark";
     const html = document.documentElement;
@@ -59,10 +58,8 @@ const NavBar = () => {
     }
   };
 
-  // Handle scroll for active section and background
   useEffect(() => {
     const handleScroll = () => {
-      // Set scrolled state for background opacity
       setScrolled(window.scrollY > 20);
 
       // Set active section
