@@ -26,7 +26,7 @@ import HouseSellImage from "../assets/housesell.png";
 import ShopShere from "../assets/shopshere.png";
 import NetMovies from "../assets/netmovie.png";
 import myPortfolio from "../assets/portfolio.png";
-import face from "../assets/face.png";
+import face from "../assets/face-recognaton.png";
 import Rwanda from "../assets/Rwanda.png";
 import india from "../assets/india.png";
 

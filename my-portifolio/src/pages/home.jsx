@@ -96,7 +96,7 @@ const Home = () => {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
               <motion.a
-                href="/projects"  
+                href="/#projects"  
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 bg-cyan-500 hover:bg-cyan-600 rounded-lg text-white font-semibold transition duration-300 flex justify-center items-center gap-2"

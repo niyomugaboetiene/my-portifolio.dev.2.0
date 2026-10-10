@@ -106,6 +106,16 @@ const About = () => {
                 <span className="text-cyan-400 mr-2">▹</span>
                 <span className="text-gray-500 dark:text-white">Based in Rwanda, open to remote opportunities</span>
               </motion.li>
+              <motion.li 
+                className="flex items-start"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.8 }}
+              >
+                <span className="text-cyan-400 mr-2">▹</span>
+                <span className="text-gray-500 dark:text-white">Founder & CEO of <a href="https://codeexplorerrwanda.netlify.app" className="text-cyan-400 hover:text-cyan-500 transition-colors hover:underline">Code Explorer Rwanda Ltd</a></span>
+              </motion.li>
             </ul>
             <motion.div
               initial={{ opacity: 0 }}
