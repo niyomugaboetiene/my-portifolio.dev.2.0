@@ -35,6 +35,7 @@ import india from "../assets/india.png";
 
 const Projects = () => {
     const [isHovered, setIsHovered] = useState(null);
+
     const projects = [
         { 
             title: "Real-Time Chat Application",
@@ -59,7 +60,7 @@ const Projects = () => {
             ],
             description: "Bengaluru Real Estate Price Prediction is AI based application with user friendly which predict the house price based on several features in India ",
             illustration: india,
-            code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
+            code: "https://github.com/niyomugaboetiene/ML.projects.io/tree/main/Data%20Science%20Project/Real%20Estate%20Price%20prediction",
             demo: "https://predictor-pearl.vercel.app"
         },
         
@@ -74,7 +75,7 @@ const Projects = () => {
                 { icon: <SiPostgresql className="text-yellow-500" />, name: "PostagreSQL", hover: "hover:bg-yellow-600" },
             ],
             description: "AI-powered Face Recognition System with image classification, facial feature detection, and real-time identity verification.",            illustration: face,
-            code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
+            code: "https://github.com/niyomugaboetiene/Kairos.AI",
             demo: "https://kairos-ai-web.vercel.app"
         },
         
@@ -89,8 +90,8 @@ const Projects = () => {
                 { icon: <SiKeras className="text-green-500" />, name: "Keras", hover: "hover:bg-green-600" },
                 { icon: <SiPostgresql className="text-yellow-500" />, name: "PostagreSQL", hover: "hover:bg-yellow-600" },
             ],
-            description: "AI-powered Potato Disease Detection System that identifies potato leaf diseases and provides instant prediction results using machine learning.",
-            illustration: leaf,
+            description: "AI-powered Potato Disease Detection System that identifies potato leaf diseases and provides instant prediction results using deep learning.",
+            illustration: face,
             code: "https://github.com/niyomugaboetiene/TeraScan.AI",
             demo: "https://terascan-ai.vercel.app"
         },
@@ -114,9 +115,10 @@ const Projects = () => {
                 {icon: <SiTailwindcss className="text-blue-400"/>, name: "Tailwindcss", hover:"hover:bg-blue-600" },
                 {icon: <FaDatabase className="text-yellow-600"/>, name: "MySQL", hover:"hover:bg-green-600" },
             ],
-            description: "Gikonko TSS Management System for managing students, teachers, classes, academic records, and school activities.",            illustration: studentIllustration,
+            description: "Gikonko TSS Management System for managing students, teachers, classes, academic records, and school activities.",
+            illustration: studentIllustration,
             code: "https://github.com/niyomugaboetiene/Gikonko-Tss-Managment-system",
-            demo: "https://gikonko-tss-ms.vercel.app/"
+            demo: "https://gikonko-tss-ms.vercel.app"
         },
         {
             title: "Portfolio Website",
