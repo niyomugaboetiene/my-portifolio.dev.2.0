@@ -70,8 +70,7 @@ const Projects = () => {
                 { icon: <SiOpencv className="text-green-500" />, name: "OpenCV", hover: "hover:bg-green-600" },
                 { icon: <SiPostgresql className="text-yellow-500" />, name: "PostagreSQL", hover: "hover:bg-yellow-600" },
             ],
-            description: "A socket.io based chat application with real-time messaging, user authentication and message history.",
-            illustration: face,
+            description: "AI-powered Face Recognition System with image classification, facial feature detection, and real-time identity verification.",            illustration: face,
             code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
             demo: "https://kairos-ai-web.vercel.app"
         },
@@ -146,7 +145,7 @@ const Projects = () => {
             ],
             description: "A modern E-commerce app where you can buy and sell goods with admin portal to manage goods and customers to view and buy goods",
             illustration: ShopShere,
-            code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
+            code: "https://github.com/niyomugaboetiene/shp-shpere-app",
             demo: "https://shp-shpere.vercel.app"
         },
         {
@@ -157,9 +156,9 @@ const Projects = () => {
                 {icon: <SiTailwindcss className="text-cyan-500"/>, name: "Tailwindcss", hover:"hover:bg-cyan-600" },
                 {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600" },
             ],
-            description: "A modern E-commerce app for buying, renting and selling houses with three user types: Admin with full privileges, Seller (Landlord) and Customer",
+            description: "A modern House commerce app for buying, renting and selling houses with three user types: Admin with full privileges, Seller (Landlord) and Customer",
             illustration: HouseSellImage,
-            code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
+            code: "https://github.com/niyomugaboetiene/house-sell-app",
             demo: "https://homezfinder.vercel.app"
         },
     ];
