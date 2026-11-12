@@ -52,25 +52,25 @@ const Skills = () => {
       items: [
         { icon: <FaHtml5 className="text-orange-500" />, name: "HTML5", level: 100, gradient: "from-blue-500 to-cyan-300" },
         { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3", level: 100, gradient: "from-indigo-500 to-purple-500" },
-        { icon: <FaJs className="text-yellow-400" />, name: "JavaScript", level: 85, gradient: "from-green-500 to-blue-500" },
+        { icon: <FaJs className="text-yellow-400" />, name: "JavaScript", level: 100, gradient: "from-green-500 to-blue-500" },
         { icon: <FaReact className="text-cyan-400" />, name: "React", level: 100, gradient: "from-red-500 to-sky-500" },
-        { icon: <FaBootstrap className="text-purple-500" />, name: "Bootstrap", level: 75 , gradient: "from-orange-500 to-yellow-500" },
-        { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", level: 90, gradient: "from-blue-500 to-yellow-500" },
-        { icon: <SiEthers className="text-green-300" />, name: "Ethers", level: 50, gradient: "from-indigo-500 to-zinc-500" },
+        { icon: <FaBootstrap className="text-purple-500" />, name: "Bootstrap", level: 100, gradient: "from-orange-500 to-yellow-500" },
+        { icon: <SiTailwindcss className="text-cyan-300" />, name: "Tailwind", level: 100, gradient: "from-blue-500 to-yellow-500" },
+        { icon: <SiEthers className="text-green-300" />, name: "Ethers", level: 60, gradient: "from-indigo-500 to-zinc-500" },
       ]
     },
     {
       name: "Backend",
       items: [
-        { icon: <FaNodeJs className="text-green-500" />, name: "Node.js", level: 90,gradient: "from-purple-500 to-red-500" },
-        { icon: <SiExpress className="text-gray-300" />, name: "Express", level: 100 , gradient: "from-green-500 to-purple-500", },
-        { icon: <SiFlask className="text-gray-300" />, name: "Flask", level: 50, gradient: "from-red-500 to-sky-500" },
-        { icon: <FaPython className="text-blue-400" />, name: "Python", level: 60, gradient: "from-emerald-500 to-orange-500" },
-        { icon: <SiDjango className="text-emerald-800" />, name: "Django", level: 30, gradient: "from-indigo-500 to-purple-500" },
-        { icon: <FaPhp className="text-indigo-500" />, name: "PHP", level: 80 , gradient: "from-orange-500 to-red-500" },
-        { icon: <SiLaravel className="text-red-600" />, name: "Laravel", level: 30, gradient: "from-red-600 to-purple-500" },
-        { icon: <SiSolidity className="text-blue-500" />, name: "Solidity", level: 50, gradient: "from-blue-500 to-purple-500" },
-        { name: "Dart", icon: <DartIcon className="text-cyan-400" />, level: 70, gradient: "from-blue-500 to-red-500" },
+        { icon: <FaNodeJs className="text-green-500" />, name: "Node.js", level: 100,gradient: "from-purple-500 to-red-500" },
+        { icon: <SiExpress className="text-gray-300" />, name: "Express", level: 100, gradient: "from-green-500 to-purple-500", },
+        { icon: <SiFlask className="text-gray-300" />, name: "Flask", level: 100, gradient: "from-red-500 to-sky-500" },
+        { icon: <FaPython className="text-blue-400" />, name: "Python", level: 90, gradient: "from-emerald-500 to-orange-500" },
+        { icon: <SiDjango className="text-emerald-800" />, name: "Django", level: 60, gradient: "from-indigo-500 to-purple-500" },
+        { icon: <FaPhp className="text-indigo-500" />, name: "PHP", level: 90, gradient: "from-orange-500 to-red-500" },
+        { icon: <SiLaravel className="text-red-600" />, name: "Laravel", level: 60, gradient: "from-red-600 to-purple-500" },
+        { icon: <SiSolidity className="text-blue-500" />, name: "Solidity", level: 60, gradient: "from-blue-500 to-purple-500" },
+        { name: "Dart", icon: <DartIcon className="text-cyan-400" />, level: 90, gradient: "from-blue-500 to-red-500" },
 
       ]
     },
@@ -78,12 +78,12 @@ const Skills = () => {
     {
       name: "ML & DL",
       items: [
-        { icon: <SiJupyter className="text-orange-400" />, name: "Jupyter notebook", level: 70,gradient: "from-purple-500 to-red-500" },
-        { icon: <FaPython className="text-blue-500" />, name: "Python", level: 60 , gradient: "from-green-500 to-purple-500", },
+        { icon: <SiJupyter className="text-orange-400" />, name: "Jupyter notebook", level: 95, gradient: "from-purple-500 to-red-500" },
+        { icon: <FaPython className="text-blue-500" />, name: "Python", level: 90 , gradient: "from-green-500 to-purple-500", },
         { icon: <SiFlask className="text-gray-300" />, name: "Flask", level: 90, gradient: "from-red-500 to-sky-500" },
-        { icon: <SiDjango className="text-emerald-800" />, name: "Django", level: 30, gradient: "from-indigo-500 to-purple-500" },
-        { icon: <FaIcons className="text-emerald-800" />, name: "TensorFlow", level: 30, gradient: "from-indigo-500 to-purple-500" },
-        { icon: <FaPython className="text-blue-400" />, name: "PyTorch", level: 40, gradient: "from-indigo-500 to-purple-500" },
+        { icon: <SiDjango className="text-emerald-800" />, name: "Django", level: 60, gradient: "from-indigo-500 to-purple-500" },
+        { icon: <FaIcons className="text-emerald-800" />, name: "TensorFlow", level: 80, gradient: "from-indigo-500 to-purple-500" },
+        { icon: <FaPython className="text-blue-400" />, name: "PyTorch", level: 90, gradient: "from-indigo-500 to-purple-500" },
       ]
     },
     {
@@ -99,11 +99,11 @@ const Skills = () => {
       items: [
         { icon: <FaGitAlt className="text-orange-600" />, name: "Git", level: 100, gradient: "from-blue-500 to-orange-500" },
         { icon: <FaGithub className="text-white" />, name: "GitHub", level: 90, gradient: "from-yellow-500 to-purple-500" },
-        { icon: <FaGitlab className="text-orange-400" />, name: "GitLab", level: 50, gradient: "from-yellow-500 to-purple-500" },
+        { icon: <FaGitlab className="text-orange-400" />, name: "GitLab", level: 60, gradient: "from-yellow-500 to-purple-500" },
         { icon: <VSCodeIcon className="text-blue-500" />, name: "VS Code", level: 100, gradient: "from-orange-500 to-green-500" },
         { icon: <SiPostman className="text-orange-400" />, name: "Postman", level: 100, gradient: "from-purple-500 to-orange-500" },
         { icon: <SiInsomnia className="text-blue-400" />, name: "Insomania", level: 80, gradient: "from-purple-500 to-orange-500" },
-        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 70 , gradient: "from-yellow-500 to-red-500" },
+        { icon: <SiRemix className="text-cyan-500" />, name: "Remix IDE", level: 80 , gradient: "from-yellow-500 to-red-500" },
       ]
     },
     
@@ -117,9 +117,9 @@ const Skills = () => {
     {
        name: "Mobile Apps and PWA",
        items: [
-              { name: "Flutter", icon: <SiFlutter className="text-cyan-400" />, level: 80, gradient: "from-sky-500 to-white" },
-              { name: "React native", icon: <SiReact className="text-cyan-400" />, level: 70, gradient: "from-blue-500 to-red-500" },
-              { name: "Swift UI", icon: <SiSwift className="text-green-400" />, level: 50, gradient: "from-blue-500 to-red-500" },
+              { name: "Flutter", icon: <SiFlutter className="text-cyan-400" />, level: 90, gradient: "from-sky-500 to-white" },
+              { name: "React native", icon: <SiReact className="text-cyan-400" />, level: 100, gradient: "from-blue-500 to-red-500" },
+              { name: "Swift UI", icon: <SiSwift className="text-green-400" />, level: 60, gradient: "from-blue-500 to-red-500" },
        ]
     },
     {
@@ -131,7 +131,7 @@ const Skills = () => {
         { name: "Multer", icon: <FaFileUpload className="text-blue-400" />, level: 100, gradient: "from-blue-500 to-amber-500" },
         { name: "Auth", icon: <FaUserShield className="text-green-400" />, level: 100, gradient: "from-orange-500 to-blue-500" },
         { name: "Passport", icon: <FaPassport className="text-cyan-400" />, level: 100, gradient: "from-red-500 to-purple-500" },
-        { name: "Material UI", icon: <FaPassport className="text-cyan-400" />, level: 55, gradient: "from-purple-500 to-red-500" },
+        { name: "Material UI", icon: <FaPassport className="text-cyan-400" />, level: 70, gradient: "from-purple-500 to-red-500" },
       ]
     }
   ];
