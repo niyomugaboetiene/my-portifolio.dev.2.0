@@ -15,6 +15,9 @@ import {
     SiPython,
     SiOpencv,
     SiPostgresql,
+    SiFastapi,
+    SiTensorflow,
+    SiKeras,
 } from "react-icons/si";
 
 import studentIllustration from "../assets/student.png";
@@ -47,7 +50,7 @@ const Projects = () => {
         },
         
         { 
-            title: "Estate Proce Predictor",
+            title: "Estate Price Predictor",
             tech: [
                 { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
                 { icon: <SiFlask className="text-gray-500" />, name: "Flask", hover: "hover:bg-green-600" },
@@ -73,6 +76,23 @@ const Projects = () => {
             description: "AI-powered Face Recognition System with image classification, facial feature detection, and real-time identity verification.",            illustration: face,
             code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
             demo: "https://kairos-ai-web.vercel.app"
+        },
+        
+        { 
+            title: "TeraScan AI",
+            tech: [
+                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
+                { icon: <SiFastapi className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600" },
+                { icon: <SiPython className="text-green-500" />, name: "Python", hover: "hover:bg-green-600" },
+                { icon: <SiJupyter className="text-green-500" />, name: "Jupyter", hover: "hover:bg-green-600" },
+                { icon: <SiTensorflow className="text-yellow-500" />, name: "Tensorflow", hover: "hover:bg-green-600" },
+                { icon: <SiKeras className="text-green-500" />, name: "Keras", hover: "hover:bg-green-600" },
+                { icon: <SiPostgresql className="text-yellow-500" />, name: "PostagreSQL", hover: "hover:bg-yellow-600" },
+            ],
+            description: "AI-powered Potato Disease Detection System that identifies potato leaf diseases and provides instant prediction results using machine learning.",
+            illustration: leaf,
+            code: "https://github.com/niyomugaboetiene/TeraScan.AI",
+            demo: "https://terascan-ai.vercel.app"
         },
         { 
             title: "Krypto-site-3.0 App",
