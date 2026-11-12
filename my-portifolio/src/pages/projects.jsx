@@ -43,11 +43,11 @@ const Projects = () => {
             description: "A socket.io based chat application with real-time messaging, user authentication and message history.",
             illustration: ChatApp,
             code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
-            demo: "#"
+            demo: "https://school-chat-web.vercel.app"
         },
         
         { 
-            title: "Bengaluru Real Estate Price Prediction",
+            title: "Estate Proce Predictor",
             tech: [
                 { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
                 { icon: <SiFlask className="text-gray-500" />, name: "Flask", hover: "hover:bg-green-600" },
@@ -61,22 +61,7 @@ const Projects = () => {
         },
         
         { 
-            title: "Rwanda Credit Denaial Predictor",
-            tech: [
-                { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
-                { icon: <SiFlask className="text-gray-500" />, name: "Flask", hover: "hover:bg-green-600" },
-                { icon: <SiJupyter className="text-orange-500" />, name: "Notebook", hover: "hover:bg-green-600" },
-                { icon: <SiPython className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600" },
-                { icon: <FaDatabase className="text-green-500" />, name: "MongoDB", hover: "hover:bg-yellow-600" },
-            ],
-            description: "Rwanda Credit Denaial Predictor is ML Based project which predict if a Rwandan Citizen is allowed to get credit or not based on different features.",
-            illustration: Rwanda,
-            code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
-            demo: "#"
-        },
-        
-        { 
-            title: "Face Recognation App",
+            title: "KAIROS AI",
             tech: [
                 { icon: <SiReact className="text-cyan-500"/>, name: "React", hover: "hover:bg-cyan-600" },
                 { icon: <SiFlask className="text-green-500" />, name: "Node.js", hover: "hover:bg-green-600" },
@@ -88,7 +73,7 @@ const Projects = () => {
             description: "A socket.io based chat application with real-time messaging, user authentication and message history.",
             illustration: face,
             code: "https://github.com/niyomugaboetiene/Chat-app-frontend",
-            demo: "#"
+            demo: "https://kairos-ai-web.vercel.app"
         },
         { 
             title: "Krypto-site-3.0 App",
@@ -104,16 +89,15 @@ const Projects = () => {
             demo: "https://krypto-site-3-0.vercel.app"
         },
         {
-            title: "Student Management System",
+            title: "Gikonko Tss MS",
             tech: [
                 {icon: <SiPhp className="text-purple-500"/>, name: "PHP", hover:"hover:bg-purple-600" },
                 {icon: <SiTailwindcss className="text-blue-400"/>, name: "Tailwindcss", hover:"hover:bg-blue-600" },
                 {icon: <FaDatabase className="text-yellow-600"/>, name: "MySQL", hover:"hover:bg-green-600" },
             ],
-            description: "Student Management System with student management, user authentication, and role-based access control.",
-            illustration: studentIllustration,
+            description: "Gikonko TSS Management System for managing students, teachers, classes, academic records, and school activities.",            illustration: studentIllustration,
             code: "https://github.com/niyomugaboetiene/Gikonko-Tss-Managment-system",
-            demo: "#"
+            demo: "https://gikonko-tss-ms.vercel.app/"
         },
         {
             title: "Portfolio Website",
@@ -125,19 +109,7 @@ const Projects = () => {
             description: "A responsive portfolio website showcasing projects, skills and contact information with smooth animations.",
             illustration: myPortfolio,
             code: "https://github.com/niyomugaboetiene/my-react-portfolio",
-            demo: "#",
-        },
-        {
-            title: "Library Management System",
-            tech: [
-                {icon: <SiReact className="text-cyan-400"/>, name: "React", hover:"hover:bg-cyan-600" },
-                {icon: <SiNodedotjs className="text-green-500"/>, name: "Node.js", hover:"hover:bg-green-600" },
-                {icon: <SiMongodb className="text-green-500"/>, name: "MongoDB", hover:"hover:bg-green-600" },
-            ],
-            description: "Full-stack Library management application with managing student functionality and role-based access control",
-            illustration: libraryAppIllustration,
-            code: "https://github.com/niyomugaboetiene/Library-Management-System",
-            demo: "#"
+            demo: "https://niyomugaboetiene.vercel.app",
         },
         {
             title: "Netmoviess",
@@ -175,7 +147,7 @@ const Projects = () => {
             description: "A modern E-commerce app where you can buy and sell goods with admin portal to manage goods and customers to view and buy goods",
             illustration: ShopShere,
             code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
-            demo: "#"
+            demo: "https://shp-shpere.vercel.app"
         },
         {
             title: "Home Finder",
@@ -188,7 +160,7 @@ const Projects = () => {
             description: "A modern E-commerce app for buying, renting and selling houses with three user types: Admin with full privileges, Seller (Landlord) and Customer",
             illustration: HouseSellImage,
             code: "https://github.com/niyomugaboetiene/task-remainder-mobile-app",
-            demo: "#"
+            demo: "https://homezfinder.vercel.app"
         },
     ];
 
