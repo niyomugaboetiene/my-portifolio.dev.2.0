@@ -76,7 +76,7 @@ const Skills = () => {
     },
     
     {
-      name: "ML & DL",
+      name: "AI & ML & DL",
       items: [
         { icon: <SiJupyter className="text-orange-400" />, name: "Jupyter notebook", level: 95, gradient: "from-purple-500 to-red-500" },
         { icon: <FaPython className="text-blue-500" />, name: "Python", level: 90 , gradient: "from-green-500 to-purple-500", },
