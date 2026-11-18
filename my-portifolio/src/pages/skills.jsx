@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import {
   SiTailwindcss, SiExpress, SiFlask, SiDjango, SiMongodb,
-  SiPostman, SiVercel, SiSocketdotio, SiJavascript, SiLaravel, SiSolidity, SiEthers, SiRemix, SiFlutter,
+  SiPostman, SiSocketdotio, SiJavascript, SiLaravel, SiSolidity, SiEthers, SiRemix, SiFlutter,
   SiReact,
   SiPostgresql,
   SiMax,
