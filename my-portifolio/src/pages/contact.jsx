@@ -237,7 +237,7 @@ const Contact = () => {
             <h3 className="text-lg sm:text-xl font-semibold dark:text-cyan-400 text-cyan-500 mb-3 sm:mb-4">Connect With Me</h3>
             <div className="flex space-x-3 sm:space-x-4">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/niyomugabo-etiene-86310a44b" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 sm:p-3 bg-gray-700 hover:bg-blue-600 rounded-full transition duration-300 flex items-center justify-center"

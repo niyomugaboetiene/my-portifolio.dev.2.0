@@ -38,7 +38,7 @@ const About = () => {
           >
             <p className="text-lg text-gray-500 dark:text-white leading-relaxed">
               I'm <span className="font-semibold text-cyan-400">Etiene Niyomugabo</span>, a passionate <span className="text-cyan-400 font-bold"> Decentralized Application Developer, </span> 
-             <span className="font-bold text-cyan-400">Machine Learning and Deep learning App Developer,</span>  <span className="text-cyan-400 font-bold">Full stack developer</span> with a strong desire to build clean, user-friendly, and impactful digital experiences. What began as curiosity has envolved into a dedicated career path.
+             <span className="font-bold text-cyan-400">Machine Learning and Deep learning Engineer,</span>  <span className="text-cyan-400 font-bold">Full stack App Eng</span> with a strong desire to build clean, user-friendly, and impactful digital experiences. What began as curiosity has envolved into a dedicated career path.
             </p>
 
             <p className="text-lg leading-relaxed dark:text-white text-gray-500">
