@@ -7,13 +7,13 @@ const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const texts = [
-    "Web 3.0 Developer",
-    "Smart Contract Dev",
-    "Blockchain Dev",
-    "Machine Learning Dev",
-    "Deep Learning Dev",
-    "Relational DB Dev",
-    "Website Dev",
+    "Web 3.0 Engineer",
+    "Smart Contract Eng",
+    "Blockchain Eng",
+    "Machine Learning Eng",
+    "Deep Learning Eng",
+    "Relational DB Eng",
+    "Website Eng",
     "React Expert",
     "UI/UX Enthusiast",
     "Graphic Designer",

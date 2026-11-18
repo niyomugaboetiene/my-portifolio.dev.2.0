@@ -6,7 +6,7 @@ function Footer() {
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
                     <p className="text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
-                        &copy; {new Date().getFullYear()} Etiene Niyomugabo. All rights reserved.
+                        &copy; {new Date().getFullYear()} <a href="https://github.com/niyomugaboetiene" className="hover:underline">Etiene Niyomugabo</a>. All rights reserved.
                     </p>
                     
                     <p className="text-sm sm:text-base text-cyan-500 dark:text-cyan-400 font-semibold text-center sm:text-right order-1 sm:order-2">
