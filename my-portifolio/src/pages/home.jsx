@@ -130,7 +130,7 @@ const Home = () => {
                 <FaGithub className="text-white text-lg sm:text-xl" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/niyomugabo-etiene-86310a44b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300 hover:translate-y-1"
