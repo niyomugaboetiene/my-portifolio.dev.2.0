@@ -63,7 +63,6 @@ function Portrait() {
           />
         </mesh>
 
-        {/* 3D Ring */}
         <mesh position={[0, 0, -0.2]} rotation={[0.5, 0.3, 0]}>
           <torusGeometry args={[2.1, 0.012, 16, 120]} />
           <meshBasicMaterial color="#00d9ff" />
@@ -74,7 +73,6 @@ function Portrait() {
   );
 }
 
-// 3D Scene
 function ThreeDScene() {
   return (
     <Canvas
@@ -92,12 +90,12 @@ function ThreeDScene() {
 
 const texts = [
   "Web 3.0 Engineer",
-  "Smart Contract Engineer",
-  "Blockchain Engineer",
+  "NLP Engineer",
+  "Data Scientist",
+  "AI Agent Engineer",
   "Machine Learning Engineer",
   "Deep Learning Engineer",
   "Full Stack Developer",
-  "React Developer",
   "UI/UX Enthusiast",
   "Graphic Designer",
   "Cybersecurity Specialist",
