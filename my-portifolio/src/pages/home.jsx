@@ -122,7 +122,6 @@ const Home = () => {
       bg-[#050816] text-white flex items-center"
     >
 
-      {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute w-96 h-96 bg-cyan-500/10
         blur-[120px] rounded-full top-10 left-10" />
@@ -139,7 +138,6 @@ const Home = () => {
       px-6 lg:px-12 w-full grid grid-cols-1
       lg:grid-cols-2 items-center gap-10 py-20">
 
-        {/* LEFT: INTRODUCTION */}
         <div className="text-center lg:text-left space-y-6">
 
           <motion.p
