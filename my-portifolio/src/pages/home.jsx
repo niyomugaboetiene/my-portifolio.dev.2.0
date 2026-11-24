@@ -96,7 +96,7 @@ const texts = [
   "Machine Learning Engineer",
   "Deep Learning Engineer",
   "Full Stack Developer",
-  "UI/UX Enthusiast",
+  "UI/UX Designer",
   "Graphic Designer",
   "Cybersecurity Specialist",
   "YouTuber"
