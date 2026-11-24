@@ -254,7 +254,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* RIGHT: 3D PORTRAIT */}
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
