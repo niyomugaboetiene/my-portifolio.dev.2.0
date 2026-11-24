@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa";
 
 import image from "../assets/DSC_0511.JPG"
-// 3D Portrait Component
 function Portrait() {
   const group = useRef();
 
@@ -44,7 +43,7 @@ function Portrait() {
     <Float speed={2} rotationIntensity={0.12} floatIntensity={0.4}>
       <group ref={group}>
 
-        {/* Glowing 3D Frame */}
+
         <mesh position={[0, 0, -0.08]}>
           <boxGeometry args={[2.85, 3.55, 0.15]} />
           <meshStandardMaterial
@@ -56,7 +55,6 @@ function Portrait() {
           />
         </mesh>
 
-        {/* Your Photograph */}
         <mesh position={[0, 0, 0.02]}>
           <planeGeometry args={[2.7, 3.4]} />
           <meshBasicMaterial
