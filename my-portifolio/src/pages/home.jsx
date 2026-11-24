@@ -99,6 +99,7 @@ const texts = [
   "UI/UX Designer",
   "Graphic Designer",
   "Cybersecurity Specialist",
+  "Video Editor",
   "YouTuber"
 ];
 
