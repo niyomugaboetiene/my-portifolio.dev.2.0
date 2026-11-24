@@ -188,7 +188,6 @@ const Home = () => {
             through code.
           </p>
 
-          {/* ACTION BUTTONS */}
           <div className="flex flex-wrap justify-center
           lg:justify-start gap-4 pt-4">
 
@@ -219,7 +218,6 @@ const Home = () => {
 
           </div>
 
-          {/* SOCIAL LINKS */}
           <div className="flex justify-center
           lg:justify-start gap-5 pt-6">
 
