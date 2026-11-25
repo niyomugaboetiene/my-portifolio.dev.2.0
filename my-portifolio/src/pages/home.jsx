@@ -1,38 +1,28 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import {
-  FaGithub,
-  FaLinkedin,
-  FaFileDownload,
-  FaWhatsapp,
-  FaFacebook,
-  FaEye,
-  FaArrowDown,
-} from "react-icons/fa";
-
-import Scene from "../components/3d/Scene";
-
-const texts = [
-  "Web 3.0 Engineer",
-  "Smart Contract Engineer",
-  "Blockchain Engineer",
-  "Machine Learning Engineer",
-  "Deep Learning Engineer",
-  "Relational Database Engineer",
-  "Website Engineer",
-  "React Expert",
-  "UI/UX Enthusiast",
-  "Graphic Designer",
-  "Full Stack Specialist",
-  "Cybersecurity Specialist",
-  "Defensive & Offensive Security",
-  "YouTuber",
-];
+import { FaGithub, FaLinkedin, FaFileDownload, FaWhatsapp, FaFacebook, FaEye } from "react-icons/fa";
+import background from "../../public/background.jpg";
 
 const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  const texts = [
+    "Web 3.0 Engineer",
+    "Smart Contract Eng",
+    "Blockchain Eng",
+    "Machine Learning Eng",
+    "Deep Learning Eng",
+    "Relational DB Eng",
+    "Website Eng",
+    "React Expert",
+    "UI/UX Enthusiast",
+    "Graphic Designer",
+    "Full Stack Specialist",
+    "Cyber security Specialist",
+    "Defensive & Offsensive Security",
+    "Youtuber"
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -40,315 +30,133 @@ const Home = () => {
         prevIndex === texts.length - 1 ? 0 : prevIndex + 1
       );
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
   const textVariants = {
-    enter: { opacity: 0, y: 20, rotateX: -20 },
-    center: { opacity: 1, y: 0, rotateX: 0 },
-    exit: { opacity: 0, y: -20, rotateX: 20 },
-  };
-
-  const socialLinks = [
-    {
-      icon: <FaGithub />,
-      url: "https://github.com/niyomugaboetiene",
-      label: "GitHub",
-      hover: "hover:bg-gray-600",
-    },
-    {
-      icon: <FaLinkedin />,
-      url: "https://www.linkedin.com/in/niyomugabo-etiene-86310a44b",
-      label: "LinkedIn",
-      hover: "hover:bg-blue-600",
-    },
-    {
-      icon: <FaWhatsapp />,
-      url: "https://wa.me/250728184299",
-      label: "WhatsApp",
-      hover: "hover:bg-green-600",
-    },
-  ];
-
-  // Reusable 3D button animation
-  const buttonHover = {
-    y: -5,
-    scale: 1.04,
-    rotateX: -5,
-    rotateY: 2,
-    transition: {
-      type: "spring",
-      stiffness: 300,
-      damping: 15,
-    },
-  };
-
-  const buttonTap = {
-    scale: 0.96,
-    rotateX: 2,
-    transition: { duration: 0.1 },
-  };
-
-  const buttonStyle = {
-    transformPerspective: 1000,
-    transformStyle: "preserve-3d",
+    enter: { opacity: 0, y: 20, position: "absolute" },
+    center: { opacity: 1, y: 0, position: "relative" },
+    exit: { opacity: 0, y: -20, position: "absolute" },
   };
 
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full flex items-center overflow-hidden bg-[#030712] text-white"
+      className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-cover bg-center bg-no-repeat w-full"
+      style={{ backgroundImage: `url(${background})` }}
     >
-      {/* Existing 3D Background */}
-      <Scene />
-
-      {/* Background gradients for text readability */}
-      <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-r from-[#030712] via-[#030712]/80 to-transparent" />
-
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-32">
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-
-          {/* LEFT: HERO CONTENT */}
-          <div className="max-w-2xl text-center lg:text-left">
-
-            {/* Greeting */}
-            <motion.div
+      <div className="absolute inset-0 dark:bg-black/70 bg-white/80"></div>
+   
+      <div className="relative z-10 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+        <div className="w-full max-w-3xl text-center">
+          
+          <div className="space-y-6 sm:space-y-8">
+            <motion.h1
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-black dark:text-white"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              className="mb-5"
+              transition={{ duration: 0.5 }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/30 bg-cyan-400/5 text-cyan-300 text-sm font-medium backdrop-blur-md">
-                <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                Available for opportunities
-              </span>
-            </motion.div>
-
-            {/* Name with metallic 3D appearance */}
-            <motion.h1
-              initial={{ opacity: 0, y: 30, rotateX: 12 }}
-              animate={{ opacity: 1, y: 0, rotateX: 0 }}
-              transition={{
-                duration: 1,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              style={{
-                transformPerspective: 1200,
-                transformStyle: "preserve-3d",
-              }}
-              className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-tight"
-            >
-              Hi, I'm
-
-              <motion.span
-                initial={{ opacity: 0, z: -40 }}
-                animate={{ opacity: 1, z: 0 }}
-                transition={{ delay: 0.3, duration: 1 }}
-                whileHover={{
-                  rotateY: 5,
-                  rotateX: -3,
-                  scale: 1.025,
-                }}
-                style={{
-                  transformPerspective: 1000,
-                  transformStyle: "preserve-3d",
-                  filter: "drop-shadow(0 5px 18px rgba(0, 217, 255, 0.18))",
-                }}
-                className="block mt-3 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 cursor-default"
-              >
-                Niyomugabo
-              </motion.span>
-
-              <motion.span
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-                className="block text-white mt-1"
-                style={{
-                  textShadow: "0 5px 20px rgba(255,255,255,0.12)",
-                }}
-              >
-                Etiene.
-              </motion.span>
+              <div className="mb-2 sm:mb-4">
+                <span className="text-sm sm:text-base text-cyan-500 dark:text-cyan-300 font-medium">
+                  Hi, I'm
+                </span>
+              </div>
+              <div>
+                <span className="dark:text-cyan-500 text-cyan-600 text-5xl sm:text-6xl md:text-7xl">
+                  Niyomugabo Etiene
+                </span>
+              </div>
             </motion.h1>
 
-            {/* Animated professional titles */}
-            <div
-              className="h-14 sm:h-16 flex items-center justify-center lg:justify-start mt-5 overflow-hidden"
-              style={{ perspective: "800px" }}
-            >
+            <div className="h-16 sm:h-20 relative overflow-hidden flex justify-center">
               <AnimatePresence mode="wait">
                 <motion.h2
                   key={currentTextIndex}
+                  className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-500 via-purple-500 to-blue-500 text-transparent bg-clip-text"
                   variants={textVariants}
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                  }}
-                  className="text-xl sm:text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-blue-400"
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
                   {texts[currentTextIndex]}
                 </motion.h2>
               </AnimatePresence>
             </div>
 
-            {/* Description */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mt-4"
+              className="dark:text-gray-300 text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
             >
-              I create beautiful, modern decentralized applications,
-              AI-based applications, ML-based applications, and
-              responsive websites using modern technologies.
-
-              <br /><br />
-
-              My objective is to solve real-world problems through code.
+              I create beautiful, modern decentralized applications, AI based Application, ML-Based Appication, and responsive websites using 
+              modern Technologies. With objective of solving real-world problem using codes.
             </motion.p>
 
-            {/* 3D Glass Action Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
-              className="flex flex-col sm:flex-row gap-4 mt-9 justify-center lg:justify-start"
-              style={{ perspective: "1000px" }}
-            >
-
-              {/* View Projects */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
               <motion.a
-                href="/#projects"
-                whileHover={buttonHover}
-                whileTap={buttonTap}
-                style={buttonStyle}
-                className="group relative overflow-hidden px-7 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold flex items-center justify-center gap-3 shadow-lg shadow-cyan-500/20 transition-all duration-300 border border-cyan-300/30 backdrop-blur-xl"
+                href="/#projects"  
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="px-6 py-3 dark:bg-cyan-600 dark:hover:bg-cyan-700 bg-cyan-500 hover:bg-cyan-600 rounded-lg text-white font-semibold transition duration-300 flex justify-center items-center gap-2"
               >
-                <span className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent opacity-50 pointer-events-none" />
-
-                <span className="relative z-10 flex items-center gap-3 [transform:translateZ(20px)]">
-                  <FaEye />
-                  View My Work
-                </span>
-
-                <span className="absolute inset-0 rounded-xl border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <FaEye /> View My Work
               </motion.a>
 
-              {/* Download CV */}
               <motion.a
                 href="/resume/Etiene_Niyomugabo.pdf"
                 download
-                whileHover={buttonHover}
-                whileTap={buttonTap}
-                style={buttonStyle}
-                className="group relative overflow-hidden px-7 py-4 rounded-xl border border-cyan-400/60 bg-white/5 hover:bg-cyan-400/10 text-cyan-300 font-semibold flex items-center justify-center gap-3 backdrop-blur-xl transition-all duration-300 shadow-lg shadow-cyan-500/5"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="px-6 py-3 dark:bg-transparent bg-transparent border-2 border-cyan-500 text-cyan-600 dark:text-cyan-400 dark:hover:bg-cyan-600/20 hover:bg-cyan-50 rounded-lg font-semibold transition duration-300 flex items-center justify-center gap-2"
               >
-                <span className="absolute inset-0 bg-gradient-to-br from-cyan-300/15 via-transparent to-purple-400/10 opacity-60 pointer-events-none" />
-
-                <span className="relative z-10 flex items-center gap-3 [transform:translateZ(20px)]">
-                  <FaFileDownload />
-                  Download CV
-                </span>
-
-                <span className="absolute inset-0 rounded-xl border border-cyan-300/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <FaFileDownload /> Download CV
               </motion.a>
+            </div>
 
-            </motion.div>
-
-            {/* Social links */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              className="flex justify-center gap-4 pt-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ delay: 0.9 }}
-              className="flex gap-4 mt-10 justify-center lg:justify-start"
             >
-
-              {socialLinks.map((social) => (
-                <motion.a
-                  key={social.label}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  title={social.label}
-                  whileHover={{
-                    y: -6,
-                    scale: 1.12,
-                    rotateX: -8,
-                    rotateY: 8,
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  style={{
-                    transformPerspective: 700,
-                    transformStyle: "preserve-3d",
-                  }}
-                  className={`w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-white text-xl ${social.hover} hover:border-transparent transition-colors duration-300 backdrop-blur-md shadow-lg`}
-                >
-                  <span className="[transform:translateZ(12px)]">
-                    {social.icon}
-                  </span>
-                </motion.a>
-              ))}
-
-              {/* Facebook placeholder */}
-              <motion.a
-                href="#contact"
-                aria-label="Facebook"
-                title="Facebook"
-                whileHover={{
-                  y: -6,
-                  scale: 1.12,
-                  rotateX: -8,
-                  rotateY: 8,
-                }}
-                whileTap={{ scale: 0.95 }}
-                style={{
-                  transformPerspective: 700,
-                  transformStyle: "preserve-3d",
-                }}
-                className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-white text-xl hover:bg-blue-700 hover:border-transparent transition-colors duration-300 backdrop-blur-md shadow-lg"
+              <a
+                href="https://github.com/niyomugaboetiene"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-gray-700 rounded-full transition duration-300 hover:translate-y-1"
               >
-                <span className="[transform:translateZ(12px)]">
-                  <FaFacebook />
-                </span>
-              </motion.a>
-
+                <FaGithub className="text-white text-lg sm:text-xl" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/niyomugabo-etiene-86310a44b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-600 rounded-full transition duration-300 hover:translate-y-1"
+              >
+                <FaLinkedin className="text-white text-lg sm:text-xl" />
+              </a>
+              <a
+                href="https://wa.me/+250728184299"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-green-500 rounded-full transition duration-300 hover:translate-y-1"
+              >
+                <FaWhatsapp className="text-white text-lg sm:text-xl" />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 sm:p-4 bg-gray-800 hover:bg-blue-700 rounded-full transition duration-300 hover:translate-y-1"
+              >
+                <FaFacebook className="text-white text-lg sm:text-xl" />
+              </a>
             </motion.div>
-
           </div>
-
-          {/* RIGHT: SPACE RESERVED FOR 3D ORB */}
-          <div className="hidden lg:block min-h-[450px]" />
-
         </div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [0, 8, 0] }}
-          transition={{
-            opacity: { delay: 1.2 },
-            y: {
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            },
-          }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400"
-        >
-          <span className="text-xs uppercase tracking-[0.3em]">
-            Scroll to explore
-          </span>
-
-          <FaArrowDown className="text-cyan-400" />
-        </motion.div>
-
       </div>
     </section>
   );
